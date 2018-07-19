@@ -38,6 +38,42 @@
 
 <body>
 
+<!-- preloader -->
+<script src="js/pace.js"></script>
+<style>
+  .pace {
+    -webkit-pointer-events: none;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none
+  }
+
+  .pace-progress {
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 4px;
+    background: #000;
+    -webkit-transition: -webkit-transform .3s, width 1s;
+    -moz-transition: width 1s;
+    -o-transform: width 1s;
+    transition: transform .3s, width 1s
+  }
+
+  .preloader-pace {
+    position: fixed;
+    z-index: 1999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+  }
+</style>
+<div class="preloader-pace"></div>
 <!-- hamburger -->
 <div class="hamburger-menu">
 
@@ -110,37 +146,31 @@
           <li class="header__list-item">
             <a class="header__link header__link--we" href="./we.html">
               Агентство
-              <span></span>
             </a>
           </li>
           <li class="header__list-item">
             <a class="header__link header__link--services" href="./services.html">
               Услуги
-              <span></span>
             </a>
           </li>
           <li class="header__list-item">
             <a class="header__link header__link--cases" href="./cases.html">
               Кейсы
-              <span></span>
             </a>
           </li>
           <li class="header__list-item">
             <a class="header__link header__link--events" href="./events.html">
               События
-              <span></span>
             </a>
           </li>
           <li class="header__list-item">
             <a class="header__link header__link--blog" href="./blog.html">
               Блог
-              <span></span>
             </a>
           </li>
           <li class="header__list-item">
             <a class="header__link header__link--contacts" href="./contacts.html">
               Контакты
-              <span></span>
             </a>
           </li>
         </ul>
@@ -569,9 +599,10 @@
       <div class="contacts__row">
 
         <div class="contacts__col">
-          <h2 class="contacts__title">
+          <h1 class="contacts__title h2">
             Нужно
-            <br> поговорить</h2>
+            <br> поговорить
+          </h1>
         </div>
 
         <div class="contacts__col">
@@ -861,7 +892,6 @@
 <link rel="stylesheet" href="css/main.min.css">
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb7KTKgcMASavxIdBi6bXImiPA_csjJ_E"></script>
 <script src="js/jquery.js"></script>
-
 
 </body>
 

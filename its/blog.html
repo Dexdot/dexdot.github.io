@@ -38,6 +38,42 @@
 
 <body>
 
+<!-- preloader -->
+<script src="js/pace.js"></script>
+<style>
+  .pace {
+    -webkit-pointer-events: none;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none
+  }
+
+  .pace-progress {
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 4px;
+    background: #000;
+    -webkit-transition: -webkit-transform .3s, width 1s;
+    -moz-transition: width 1s;
+    -o-transform: width 1s;
+    transition: transform .3s, width 1s
+  }
+
+  .preloader-pace {
+    position: fixed;
+    z-index: 1999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+  }
+</style>
+<div class="preloader-pace"></div>
 <!-- hamburger -->
 <div class="hamburger-menu">
 
@@ -110,37 +146,31 @@
           <li class="header__list-item">
             <a class="header__link header__link--we" href="./we.html">
               Агентство
-              <span></span>
             </a>
           </li>
           <li class="header__list-item">
             <a class="header__link header__link--services" href="./services.html">
               Услуги
-              <span></span>
             </a>
           </li>
           <li class="header__list-item">
             <a class="header__link header__link--cases" href="./cases.html">
               Кейсы
-              <span></span>
             </a>
           </li>
           <li class="header__list-item">
             <a class="header__link header__link--events" href="./events.html">
               События
-              <span></span>
             </a>
           </li>
           <li class="header__list-item">
             <a class="header__link header__link--blog" href="./blog.html">
               Блог
-              <span></span>
             </a>
           </li>
           <li class="header__list-item">
             <a class="header__link header__link--contacts" href="./contacts.html">
               Контакты
-              <span></span>
             </a>
           </li>
         </ul>
@@ -566,7 +596,7 @@
 <div class="container">
 
   <div class="blog">
-    <h2 class="blog__title">Блог</h2>
+    <h1 class="blog__title h2">Блог</h1>
     <p class="blog__text">
       Пишем об интернет-маркетинге, брендинге, разработке стратегий, сайтов, магазинов и сервисов. Зовём в Facebook, Twitter и
       ВКонтакте — там обновления
@@ -616,9 +646,6 @@
 
     <div class="blog-grid__item">
       <div class="media-block">
-        <a class="media-block__img-wrap" href="./article.html">
-          <img src="img/media/triple-junior.jpg" alt="its.agency ищет стажеров" class="media-block__img">
-        </a>
         <ul class="media-block__tags">
           <li class="media-block__tag">
             <a href="">Вакансии</a>
@@ -627,20 +654,20 @@
             20 июня
           </li>
         </ul>
-        <h5 class="media-block__title">
+        <div class="media-block__title h5">
           <a href="./article.html">its.agency ищет стажеров</a>
-        </h5>
+        </div>
         <p class="media-block__text">
           Мы расширяемся и нам нужны дерзкие начинающие профессионалы сразу в трех областях: веб-дизайн, фронтенд и бекенд-разработка
         </p>
+        <a class="media-block__img-wrap" href="./article.html">
+          <img src="img/media/triple-junior.jpg" alt="its.agency ищет стажеров" class="media-block__img">
+        </a>
       </div>
     </div>
 
     <div class="blog-grid__item">
       <div class="media-block">
-        <a class="media-block__img-wrap" href="./article.html">
-          <img src="img/media/business-marketing.jpg" alt="Почему бизнес боится контент-маркетинга" class="media-block__img">
-        </a>
         <ul class="media-block__tags">
           <li class="media-block__tag">
             <a href="">Маркетинг</a>
@@ -649,20 +676,20 @@
             18 июня
           </li>
         </ul>
-        <h5 class="media-block__title">
+        <div class="media-block__title h5">
           <a href="./article.html">Почему бизнес боится контент-маркетинга</a>
-        </h5>
+        </div>
         <p class="media-block__text">
-          Часто люди думают так: не умеешь писать красиво, не пиши совсем. Это ошибочная установка
+          Часто люди думают так: не умеешь писать красиво, не пиши совсем. Это ошибочная установка
         </p>
+        <a class="media-block__img-wrap" href="./article.html">
+          <img src="img/media/business-marketing.jpg" alt="Почему бизнес боится контент-маркетинга" class="media-block__img">
+        </a>
       </div>
     </div>
 
     <div class="blog-grid__item">
       <div class="media-block">
-        <a class="media-block__img-wrap" href="./article.html">
-          <img src="img/media/smm-wanted.jpg" alt="Вакансия SMM-специалиста" class="media-block__img">
-        </a>
         <ul class="media-block__tags">
           <li class="media-block__tag">
             <a href="">Вакансии</a>
@@ -671,20 +698,20 @@
             13 июня
           </li>
         </ul>
-        <h5 class="media-block__title">
+        <div class="media-block__title h5">
           <a href="./article.html">Вакансия SMM-специалиста</a>
-        </h5>
+        </div>
         <p class="media-block__text">
           Ищем сммщика без мемасов в голове
         </p>
+        <a class="media-block__img-wrap" href="./article.html">
+          <img src="img/media/smm-wanted.jpg" alt="Вакансия SMM-специалиста" class="media-block__img">
+        </a>
       </div>
     </div>
 
     <div class="blog-grid__item">
       <div class="media-block">
-        <a class="media-block__img-wrap" href="./article.html">
-          <img src="img/media/text-about.jpg" alt="Что писать в тексте о компании, если писать не о чем" class="media-block__img">
-        </a>
         <ul class="media-block__tags">
           <li class="media-block__tag">
             <a href="">Маркетинг</a>
@@ -693,20 +720,20 @@
             23 мая
           </li>
         </ul>
-        <h5 class="media-block__title">
+        <div class="media-block__title h5">
           <a href="./article.html">Что писать в тексте о компании, если писать не о чем</a>
-        </h5>
+        </div>
         <p class="media-block__text">
           Инструкция для начинающих и сомневающихся от Яны Чариковой
         </p>
+        <a class="media-block__img-wrap" href="./article.html">
+          <img src="img/media/text-about.jpg" alt="Что писать в тексте о компании, если писать не о чем" class="media-block__img">
+        </a>
       </div>
     </div>
 
     <div class="blog-grid__item">
       <div class="media-block">
-        <a class="media-block__img-wrap" href="./article.html">
-          <img src="img/media/business-marketing-2.jpg" alt="Почему бизнес боится контент-маркетинга" class="media-block__img">
-        </a>
         <ul class="media-block__tags">
           <li class="media-block__tag">
             <a href="">Маркетинг</a>
@@ -715,20 +742,20 @@
             26 апреля
           </li>
         </ul>
-        <h5 class="media-block__title">
+        <div class="media-block__title h5">
           <a href="./article.html">Почему бизнес боится контент-маркетинга</a>
-        </h5>
+        </div>
         <p class="media-block__text">
           Бывает, что сильный бизнес может построить завод, но годами не может опубликовать пост
         </p>
+        <a class="media-block__img-wrap" href="./article.html">
+          <img src="img/media/business-marketing-2.jpg" alt="Почему бизнес боится контент-маркетинга" class="media-block__img">
+        </a>
       </div>
     </div>
 
     <div class="blog-grid__item">
       <div class="media-block">
-        <a class="media-block__img-wrap" href="./article.html">
-          <img src="img/media/vetset.jpg" alt="Продвижение ветеринарной клиники «ВетСеть»" class="media-block__img">
-        </a>
         <ul class="media-block__tags">
           <li class="media-block__tag">
             <a href="">SMM</a>
@@ -737,20 +764,22 @@
             10 апреля
           </li>
         </ul>
-        <h5 class="media-block__title">
-          <a href="./article.html">Продвижение ветеринарной клиники «ВетСеть»</a>
-        </h5>
+        <div class="media-block__title h5">
+          <a href="./article.html">
+            Продвижение ветеринарной клиники «ВетСеть»
+          </a>
+        </div>
         <p class="media-block__text">
           Как мы за полгода сделали самое активное сообщество ветеринарной клиники в Санкт-Петербурге
         </p>
+        <a class="media-block__img-wrap" href="./article.html">
+          <img src="img/media/vetset.jpg" alt="Продвижение ветеринарной клиники «ВетСеть»" class="media-block__img">
+        </a>
       </div>
     </div>
 
     <div class="blog-grid__item">
       <div class="media-block">
-        <a class="media-block__img-wrap" href="./article.html">
-          <img src="img/media/dovlatov.jpg" alt="Продвижение фильма «Довлатов»" class="media-block__img">
-        </a>
         <ul class="media-block__tags">
           <li class="media-block__tag">
             <a href="">SMM</a>
@@ -759,20 +788,20 @@
             29 марта
           </li>
         </ul>
-        <h5 class="media-block__title">
+        <div class="media-block__title h5">
           <a href="./article.html">Продвижение фильма «Довлатов»</a>
-        </h5>
+        </div>
         <p class="media-block__text">
           Мы нашли аудиторию клиента в 33 городах России и добились стоимости перехода 9 рублей
         </p>
+        <a class="media-block__img-wrap" href="./article.html">
+          <img src="img/media/dovlatov.jpg" alt="Продвижение фильма «Довлатов»" class="media-block__img">
+        </a>
       </div>
     </div>
 
     <div class="blog-grid__item">
       <div class="media-block">
-        <a class="media-block__img-wrap" href="./article.html">
-          <img src="img/media/specia-conf.jpg" alt="Как привести 56 блогеров по бартеру за два месяца" class="media-block__img">
-        </a>
         <ul class="media-block__tags">
           <li class="media-block__tag">
             <a href="">Маркетинг</a>
@@ -781,12 +810,17 @@
             23 марта
           </li>
         </ul>
-        <h5 class="media-block__title">
-          <a href="./article.html">Как привести 56 блогеров по бартеру за два месяца</a>
-        </h5>
+        <div class="media-block__title h5">
+          <a href="./article.html">
+            Как привести 56 блогеров по бартеру за два месяца
+          </a>
+        </div>
         <p class="media-block__text">
           Презентация с выступления Марианны Лушниковой на SPECIA CONF: Social Media Marketing
         </p>
+        <a class="media-block__img-wrap" href="./article.html">
+          <img src="img/media/specia-conf.jpg" alt="Как привести 56 блогеров по бартеру за два месяца" class="media-block__img">
+        </a>
       </div>
     </div>
 
@@ -1076,7 +1110,6 @@
 <link rel="stylesheet" href="css/main.min.css">
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb7KTKgcMASavxIdBi6bXImiPA_csjJ_E"></script>
 <script src="js/jquery.js"></script>
-
 
 </body>
 

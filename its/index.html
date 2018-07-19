@@ -47,7 +47,6 @@
     z-index: 99999;
     width: 100vw;
     height: 100vh;
-    background: #fff;
 
     display: flex;
     align-items: center;
@@ -59,8 +58,8 @@
     width: 100%;
     height: 100%;
     background: #fff;
-    z-index: 1;
     transform: translate(0, 100%);
+    z-index: 1;
   }
 
   .preloader .i-logo {
@@ -206,37 +205,31 @@
           <li class="header__list-item">
             <a class="header__link header__link--we" href="./we.html">
               Агентство
-              <span></span>
             </a>
           </li>
           <li class="header__list-item">
             <a class="header__link header__link--services" href="./services.html">
               Услуги
-              <span></span>
             </a>
           </li>
           <li class="header__list-item">
             <a class="header__link header__link--cases" href="./cases.html">
               Кейсы
-              <span></span>
             </a>
           </li>
           <li class="header__list-item">
             <a class="header__link header__link--events" href="./events.html">
               События
-              <span></span>
             </a>
           </li>
           <li class="header__list-item">
             <a class="header__link header__link--blog" href="./blog.html">
               Блог
-              <span></span>
             </a>
           </li>
           <li class="header__list-item">
             <a class="header__link header__link--contacts" href="./contacts.html">
               Контакты
-              <span></span>
             </a>
           </li>
         </ul>
@@ -661,7 +654,7 @@
 
 <div class="container">
 	<div class="main">
-		<h1 class="main__title">
+		<h1 class="main__title h1">
 			<span>its.</span>
 			<span>
 				<span class="word">creative</span>
@@ -681,12 +674,15 @@
 		<span class="grid-sizer"></span>
 
 		<div class="grid-item">
-			<a class="mockup" href="" style="background-image: url('img/cases/neurohive.jpg')">
+			<a class="mockup" href="">
+				<div class="mockup__bg" style="background-image: url('img/cases/neurohive.jpg')"></div>
 				<ul class="mockup__tags">
 					<li class="mockup__tag">Промо-сайт</li>
 					<li class="mockup__tag">Айдентика</li>
 				</ul>
-				<h4 class="mockup__title">Neurohive</h4>
+				<span class="mockup__title h4">
+					Neurohive
+				</span>
 				<p class="mockup__text">Хакатон для разработчиков нейросетей</p>
 				<div class="mockup__padding"></div>
 			</a>
@@ -699,10 +695,10 @@
 						Мнение
 					</li>
 				</ul>
-				<h5 class="card-block__title">
+				<p class="card-block__title h5">
 					Мы считаем, что сммщик — это специальность на стыке менеджмента, аналитики и творчества. Просто постить контент, даже смешной,
 					недостаточно.
-				</h5>
+				</p>
 				<p class="card-block__text">
 					<b>Марианна Лушникова</b>
 				</p>
@@ -711,47 +707,59 @@
 		</div>
 
 		<div class="grid-item">
-			<a class="mockup" href="" style="background-image: url('img/cases/larne.jpg')">
+			<a class="mockup" href="">
+				<div class="mockup__bg" style="background-image: url('img/cases/larne.jpg')"></div>
 				<ul class="mockup__tags">
 					<li class="mockup__tag">eCommerce</li>
 				</ul>
-				<h4 class="mockup__title">Larne</h4>
+				<span class="mockup__title h4">
+					Larne
+				</span>
 				<p class="mockup__text">Магазин дизайнерской одежды из родного Петербурга</p>
 				<div class="mockup__padding"></div>
 			</a>
 		</div>
 
 		<div class="grid-item">
-			<a class="mockup" href="" style="background-image: url('img/cases/gradient.jpg')">
+			<a class="mockup" href="">
+				<div class="mockup__bg" style="background-image: url('img/cases/gradient.jpg')"></div>
 				<ul class="mockup__tags">
 					<li class="mockup__tag">eCommerce</li>
 					<li class="mockup__tag">SMM</li>
 				</ul>
-				<h4 class="mockup__title">Бьютека</h4>
+				<span class="mockup__title h4">
+					Бьютека
+				</span>
 				<p class="mockup__text">Сеть магазинов здоровья и красоты</p>
 				<div class="mockup__padding"></div>
 			</a>
 		</div>
 
 		<div class="grid-item">
-			<a class="mockup" href="" style="background-image: url('img/cases/citycar.jpg')">
+			<a class="mockup" href="">
+				<div class="mockup__bg" style="background-image: url('img/cases/citycar.jpg')"></div>
 				<ul class="mockup__tags">
 					<li class="mockup__tag">Веб-сайт</li>
 					<li class="mockup__tag">SMM</li>
 					<li class="mockup__tag">SEO</li>
 				</ul>
-				<h4 class="mockup__title">Citycar</h4>
+				<span class="mockup__title h4">
+					Citycar
+				</span>
 				<p class="mockup__text">Аренда автомобилей на Дальнем Востоке</p>
 				<div class="mockup__padding"></div>
 			</a>
 		</div>
 
 		<div class="grid-item">
-			<a class="mockup" href="" style="background-image: url('img/cases/saharok.jpg')">
+			<a class="mockup" href="">
+				<div class="mockup__bg" style="background-image: url('img/cases/saharok.jpg')"></div>
 				<ul class="mockup__tags">
 					<li class="mockup__tag">eCommerce</li>
 				</ul>
-				<h4 class="mockup__title">Сахарок</h4>
+				<span class="mockup__title h4">
+					Сахарок
+				</span>
 				<p class="mockup__text">Магазин минималистичных украшений</p>
 				<div class="mockup__padding"></div>
 			</a>
@@ -759,10 +767,6 @@
 
 		<div class="grid-item">
 			<div class="media-block">
-				<a class="media-block__img-wrap" href="">
-					<img src="img/media/business-marketing.jpg" alt="Рассказали клиникам эстетической медицины, как найти и сегментировать целевую аудиторию."
-					 class="media-block__img">
-				</a>
 				<ul class="media-block__tags">
 					<li class="media-block__tag">
 						<a href="">Маркетинг</a>
@@ -771,12 +775,15 @@
 						26 апреля
 					</li>
 				</ul>
-				<h5 class="media-block__title">
+				<div class="media-block__title h5">
 					<a href="">Почему бизнес боится контент-маркетинга</a>
-				</h5>
+				</div>
 				<p class="media-block__text">
 					Рассказали клиникам эстетической медицины, как найти и сегментировать целевую аудиторию.
 				</p>
+				<a class="media-block__img-wrap" href="">
+					<img class="media-block__img" src="img/media/business-marketing.jpg" alt="Рассказали клиникам эстетической медицины, как найти и сегментировать целевую аудиторию.">
+				</a>
 			</div>
 		</div>
 
@@ -787,10 +794,10 @@
 						Мнение
 					</li>
 				</ul>
-				<h5 class="card-block__title">
+				<p class="card-block__title h5">
 					«Все проще, если у текста есть конкретная задача. Например, объяснить инвесторам, что у вас надежная компания. Или заинтересовать
 					потенциальных сотрудников. Когда цель ясна, аргументы находятся сами.
-				</h5>
+				</p>
 				<p class="card-block__text">
 					<b>Филипп Бразговский</b>
 				</p>
@@ -800,23 +807,29 @@
 
 		<div class="grid-item">
 			<a class="mockup" href="" style="background-image: url('img/cases/gradient.jpg')">
+				<div class="mockup__bg"></div>
 				<ul class="mockup__tags">
 					<li class="mockup__tag">eCommerce</li>
 					<li class="mockup__tag">SMM</li>
 					<li class="mockup__tag">SEO</li>
 				</ul>
-				<h4 class="mockup__title">Алексеевская дубрава</h4>
+				<span class="mockup__title h4">
+					Алексеевская дубрава
+				</span>
 				<p class="mockup__text">Крупнейший поставщик ландшафтных решений</p>
 				<div class="mockup__padding"></div>
 			</a>
 		</div>
 
 		<div class="grid-item">
-			<a class="mockup" href="" style="background-image: url('img/cases/gradient.jpg')">
+			<a class="mockup" href="">
+				<div class="mockup__bg" style="background-image: url('img/cases/gradient.jpg')"></div>
 				<ul class="mockup__tags">
 					<li class="mockup__tag">Веб-сайт</li>
 				</ul>
-				<h4 class="mockup__title">MyHome</h4>
+				<span class="mockup__title h4">
+					MyHome
+				</span>
 				<p class="mockup__text">Ремонт по дизайн-проектам за короткий срок</p>
 				<div class="mockup__padding"></div>
 			</a>
@@ -1157,7 +1170,6 @@
 <link rel="stylesheet" href="css/main.min.css">
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb7KTKgcMASavxIdBi6bXImiPA_csjJ_E"></script>
 <script src="js/jquery.js"></script>
-
 
 </body>
 
