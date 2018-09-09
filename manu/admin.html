@@ -29,7 +29,8 @@
   <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
 
-  <!-- <link rel="preload" href="./fonts/lato/Lato-Bold.woff2" as="font"> -->
+  <link rel="preload" href="./fonts/lato/Lato-Bold.woff2" as="font">
+  <link rel="preload" href="./fonts/roboto/Roboto-Bold.woff2" as="font">
 
 </head>
 
@@ -84,7 +85,7 @@
 </svg>
           </a>
         </div>
-        <button class="btn header__btn">Early Accesses</button>
+        <button class="btn header__btn" data-micromodal-trigger="early-access-modal">Early Accesses</button>
       </div>
       <button class="hamburger hamburger--slider js-open-menu" type="button">
   <span class="hamburger-box">
@@ -94,6 +95,53 @@
     </div>
   </div>
 </header>
+<!-- Early Access Modal -->
+<div class="modal" id="early-access-modal" aria-hidden="true">
+  <div class="modal__overlay" data-micromodal-close tabindex="-1">
+    <form class="modal__container" role="dialog" aria-modal="true" aria-labelledby="early-access-modal-title">
+
+      <button class="modal__close" aria-label="Close modal" type="button" data-micromodal-close>
+        <svg class="i-close" viewBox="0 0 22 22">
+  <path d="M1 1L11 11M21 21L11 11M11 11L21 1L1 21" />
+</svg>
+      </button>
+
+      <main class="modal__content" id="early-access-modal-content">
+        <h2 class="modal__title" id="early-access-modal-title">
+          Early Access
+        </h2>
+
+        <div class="mdc-text-field mdc-text-field--outlined">
+          <input class="mdc-text-field__input" type="text">
+          <label class="mdc-floating-label">First Name</label>
+          <div class="mdc-notched-outline">
+            <svg>
+              <path class="mdc-notched-outline__path" />
+            </svg>
+          </div>
+          <div class="mdc-notched-outline__idle"></div>
+        </div>
+
+        <div class="mdc-text-field mdc-text-field--outlined">
+          <input class="mdc-text-field__input" type="email">
+          <label class="mdc-floating-label">Email</label>
+          <div class="mdc-notched-outline">
+            <svg>
+              <path class="mdc-notched-outline__path" />
+            </svg>
+          </div>
+          <div class="mdc-notched-outline__idle"></div>
+        </div>
+
+      </main>
+
+      <footer class="modal__footer">
+        <button class="modal__btn btn" type="submit">Get Early Access</button>
+      </footer>
+
+    </form>
+  </div>
+</div>
 <!-- Menu -->
 <div class="menu">
   <div class="menu__container">
@@ -156,6 +204,41 @@
         </li>
       </ul>
     </div>
+  </div>
+</div>
+
+<!-- Delete Account Modal -->
+<div class="modal" id="delete-acc-modal" aria-hidden="true">
+  <div class="modal__overlay" data-micromodal-close tabindex="-1">
+    <form class="modal__container" role="dialog" aria-modal="true" aria-labelledby="delete-acc-modal-title">
+
+      <button class="modal__close" aria-label="Close modal" type="button" data-micromodal-close>
+        <svg class="i-close" viewBox="0 0 22 22">
+  <path d="M1 1L11 11M21 21L11 11M11 11L21 1L1 21" />
+</svg>
+      </button>
+
+      <main class="modal__content" id="delete-acc-modal-content">
+        <h2 class="modal__title" id="delete-acc-modal-title">
+          Are You Sure?
+        </h2>
+        <p>
+          Your data will be completely deleted from the system, you will not be able to recover your account.
+        </p>
+        <label class="checkbox checkbox--is-checked">
+          <input class="checkbox__input" type="checkbox" required checked> Delete my show cases <svg class="i-daw" viewBox="0 0 24 24">
+  <polyline points="20 6 9 17 4 12"></polyline>
+</svg>
+        </label>
+
+      </main>
+
+      <footer class="modal__footer">
+        <button class="modal__btn btn" type="button" data-micromodal-close>Cancel</button>
+        <button class="modal__btn btn btn--stroke" type="submit">Delete Account</button>
+      </footer>
+
+    </form>
   </div>
 </div>
 
@@ -532,7 +615,7 @@
           </div>
         </div>
         <div>
-          <a class="profile-link" href="">Delete Account</a>
+          <span class="profile-link" data-micromodal-trigger="delete-acc-modal">Delete Account</span>
           <a class="profile-link" download href="../../fonts/roboto/Roboto-Bold.woff2">Download Data</a>
           <button class="btn profile-submit" type="submit">Save</button>
         </div>
@@ -735,6 +818,35 @@
 </main>
 
 <script defer src="js/admin.js"></script>
+<!-- Tweet -->
+<script>window.twttr = (function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+      t = window.twttr || {};
+    if (d.getElementById(id)) return t;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+
+    t._e = [];
+    t.ready = function (f) {
+      t._e.push(f);
+    };
+
+    return t;
+  }(document, "script", "twitter-wjs"));
+</script>
+<!-- ./Tweet -->
+<!-- FB Share -->
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+<!-- ./FB Share -->
 
 <!-- footer -->
 <link rel="stylesheet" href="css/main.min.css">
@@ -753,7 +865,7 @@
             <a class="footer__link" href="">Forum</a>
           </li>
           <li class="footer__list-item">
-            <a class="footer__link" href="">Show Cases</a>
+            <a class="footer__link" href="./cases.html">Show Cases</a>
           </li>
           <li class="footer__list-item">
             <a class="footer__link" href="">Support</a>
@@ -886,7 +998,7 @@
             <a class="footer__link" href="">Forum</a>
           </li>
           <li class="footer__list-item">
-            <a class="footer__link" href="">Show Cases</a>
+            <a class="footer__link" href=./cases.html "">Show Cases</a>
           </li>
           <li class="footer__list-item">
             <a class="footer__link" href="">Support</a>

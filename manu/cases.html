@@ -29,7 +29,8 @@
   <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
 
-  <!-- <link rel="preload" href="./fonts/lato/Lato-Bold.woff2" as="font"> -->
+  <link rel="preload" href="./fonts/lato/Lato-Bold.woff2" as="font">
+  <link rel="preload" href="./fonts/roboto/Roboto-Bold.woff2" as="font">
 
 </head>
 
@@ -84,7 +85,7 @@
 </svg>
           </a>
         </div>
-        <button class="btn header__btn">Early Accesses</button>
+        <button class="btn header__btn" data-micromodal-trigger="early-access-modal">Early Accesses</button>
       </div>
       <button class="hamburger hamburger--slider js-open-menu" type="button">
   <span class="hamburger-box">
@@ -94,6 +95,53 @@
     </div>
   </div>
 </header>
+<!-- Early Access Modal -->
+<div class="modal" id="early-access-modal" aria-hidden="true">
+  <div class="modal__overlay" data-micromodal-close tabindex="-1">
+    <form class="modal__container" role="dialog" aria-modal="true" aria-labelledby="early-access-modal-title">
+
+      <button class="modal__close" aria-label="Close modal" type="button" data-micromodal-close>
+        <svg class="i-close" viewBox="0 0 22 22">
+  <path d="M1 1L11 11M21 21L11 11M11 11L21 1L1 21" />
+</svg>
+      </button>
+
+      <main class="modal__content" id="early-access-modal-content">
+        <h2 class="modal__title" id="early-access-modal-title">
+          Early Access
+        </h2>
+
+        <div class="mdc-text-field mdc-text-field--outlined">
+          <input class="mdc-text-field__input" type="text">
+          <label class="mdc-floating-label">First Name</label>
+          <div class="mdc-notched-outline">
+            <svg>
+              <path class="mdc-notched-outline__path" />
+            </svg>
+          </div>
+          <div class="mdc-notched-outline__idle"></div>
+        </div>
+
+        <div class="mdc-text-field mdc-text-field--outlined">
+          <input class="mdc-text-field__input" type="email">
+          <label class="mdc-floating-label">Email</label>
+          <div class="mdc-notched-outline">
+            <svg>
+              <path class="mdc-notched-outline__path" />
+            </svg>
+          </div>
+          <div class="mdc-notched-outline__idle"></div>
+        </div>
+
+      </main>
+
+      <footer class="modal__footer">
+        <button class="modal__btn btn" type="submit">Get Early Access</button>
+      </footer>
+
+    </form>
+  </div>
+</div>
 <!-- Menu -->
 <div class="menu">
   <div class="menu__container">
@@ -939,7 +987,9 @@
   <div class="cases-header">
     <div class="container">
       <h1 class="h1 cases-title">Show Cases</h1>
-      <button class="btn cases-filter-btn js-open-filter">Filter 4</button>
+      <button class="btn cases-filter-btn js-open-filter">Filter
+        <span>0</span>
+      </button>
       <button class="btn btn--stroke white-text">Add Your Game +</button>
       <ul class="cases-tags link-tags--light">
         <li>
@@ -1250,7 +1300,7 @@
             <a class="footer__link" href="">Forum</a>
           </li>
           <li class="footer__list-item">
-            <a class="footer__link" href="">Show Cases</a>
+            <a class="footer__link" href="./cases.html">Show Cases</a>
           </li>
           <li class="footer__list-item">
             <a class="footer__link" href="">Support</a>
@@ -1383,7 +1433,7 @@
             <a class="footer__link" href="">Forum</a>
           </li>
           <li class="footer__list-item">
-            <a class="footer__link" href="">Show Cases</a>
+            <a class="footer__link" href=./cases.html "">Show Cases</a>
           </li>
           <li class="footer__list-item">
             <a class="footer__link" href="">Support</a>
