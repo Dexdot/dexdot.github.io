@@ -207,1076 +207,227 @@
   </div>
 </div>
 
-<!-- Filter -->
-<form class="filter">
+<main class="search-container">
+  <h1 class="h1 search-title" id="all">Search result for "game"</h1>
+  <nav class="search-menu">
+    <ul>
+      <li>
+        <a class="is-active" href="#all">All
+          <span>25</span>
+        </a>
+      </li>
+      <li>
+        <a href="#blog">Blog
+          <span>12</span>
+        </a>
+      </li>
+      <li>
+        <a href="#cases">Show Cases
+          <span>5</span>
+        </a>
+      </li>
+      <li>
+        <a href="#users">Users
+          <span>17</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="search-content">
+    <div class="search-group" id="blog">
+      <h2 class="search-group__title">Blog
+        <span>(10 results)</span>
+      </h2>
+      <div class="search-group__content">
 
-  <div class="filter__wrap">
-    <a class="filter__logo" href="">
-      <img src="img/logo.png" alt="Manu">
-    </a>
-    <button class="hamburger hamburger--slider is-active js-close-filter" type="button">
-      <span class="hamburger-box">
-        <span class="hamburger-inner"></span>
-      </span>
-    </button>
+        <div class="news-block">
+          <a class="news-block__img-wrap" href="">
+            <img src="img/news2.jpg" alt="Nintendo Switch Open Beta Now" class="news-block__img">
+          </a>
+          <div class="news-block__body">
+            <p class="news-block__title h4">
+              <a href="">Nintendo Switch Open Beta Now</a>
+            </p>
+            <p class="news-block__text">
+              We are now at the open beta phase of the Manu Nintendo Switch licence. Its full com...
+            </p>
+            <div class="news-block__footer">
+              <a class="news-block__tag" href="">12 JUL</a>
+              <a class="news-block__tag" href="">#inspiration</a>
+              <a class="news-block__tag" href="">#news</a>
+            </div>
+          </div>
+        </div>
 
-    <!-- filter__container -->
-    <div class="filter__container">
-      <div class="filter__tabs">
-        <button class="filter__tab filter__tab--active" type="button" data-filter="genre">
-          Genre
-          <span class="filter__num">29</span>
-        </button>
-        <button class="filter__tab" type="button" data-filter="platform">
-          Platform
-          <span class="filter__num">14</span>
-        </button>
+        <div class="news-block">
+          <a class="news-block__img-wrap" href="">
+            <img src="img/news1.jpg" alt="Nintendo Switch Open Beta Now" class="news-block__img">
+          </a>
+          <div class="news-block__body">
+            <p class="news-block__title h4">
+              <a href="">Nintendo Switch Open Beta Now</a>
+            </p>
+            <p class="news-block__text">
+              We are now at the open beta phase of the Manu Nintendo Switch licence. Its full com...
+            </p>
+            <div class="news-block__footer">
+              <a class="news-block__tag" href="">12 JUL</a>
+              <a class="news-block__tag" href="">#inspiration</a>
+              <a class="news-block__tag" href="">#news</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="news-block">
+          <a class="news-block__img-wrap" href="">
+            <img src="img/news3.jpg" alt="Nintendo Switch Open Beta Now" class="news-block__img">
+          </a>
+          <div class="news-block__body">
+            <p class="news-block__title h4">
+              <a href="">Nintendo Switch Open Beta Now</a>
+            </p>
+            <p class="news-block__text">
+              We are now at the open beta phase of the Manu Nintendo Switch licence. Its full com...
+            </p>
+            <div class="news-block__footer">
+              <a class="news-block__tag" href="">12 JUL</a>
+              <a class="news-block__tag" href="">#inspiration</a>
+              <a class="news-block__tag" href="">#news</a>
+            </div>
+          </div>
+        </div>
+
       </div>
-      <ul class="filter__list filter__list--visible" data-filter="genre">
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Action
-              <div class="filter__num">18</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Adventure
-              <div class="filter__num">45</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Arcade
-              <div class="filter__num">88</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Card
-              <div class="filter__num">5</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Casual
-              <div class="filter__num">12</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Combat
-              <div class="filter__num">6</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Fighting
-              <div class="filter__num">19</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Horror
-              <div class="filter__num">14</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Isometric
-              <div class="filter__num">36</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Mobile
-              <div class="filter__num">22</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Action
-              <div class="filter__num">18</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Adventure
-              <div class="filter__num">45</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Arcade
-              <div class="filter__num">88</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Card
-              <div class="filter__num">5</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Casual
-              <div class="filter__num">12</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Combat
-              <div class="filter__num">6</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Fighting
-              <div class="filter__num">19</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Horror
-              <div class="filter__num">14</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Isometric
-              <div class="filter__num">36</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Mobile
-              <div class="filter__num">22</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Action
-              <div class="filter__num">18</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Adventure
-              <div class="filter__num">45</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Arcade
-              <div class="filter__num">88</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Card
-              <div class="filter__num">5</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Casual
-              <div class="filter__num">12</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Combat
-              <div class="filter__num">6</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Fighting
-              <div class="filter__num">19</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Horror
-              <div class="filter__num">14</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Isometric
-              <div class="filter__num">36</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Mobile
-              <div class="filter__num">22</div>
-            </div>
-          </div>
-        </div>
-      </ul>
-      <ul class="filter__list" data-filter="platform">
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Action
-              <div class="filter__num">18</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Adventure
-              <div class="filter__num">45</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Arcade
-              <div class="filter__num">88</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Card
-              <div class="filter__num">5</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Casual
-              <div class="filter__num">12</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Combat
-              <div class="filter__num">6</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Fighting
-              <div class="filter__num">19</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Horror
-              <div class="filter__num">14</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Isometric
-              <div class="filter__num">36</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Mobile
-              <div class="filter__num">22</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Action
-              <div class="filter__num">18</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Adventure
-              <div class="filter__num">45</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Arcade
-              <div class="filter__num">88</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Card
-              <div class="filter__num">5</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Casual
-              <div class="filter__num">12</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Combat
-              <div class="filter__num">6</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Fighting
-              <div class="filter__num">19</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Horror
-              <div class="filter__num">14</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Isometric
-              <div class="filter__num">36</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Mobile
-              <div class="filter__num">22</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Action
-              <div class="filter__num">18</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Adventure
-              <div class="filter__num">45</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Arcade
-              <div class="filter__num">88</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Card
-              <div class="filter__num">5</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Casual
-              <div class="filter__num">12</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Combat
-              <div class="filter__num">6</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Fighting
-              <div class="filter__num">19</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Horror
-              <div class="filter__num">14</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Isometric
-              <div class="filter__num">36</div>
-            </div>
-          </div>
-        </div>
-        <div class="filter__list-item">
-          <input type="checkbox">
-          <div>
-            <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg>
-            <div class="filter__text-wrap">
-              Mobile
-              <div class="filter__num">22</div>
-            </div>
-          </div>
-        </div>
-      </ul>
     </div>
-    <!-- ./filter__container -->
+    <div class="search-group" id="cases">
+      <h2 class="search-group__title">Show Cases
+        <span>(3 results)</span>
+      </h2>
+      <div class="search-group__content">
 
-    <div class="filter__footer">
-      <button class="btn" type="submit">OK</button>
-      <button class="filter__cancel" type="button">
-        <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg> Cancel
-      </button>
+        <div class="grid">
+          <div class="grid-sizer"></div>
+
+          <div class="grid-item grid-item--lg" data-micromodal-trigger="game-1-modal">
+            <div class="media-block">
+              <div class="media-block__shadow"></div>
+              <div class="media-block__img" style="background-image: url('img/g2.jpg');"></div>
+              <div class="media-block__body">
+                <a class="media-block__title" href="">Game Name</a>
+                <a href="" class="media-block__subtitle">
+                  Leopold Blum
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-item" data-micromodal-trigger="game-2-modal">
+            <div class="media-block media-block--sm">
+              <div class="media-block__shadow"></div>
+              <div class="media-block__img" style="background-image: url('img/g1.jpg');"></div>
+              <div class="media-block__body">
+                <a class="media-block__title" href="">Game Name</a>
+                <a href="" class="media-block__subtitle">
+                  Leopold Blum
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-item" data-micromodal-trigger="game-3-modal">
+            <div class="media-block media-block--sm">
+              <div class="media-block__shadow"></div>
+              <div class="media-block__img" style="background-image: url('img/g3.jpg');"></div>
+              <div class="media-block__body">
+                <a class="media-block__title" href="">Game Name</a>
+                <a href="" class="media-block__subtitle">
+                  Leopold Blum
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
     </div>
-  </div>
+    <div class="search-group" id="users">
+      <h2 class="search-group__title">Users
+        <span>(2 results)</span>
+      </h2>
+      <div class="search-group__content">
 
-  <div class="filter__footer--mob">
-    <button class="btn" type="submit">OK</button>
-    <button class="filter__cancel" type="button">
-      <svg class="i-cross" viewBox="0 0 11 11">
-  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
-</svg> Cancel
-    </button>
-  </div>
+        <div class="user">
+          <div class="avatar avatar--sm">
+            <svg class="avatar__svg" viewBox="0 0 36 36">
+              <linearGradient id="avatar-gradient">
+                <stop offset="0%" stop-color="#7FCDF3" />
+                <stop offset="100%" stop-color="#0C48A9" />
+              </linearGradient>
+              <path stroke="url(#avatar-gradient)" class="avatar__circle" stroke-dasharray="75 100" d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831" />
+            </svg>
+            <img class="avatar__img" src="img/f3.jpg" alt="">
+            <div class="avatar__rate">4.1</div>
+          </div>
+          <div class="user__body">
+            <div>
+              <h3 class="user__name">Becky Mandelbaum</h3>
+              <p class="user__spec">Game Designer</p>
+            </div>
+            <a class="user__link btn btn--stroke" href="">View Profile</a>
+          </div>
+        </div>
 
-  <div class="filter__overlay js-close-filter"></div>
+        <div class="user">
+          <div class="avatar avatar--sm">
+            <svg class="avatar__svg" viewBox="0 0 36 36">
+              <linearGradient id="avatar-gradient">
+                <stop offset="0%" stop-color="#7FCDF3" />
+                <stop offset="100%" stop-color="#0C48A9" />
+              </linearGradient>
+              <path stroke="url(#avatar-gradient)" class="avatar__circle" stroke-dasharray="75 100" d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831" />
+            </svg>
+            <img class="avatar__img" src="img/f1.jpg" alt="">
+            <div class="avatar__rate">4.6</div>
+          </div>
+          <div class="user__body">
+            <div>
+              <h3 class="user__name">Jonathan Fields</h3>
+              <p class="user__spec">Developer</p>
+            </div>
+            <a class="user__link btn btn--stroke" href="">View Profile</a>
+          </div>
+        </div>
 
+        <div class="user">
+          <div class="avatar avatar--sm">
+            <svg class="avatar__svg" viewBox="0 0 36 36">
+              <linearGradient id="avatar-gradient">
+                <stop offset="0%" stop-color="#7FCDF3" />
+                <stop offset="100%" stop-color="#0C48A9" />
+              </linearGradient>
+              <path stroke="url(#avatar-gradient)" class="avatar__circle" stroke-dasharray="75 100" d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831" />
+            </svg>
+            <img class="avatar__img" src="img/f3.jpg" alt="">
+            <div class="avatar__rate">3.1</div>
+          </div>
+          <div class="user__body">
+            <div>
+              <h3 class="user__name">Becky Mandelbaum</h3>
+              <p class="user__spec">Producer</p>
+            </div>
+            <a class="user__link btn btn--stroke" href="">View Profile</a>
+          </div>
+        </div>
 
-</form>
-
-<main>
-  <div class="cases-header">
-    <div class="container">
-      <h1 class="h1 cases-title">Show Cases</h1>
-      <button class="btn cases-filter-btn js-open-filter">Filter
-        <span>0</span>
-      </button>
-      <button class="btn btn--stroke white-text">Add Your Game +</button>
-      <ul class="cases-tags link-tags--light">
-        <li>
-          <span class="link-tag">
-            Popular:
-          </span>
-        </li>
-        <li>
-          <a class="link-tag" href="">
-            New
-            <span class="link-tag__num">12</span>
-          </a>
-        </li>
-        <li>
-          <a class="link-tag" href="">
-            RPG
-            <span class="link-tag__num">5</span>
-          </a>
-        </li>
-        <li>
-          <a class="link-tag link-tag--active" href="">
-            Action
-            <span class="link-tag__num">56</span>
-          </a>
-        </li>
-        <li>
-          <a class="link-tag" href="">
-            Arcade
-            <span class="link-tag__num">4</span>
-          </a>
-        </li>
-        <li>
-          <a class="link-tag" href="">
-            Simulation
-            <span class="link-tag__num">14</span>
-          </a>
-        </li>
-        <li>
-          <a class="link-tag" href="">
-            Strategy
-            <span class="link-tag__num">8</span>
-          </a>
-        </li>
-        <li>
-          <a class="link-tag" href="">
-            Quest
-            <span class="link-tag__num">2</span>
-          </a>
-        </li>
-      </ul>
+      </div>
     </div>
-  </div>
-  <div class="grid-wrap">
-    <div class="grid">
-      <div class="grid-sizer"></div>
-
-      <div class="grid-item grid-item--lg" data-micromodal-trigger="game-1-modal">
-        <div class="media-block">
-          <div class="media-block__shadow"></div>
-          <div class="media-block__img" style="background-image: url('img/g2.jpg');"></div>
-          <div class="media-block__body">
-            <a class="media-block__title" href="">Game Name</a>
-            <a href="" class="media-block__subtitle">
-              Leopold Blum
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid-item" data-micromodal-trigger="game-2-modal">
-        <div class="media-block media-block--sm">
-          <div class="media-block__shadow"></div>
-          <div class="media-block__img" style="background-image: url('img/g1.jpg');"></div>
-          <div class="media-block__body">
-            <a class="media-block__title" href="">Game Name</a>
-            <a href="" class="media-block__subtitle">
-              Leopold Blum
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid-item" data-micromodal-trigger="game-3-modal">
-        <div class="media-block media-block--sm">
-          <div class="media-block__shadow"></div>
-          <div class="media-block__img" style="background-image: url('img/g3.jpg');"></div>
-          <div class="media-block__body">
-            <a class="media-block__title" href="">Game Name</a>
-            <a href="" class="media-block__subtitle">
-              Leopold Blum
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid-item grid-item--lg" data-micromodal-trigger="game-4-modal">
-        <div class="media-block">
-          <div class="media-block__shadow"></div>
-          <div class="media-block__img" style="background-image: url('img/g4.jpg');"></div>
-          <div class="media-block__body">
-            <a class="media-block__title" href="">Game Name</a>
-            <a href="" class="media-block__subtitle">
-              Leopold Blum
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid-item" data-micromodal-trigger="game-5-modal">
-        <div class="media-block media-block--sm">
-          <div class="media-block__shadow"></div>
-          <div class="media-block__img" style="background-image: url('img/g6.jpg');"></div>
-          <div class="media-block__body">
-            <a class="media-block__title" href="">Game Name</a>
-            <a href="" class="media-block__subtitle">
-              Leopold Blum
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid-item" data-micromodal-trigger="game-6-modal">
-        <div class="media-block media-block--sm">
-          <div class="media-block__shadow"></div>
-          <div class="media-block__img" style="background-image: url('img/g5.png');"></div>
-          <div class="media-block__body">
-            <a class="media-block__title" href="">Game Name</a>
-            <a href="" class="media-block__subtitle">
-              Leopold Blum
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid-item" data-micromodal-trigger="game-7-modal">
-        <div class="media-block media-block--sm">
-          <div class="media-block__shadow"></div>
-          <div class="media-block__img" style="background-image: url('img/g1.jpg');"></div>
-          <div class="media-block__body">
-            <a class="media-block__title" href="">Game Name</a>
-            <a href="" class="media-block__subtitle">
-              Leopold Blum
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid-item" data-micromodal-trigger="game-8-modal">
-        <div class="media-block media-block--sm">
-          <div class="media-block__shadow"></div>
-          <div class="media-block__img" style="background-image: url('img/g3.jpg');"></div>
-          <div class="media-block__body">
-            <a class="media-block__title" href="">Game Name</a>
-            <a href="" class="media-block__subtitle">
-              Leopold Blum
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid-item" data-micromodal-trigger="game-9-modal">
-        <div class="media-block media-block--sm">
-          <div class="media-block__shadow"></div>
-          <div class="media-block__img" style="background-image: url('img/g7.jpg');"></div>
-          <div class="media-block__body">
-            <a class="media-block__title" href="">Game Name</a>
-            <a href="" class="media-block__subtitle">
-              Leopold Blum
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid-item" data-micromodal-trigger="game-1-modal">
-        <div class="media-block media-block--sm">
-          <div class="media-block__shadow"></div>
-          <div class="media-block__img" style="background-image: url('img/g5.png');"></div>
-          <div class="media-block__body">
-            <a class="media-block__title" href="">Game Name</a>
-            <a href="" class="media-block__subtitle">
-              Leopold Blum
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid-item" data-micromodal-trigger="game-2-modal">
-        <div class="media-block media-block--sm">
-          <div class="media-block__shadow"></div>
-          <div class="media-block__img" style="background-image: url('img/g1.jpg');"></div>
-          <div class="media-block__body">
-            <a class="media-block__title" href="">Game Name</a>
-            <a href="" class="media-block__subtitle">
-              Leopold Blum
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid-item" data-micromodal-trigger="game-3-modal">
-        <div class="media-block media-block--sm">
-          <div class="media-block__shadow"></div>
-          <div class="media-block__img" style="background-image: url('img/g3.jpg');"></div>
-          <div class="media-block__body">
-            <a class="media-block__title" href="">Game Name</a>
-            <a href="" class="media-block__subtitle">
-              Leopold Blum
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid-item grid-item--lg" data-micromodal-trigger="game-4-modal">
-        <div class="media-block">
-          <div class="media-block__shadow"></div>
-          <div class="media-block__img" style="background-image: url('img/g8.jpg');"></div>
-          <div class="media-block__body">
-            <a class="media-block__title" href="">Game Name</a>
-            <a href="" class="media-block__subtitle">
-              Leopold Blum
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid-item grid-item--lg" data-micromodal-trigger="game-5-modal">
-        <div class="media-block">
-          <div class="media-block__shadow"></div>
-          <div class="media-block__img" style="background-image: url('img/g9.jpg');"></div>
-          <div class="media-block__body">
-            <a class="media-block__title" href="">Game Name</a>
-            <a href="" class="media-block__subtitle">
-              Leopold Blum
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid-item" data-micromodal-trigger="game-6-modal">
-        <div class="media-block media-block--sm">
-          <div class="media-block__shadow"></div>
-          <div class="media-block__img" style="background-image: url('img/g5.png');"></div>
-          <div class="media-block__body">
-            <a class="media-block__title" href="">Game Name</a>
-            <a href="" class="media-block__subtitle">
-              Leopold Blum
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid-item" data-micromodal-trigger="game-7-modal">
-        <div class="media-block media-block--sm">
-          <div class="media-block__shadow"></div>
-          <div class="media-block__img" style="background-image: url('img/g6.jpg');"></div>
-          <div class="media-block__body">
-            <a class="media-block__title" href="">Game Name</a>
-            <a href="" class="media-block__subtitle">
-              Leopold Blum
-            </a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-  <div class="pagination cases-pagination">
-    <a class="pagination__arrow" href="">
-      <svg class="i-polygon" viewBox="0 0 7 9">
-  <path d="M0.6 4.15359C0.333333 4.30755 0.333334 4.69245 0.6 4.84641L6.15 8.0507C6.41667 8.20466 6.75 8.01221 6.75 7.70429L6.75 1.29571C6.75 0.987785 6.41667 0.795335 6.15 0.949296L0.6 4.15359Z"
-  />
-</svg>
-    </a>
-    <div>
-      <a class="pagination__num pagination__num--active" href="">1</a>
-      <a class="pagination__num" href="">2</a>
-      <a class="pagination__num" href="">3</a>
-      <a class="pagination__num" href="">4</a>
-      <a class="pagination__num" href="">......</a>
-      <a class="pagination__num" href="">37</a>
-    </div>
-    <a class="pagination__arrow" href="">
-      <svg class="i-polygon" viewBox="0 0 7 9">
-  <path d="M0.6 4.15359C0.333333 4.30755 0.333334 4.69245 0.6 4.84641L6.15 8.0507C6.41667 8.20466 6.75 8.01221 6.75 7.70429L6.75 1.29571C6.75 0.987785 6.41667 0.795335 6.15 0.949296L0.6 4.15359Z"
-  />
-</svg>
-    </a>
   </div>
   <div>
   <div class="modal case" id="game-1-modal" aria-hidden="true">
@@ -4962,7 +4113,8 @@
 </main>
 
 <script defer src="js/masonry.js"></script>
-<script defer src="js/cases.js"></script>
+<script defer src="js/search.js"></script>
+
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
 <script defer type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
