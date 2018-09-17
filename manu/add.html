@@ -113,26 +113,36 @@
           Early Access
         </h2>
 
-        <div class="mdc-text-field mdc-text-field--outlined">
-          <input class="mdc-text-field__input" type="text">
-          <label class="mdc-floating-label">First Name</label>
-          <div class="mdc-notched-outline">
-            <svg>
-              <path class="mdc-notched-outline__path" />
-            </svg>
+        <div class="mdc-text-field-wrap">
+          <div class="mdc-text-field mdc-text-field--outlined">
+            <input class="mdc-text-field__input" type="text" required minlength="1">
+            <label class="mdc-floating-label">First Name</label>
+            <div class="mdc-notched-outline">
+              <svg>
+                <path class="mdc-notched-outline__path" />
+              </svg>
+            </div>
+            <div class="mdc-notched-outline__idle"></div>
           </div>
-          <div class="mdc-notched-outline__idle"></div>
+          <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" aria-hidden="true">
+            Username is incorrect.
+          </p>
         </div>
 
-        <div class="mdc-text-field mdc-text-field--outlined">
-          <input class="mdc-text-field__input" type="email">
-          <label class="mdc-floating-label">Email</label>
-          <div class="mdc-notched-outline">
-            <svg>
-              <path class="mdc-notched-outline__path" />
-            </svg>
+        <div class="mdc-text-field-wrap">
+          <div class="mdc-text-field mdc-text-field--outlined">
+            <input class="mdc-text-field__input" type="email" required minlength="1">
+            <label class="mdc-floating-label">Email</label>
+            <div class="mdc-notched-outline">
+              <svg>
+                <path class="mdc-notched-outline__path" />
+              </svg>
+            </div>
+            <div class="mdc-notched-outline__idle"></div>
           </div>
-          <div class="mdc-notched-outline__idle"></div>
+          <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" aria-hidden="true">
+            Email is incorrect.
+          </p>
         </div>
 
       </main>
@@ -247,31 +257,46 @@
   <div class="profile-group">
     <p class="profile-group__title">Main Info</p>
 
-    <div class="mdc-text-field mdc-text-field--outlined">
-      <input class="mdc-text-field__input" type="text">
-      <label class="mdc-floating-label">Case Name</label>
-      <div class="mdc-notched-outline">
-        <svg>
-          <path class="mdc-notched-outline__path" />
-        </svg>
+    <div class="mdc-text-field-wrap">
+      <div class="mdc-text-field mdc-text-field--outlined">
+        <input class="mdc-text-field__input" type="text" required minlength="1">
+        <label class="mdc-floating-label">Case Name</label>
+        <div class="mdc-notched-outline">
+          <svg>
+            <path class="mdc-notched-outline__path" />
+          </svg>
+        </div>
+        <div class="mdc-notched-outline__idle"></div>
       </div>
-      <div class="mdc-notched-outline__idle"></div>
+      <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" aria-hidden="true">
+        Enter the name of the case
+      </p>
     </div>
 
-    <div class="mdc-text-field mdc-text-field--outlined">
-      <input class="mdc-text-field__input" type="text">
-      <label class="mdc-floating-label">Website</label>
-      <div class="mdc-notched-outline">
-        <svg>
-          <path class="mdc-notched-outline__path" />
-        </svg>
+    <div class="mdc-text-field-wrap">
+      <div class="mdc-text-field mdc-text-field--outlined">
+        <input class="mdc-text-field__input" type="text" required minlength="1">
+        <label class="mdc-floating-label">Website</label>
+        <div class="mdc-notched-outline">
+          <svg>
+            <path class="mdc-notched-outline__path" />
+          </svg>
+        </div>
+        <div class="mdc-notched-outline__idle"></div>
       </div>
-      <div class="mdc-notched-outline__idle"></div>
+      <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" aria-hidden="true">
+        Enter a link
+      </p>
     </div>
 
-    <div class="mdc-text-field mdc-text-field--textarea autosize">
-      <textarea class="mdc-text-field__input"></textarea>
-      <label class="mdc-floating-label">Description</label>
+    <div class="mdc-text-field-wrap">
+      <div class="mdc-text-field mdc-text-field--textarea autosize">
+        <textarea class="mdc-text-field__input" required minlength="1"></textarea>
+        <label class="mdc-floating-label">Description</label>
+      </div>
+      <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" aria-hidden="true">
+        Enter a description of the case
+      </p>
     </div>
 
   </div>
@@ -416,15 +441,20 @@
   <div class="profile-group">
     <p class="profile-group__title">Video</p>
 
-    <div class="mdc-text-field mdc-text-field--outlined">
-      <input class="mdc-text-field__input" type="text">
-      <label class="mdc-floating-label">Add Youtube Link</label>
-      <div class="mdc-notched-outline">
-        <svg>
-          <path class="mdc-notched-outline__path" />
-        </svg>
+    <div class="mdc-text-field-wrap">
+      <div class="mdc-text-field mdc-text-field--outlined">
+        <input class="mdc-text-field__input" type="text" required minlength="1">
+        <label class="mdc-floating-label">Add Youtube Link</label>
+        <div class="mdc-notched-outline">
+          <svg>
+            <path class="mdc-notched-outline__path" />
+          </svg>
+        </div>
+        <div class="mdc-notched-outline__idle"></div>
       </div>
-      <div class="mdc-notched-outline__idle"></div>
+      <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" aria-hidden="true">
+        Enter a link
+      </p>
     </div>
 
   </div>
@@ -574,15 +604,20 @@
   <div class="profile-group">
     <p class="profile-group__title">App Store</p>
 
-    <div class="mdc-text-field mdc-text-field--outlined">
-      <input class="mdc-text-field__input" type="text">
-      <label class="mdc-floating-label">Add App Store Link</label>
-      <div class="mdc-notched-outline">
-        <svg>
-          <path class="mdc-notched-outline__path" />
-        </svg>
+    <div class="mdc-text-field-wrap">
+      <div class="mdc-text-field mdc-text-field--outlined">
+        <input class="mdc-text-field__input" type="text" required minlength="1">
+        <label class="mdc-floating-label">Add App Store Link</label>
+        <div class="mdc-notched-outline">
+          <svg>
+            <path class="mdc-notched-outline__path" />
+          </svg>
+        </div>
+        <div class="mdc-notched-outline__idle"></div>
       </div>
-      <div class="mdc-notched-outline__idle"></div>
+      <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" aria-hidden="true">
+        Enter a link
+      </p>
     </div>
 
   </div>
@@ -590,15 +625,20 @@
   <div class="profile-group">
     <p class="profile-group__title">Google Play</p>
 
-    <div class="mdc-text-field mdc-text-field--outlined">
-      <input class="mdc-text-field__input" type="text">
-      <label class="mdc-floating-label">Add Google Play Link</label>
-      <div class="mdc-notched-outline">
-        <svg>
-          <path class="mdc-notched-outline__path" />
-        </svg>
+    <div class="mdc-text-field-wrap">
+      <div class="mdc-text-field mdc-text-field--outlined">
+        <input class="mdc-text-field__input" type="text" required minlength="1">
+        <label class="mdc-floating-label">Add Google Play Link</label>
+        <div class="mdc-notched-outline">
+          <svg>
+            <path class="mdc-notched-outline__path" />
+          </svg>
+        </div>
+        <div class="mdc-notched-outline__idle"></div>
       </div>
-      <div class="mdc-notched-outline__idle"></div>
+      <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" aria-hidden="true">
+        Enter a link
+      </p>
     </div>
 
   </div>
@@ -692,32 +732,47 @@
     <div class="footer__right">
       <form class="footer__form">
 
-        <div class="footer__name mdc-text-field mdc-text-field--outlined">
-          <input class="mdc-text-field__input" type="text">
-          <label class="mdc-floating-label">Name</label>
-          <div class="mdc-notched-outline">
-            <svg>
-              <path class="mdc-notched-outline__path" />
-            </svg>
+        <div class="mdc-text-field-wrap footer__name">
+          <div class=" mdc-text-field mdc-text-field--outlined">
+            <input class="mdc-text-field__input" type="text" required minlength="1">
+            <label class="mdc-floating-label">Name</label>
+            <div class="mdc-notched-outline">
+              <svg>
+                <path class="mdc-notched-outline__path" />
+              </svg>
+            </div>
+            <div class="mdc-notched-outline__idle"></div>
           </div>
-          <div class="mdc-notched-outline__idle"></div>
+          <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" aria-hidden="true">
+            Enter your name
+          </p>
         </div>
 
-        <div class="footer__email mdc-text-field mdc-text-field--outlined">
-          <input class="mdc-text-field__input" type="email">
-          <label class="mdc-floating-label">E-mail</label>
-          <div class="mdc-notched-outline">
-            <svg>
-              <path class="mdc-notched-outline__path" />
-            </svg>
+        <div class="mdc-text-field-wrap footer__email">
+          <div class=" mdc-text-field mdc-text-field--outlined">
+            <input class="mdc-text-field__input" type="email" required minlength="1">
+            <label class="mdc-floating-label">E-mail</label>
+            <div class="mdc-notched-outline">
+              <svg>
+                <path class="mdc-notched-outline__path" />
+              </svg>
+            </div>
+            <div class="mdc-notched-outline__idle"></div>
           </div>
-          <div class="mdc-notched-outline__idle"></div>
+          <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" aria-hidden="true">
+            Enter your e-mail
+          </p>
         </div>
 
-        <div class="mdc-text-field mdc-text-field--textarea autosize">
-          <textarea class="mdc-text-field__input"></textarea>
-          <label class="mdc-floating-label">
-            Message</label>
+        <div class="mdc-text-field-wrap">
+          <div class="mdc-text-field mdc-text-field--textarea autosize">
+            <textarea class="mdc-text-field__input" required minlength="1"></textarea>
+            <label class="mdc-floating-label">
+              Message</label>
+          </div>
+          <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" aria-hidden="true">
+            Enter your message
+          </p>
         </div>
 
         <div class="footer__policy">
@@ -736,6 +791,7 @@
 </svg>
           </button>
         </div>
+
       </form>
     </div>
   </div>
@@ -827,32 +883,47 @@
           <div class="accordion__content">
             <form class="footer__form">
 
-              <div class="footer__name mdc-text-field mdc-text-field--outlined">
-                <input class="mdc-text-field__input" type="text">
-                <label class="mdc-floating-label">Name</label>
-                <div class="mdc-notched-outline">
-                  <svg>
-                    <path class="mdc-notched-outline__path" />
-                  </svg>
+              <div class="mdc-text-field-wrap footer__name">
+                <div class=" mdc-text-field mdc-text-field--outlined">
+                  <input class="mdc-text-field__input" type="text" required minlength="1">
+                  <label class="mdc-floating-label">Name</label>
+                  <div class="mdc-notched-outline">
+                    <svg>
+                      <path class="mdc-notched-outline__path" />
+                    </svg>
+                  </div>
+                  <div class="mdc-notched-outline__idle"></div>
                 </div>
-                <div class="mdc-notched-outline__idle"></div>
+                <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" aria-hidden="true">
+                  Enter your name
+                </p>
               </div>
 
-              <div class="footer__email mdc-text-field mdc-text-field--outlined">
-                <input class="mdc-text-field__input" type="email">
-                <label class="mdc-floating-label">E-mail</label>
-                <div class="mdc-notched-outline">
-                  <svg>
-                    <path class="mdc-notched-outline__path" />
-                  </svg>
+              <div class="mdc-text-field-wrap footer__email">
+                <div class=" mdc-text-field mdc-text-field--outlined">
+                  <input class="mdc-text-field__input" type="email" required minlength="1">
+                  <label class="mdc-floating-label">E-mail</label>
+                  <div class="mdc-notched-outline">
+                    <svg>
+                      <path class="mdc-notched-outline__path" />
+                    </svg>
+                  </div>
+                  <div class="mdc-notched-outline__idle"></div>
                 </div>
-                <div class="mdc-notched-outline__idle"></div>
+                <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" aria-hidden="true">
+                  Enter your e-mail
+                </p>
               </div>
 
-              <div class="mdc-text-field mdc-text-field--textarea autosize">
-                <textarea class="mdc-text-field__input" id="textarea"></textarea>
-                <label class="mdc-floating-label">
-                  Message</label>
+              <div class="mdc-text-field-wrap">
+                <div class="mdc-text-field mdc-text-field--textarea autosize">
+                  <textarea class="mdc-text-field__input" required minlength="1"></textarea>
+                  <label class="mdc-floating-label">
+                    Message</label>
+                </div>
+                <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" aria-hidden="true">
+                  Enter your message
+                </p>
               </div>
 
               <div class="footer__policy">
@@ -871,6 +942,7 @@
 </svg>
                 </button>
               </div>
+
             </form>
           </div>
         </li>
