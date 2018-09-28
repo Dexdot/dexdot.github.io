@@ -70,7 +70,7 @@
       "name": "Кирилл Сагань",
       "position": "Backend Developer",
       "year": 2017,
-      "photo": ""
+      "photo": "https://its.agency/assets/team/sagan.jpg"
     },
     "Артем Соколов": {
       "name": "Артем Соколов",
@@ -190,7 +190,7 @@
       "name": "Александр Максименко",
       "position": "Backend Developer",
       "year": 2015,
-      "photo": ""
+      "photo": "https://its.agency/assets/team/maksimenko.jpg"
     },
     "Сергей Михайлов": {
       "name": "Сергей Михайлов",
@@ -232,13 +232,13 @@
       "name": "Алексей Бондарев",
       "position": "Designer",
       "year": 2013,
-      "photo": ""
+      "photo": "https://its.agency/assets/team/bondarev.jpg"
     },
     "Алексей Бруев": {
       "name": "Алексей Бруев",
       "position": "Backend Developer",
       "year": 2013,
-      "photo": ""
+      "photo": "https://its.agency/assets/team/bruev.jpg"
     },
     "Анна Осипова": {
       "name": "Анна Осипова",
@@ -250,7 +250,7 @@
       "name": "Илья Габушев",
       "position": "Backend Developer",
       "year": 2012,
-      "photo": ""
+      "photo": "https://its.agency/assets/team/gabushev.jpg"
     },
     "Алексей Елсуков": {
       "name": "Алексей Елсуков",
@@ -280,7 +280,7 @@
       "name": "Станислав Петров",
       "position": "Backend Developer",
       "year": 2011,
-      "photo": ""
+      "photo": "https://its.agency/assets/team/petrov.jpg"
     },
     "Ксения Соловьева": {
       "name": "Ксения Соловьева",
@@ -310,7 +310,7 @@
       "name": "Станислав Лепиков",
       "position": "Frontend Developer",
       "year": 2010,
-      "photo": ""
+      "photo": "https://its.agency/assets/team/lepikov.jpg"
     },
     "Марьяна Мальцева": {
       "name": "Марьяна Мальцева",
@@ -322,7 +322,7 @@
       "name": "Артем Осетров",
       "position": "Designer",
       "year": 2010,
-      "photo": ""
+      "photo": "https://its.agency/assets/team/osetrov.jpg"
     },
     "Михайл Самсонов ": {
       "name": "Михайл Самсонов ",
@@ -334,7 +334,7 @@
       "name": "Павел Тихонов",
       "position": "Backend Developer",
       "year": 2010,
-      "photo": ""
+      "photo": "https://its.agency/assets/team/tikhonov.jpg"
     },
     "Игорь Майданов": {
       "name": "Игорь Майданов",
@@ -394,7 +394,7 @@
       "name": "Елена Карандей",
       "position": "SEO Manager",
       "year": 2007,
-      "photo": "https://its.agency/assets/team/karandey.jpeg"
+      "photo": "https://its.agency/assets/team/karandey.jpg"
     },
     "Александра Кислова": {
       "name": "Александра Кислова",
@@ -406,7 +406,7 @@
       "name": "Андрей Кобецкой",
       "position": "Frontend Developer",
       "year": 2007,
-      "photo": ""
+      "photo": "https://its.agency/assets/team/kobetskoy.jpg"
     },
     "Александр Сисимов": {
       "name": "Александр Сисимов",
@@ -430,7 +430,7 @@
       "name": "Елизавета Косцова",
       "position": "Project Manager",
       "year": 2006,
-      "photo": ""
+      "photo": "https://its.agency/assets/team/kostsova.jpg"
     },
     "Юрий Михайлов": {
       "name": "Юрий Михайлов",
@@ -454,7 +454,7 @@
       "name": "Елена Григорьева",
       "position": "Accountant",
       "year": 2005,
-      "photo": ""
+      "photo": "https://its.agency/assets/team/grigorieva.jpg"
     },
     "Елизавета Пимошина": {
       "name": "Елизавета Пимошина",
@@ -466,12 +466,12 @@
       "name": "Ольга Созонова",
       "position": "Project Manager",
       "year": 2005,
-      "photo": ""
+      "photo": "https://its.agency/assets/team/sozonova.jpg"
     },
     "Андрей Журавлев": {
       "name": "Андрей Журавлев",
       "position": "CEO",
-      "year": 2004,
+      "year": 1998,
       "photo": "https://its.agency/assets/team/zhuravlev.png"
     },
     "Сергей Комнатный": {
