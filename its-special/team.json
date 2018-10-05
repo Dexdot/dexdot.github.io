@@ -5,49 +5,49 @@
       "position": "Frontend Developer",
       "year": 2018,
       "photo": "https://its.agency/assets/team/kamil.jpg",
-      "event": "Первые CSSDA и Awwwards"
+      "event": "CSSDA и Awwwards"
     },
     "Илья Возняков": {
       "name": "Илья Возняков",
       "position": "SMM Manager",
       "year": 2018,
       "photo": "https://its.agency/assets/team/voznyakov.jpg",
-      "event": "Первые CSSDA и Awwwards"
+      "event": "CSSDA и Awwwards"
     },
     "Оник Гаспарян": {
       "name": "Оник Гаспарян",
       "position": "CTO",
       "year": 2018,
       "photo": "https://its.agency/assets/team/onik.jpg",
-      "event": "Первые CSSDA и Awwwards"
+      "event": "CSSDA и Awwwards"
     },
     "Павел Малютин": {
       "name": "Павел Малютин",
       "position": "QA Engineer",
       "year": 2018,
       "photo": "https://its.agency/assets/team/malyutin.jpg",
-      "event": "Первые CSSDA и Awwwards"
+      "event": "CSSDA и Awwwards"
     },
     "Яна Нурпеисова": {
       "name": "Яна Нурпеисова",
       "position": "Project Manager",
       "year": 2018,
       "photo": "https://its.agency/assets/team/nurpeisova.jpg",
-      "event": "Первые CSSDA и Awwwards"
+      "event": "CSSDA и Awwwards"
     },
     "Екатерина Пугачева": {
       "name": "Екатерина Пугачева",
       "position": "Project Manager",
       "year": 2018,
       "photo": "https://its.agency/assets/team/pugacheva.jpg",
-      "event": "Первые CSSDA и Awwwards"
+      "event": "CSSDA и Awwwards"
     },
     "Роман Старченков": {
       "name": "Роман Старченков",
       "position": "Backend Developer",
       "year": 2018,
       "photo": "https://its.agency/assets/team/starchenkov.jpg",
-      "event": "Первые CSSDA и Awwwards"
+      "event": "CSSDA и Awwwards"
     },
     "Никита Борисов": {
       "name": "Никита Борисов",
@@ -210,13 +210,6 @@
       "photo": "https://its.agency/assets/team/gusak.jpg",
       "event": "IT Studio → its.agency"
     },
-    "Илья Клявлин": {
-      "name": "Илья Клявлин",
-      "position": "Designer",
-      "year": 2015,
-      "photo": "https://its.agency/assets/team/klyavlin.jpg",
-      "event": "IT Studio → its.agency"
-    },
     "Александр Максименко": {
       "name": "Александр Максименко",
       "position": "Backend Developer",
@@ -285,13 +278,6 @@
       "position": "Designer",
       "year": 2013,
       "photo": "https://its.agency/assets/team/osipova.jpg",
-      "event": ""
-    },
-    "Илья Габушев": {
-      "name": "Илья Габушев",
-      "position": "Backend Developer",
-      "year": 2012,
-      "photo": "https://its.agency/assets/team/gabushev.jpg",
       "event": ""
     },
     "Алексей Елсуков": {
@@ -469,13 +455,6 @@
       "photo": "https://its.agency/assets/team/kislova.jpg",
       "event": "Запустили первую соцсеть фанатов спорта – «Русфан»"
     },
-    "Андрей Кобецкой": {
-      "name": "Андрей Кобецкой",
-      "position": "Frontend Developer",
-      "year": 2007,
-      "photo": "https://its.agency/assets/team/kobetskoy.jpg",
-      "event": "Запустили первую соцсеть фанатов спорта – «Русфан»"
-    },
     "Александр Сисимов": {
       "name": "Александр Сисимов",
       "position": "Project Manager",
@@ -539,19 +518,26 @@
       "photo": "https://its.agency/assets/team/pimoshina.jpg",
       "event": "Запускаем направление SEO"
     },
-    "Ольга Созонова": {
-      "name": "Ольга Созонова",
-      "position": "Project Manager",
-      "year": 2005,
-      "photo": "https://its.agency/assets/team/sozonova.jpg",
-      "event": "Запускаем направление SEO"
-    },
     "Андрей Журавлев": {
       "name": "Андрей Журавлев",
-      "position": "CEO",
+      "position": "Co-Owner",
       "year": 2004,
       "photo": "https://its.agency/assets/team/zhuravlev.png",
-      "event": "Студия Сергея Комнатного → IT Studio"
+      "event": "HLU Design → IT Studio"
+    },
+    "Андрей Никулин": {
+      "name": "Андрей Никулин",
+      "position": "Project Manager",
+      "year": 2001,
+      "photo": "https://its.agency/assets/team/nikulin.jpg",
+      "event": "Разработали собственную CMS"
+    },
+    "Александр Шибаловский": {
+      "name": "Александр Шибаловский",
+      "position": "Backend Developer",
+      "year": 2000,
+      "photo": "https://its.agency/assets/team/shibalovsky.jpg",
+      "event": "Студия Сергея Комнатного → HLU Design"
     },
     "Сергей Комнатный": {
       "name": "Сергей Комнатный",
@@ -559,13 +545,6 @@
       "year": 1998,
       "photo": "https://its.agency/assets/team/komnatny.jpg",
       "event": "Студия Сергея Комнатного"
-    },
-    "": {
-      "name": "",
-      "position": "",
-      "year": "",
-      "photo": "",
-      "event": "  "
     }
   }
 }
