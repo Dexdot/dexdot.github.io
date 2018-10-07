@@ -99,6 +99,30 @@
     </div>
   </div>
 </header>
+
+<div class="header-fixed">
+  <div class="container">
+    <div class="header-fixed__inner">
+      <button class="btn header__btn" data-micromodal-trigger="early-access-modal">Early Accesses</button>
+      <div>
+        <button class="header__search" data-micromodal-trigger="search-modal">
+          <svg class="i-search" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 7.15522C0 3.20836 3.20836 0 7.15522 0C11.1021 0 14.3104 3.20836 14.3104 7.15522C14.3104 8.82549 13.7305 10.3623 12.7654 11.5809L16 14.8155L14.8155 16L11.5809 12.7654C10.3623 13.7305 8.82549 14.3104 7.15522 14.3104C3.20836 14.3104 0 11.1021 0 7.15522ZM7.15522 1.68358C4.13626 1.68358 1.68358 4.13626 1.68358 7.15522C1.68358 10.1742 4.13626 12.6269 7.15522 12.6269C10.1742 12.6269 12.6269 10.1742 12.6269 7.15522C12.6269 4.13626 10.1742 1.68358 7.15522 1.68358ZM11.5787 11.6577L11.6206 11.6206L11.6577 11.5787C11.6316 11.6053 11.6053 11.6316 11.5787 11.6577Z"
+  />
+</svg>
+        </button>
+        <a class="header__personal" href="./reg.html">
+          <svg class="i-personal" viewBox="0 0 14 16">
+  <path d="M7.00001 0.212219C5.1729 0.212219 3.67798 1.81646 3.67798 3.77721C3.67798 5.73795 5.1729 7.34219 7.00001 7.34219C8.82713 7.34219 10.322 5.73795 10.322 3.77721C10.322 1.81646 8.82713 0.212219 7.00001 0.212219ZM7.00001 1.57031C8.14691 1.57031 9.05651 2.54644 9.05651 3.77721C9.05651 5.00798 8.14691 5.9841 7.00001 5.9841C5.85312 5.9841 4.94352 5.00798 4.94352 3.77721C4.94352 2.54644 5.85312 1.57031 7.00001 1.57031ZM7.00001 8.65784C3.25877 8.65784 0.197754 11.8494 0.197754 15.7878H1.46329C1.46329 12.6048 3.92318 10.0159 7.00001 10.0159C10.0769 10.0159 12.5367 12.6048 12.5367 15.7878H13.8023C13.8023 11.8494 10.7413 8.65784 7.00001 8.65784Z"
+  />
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.52796 3.77718C3.52796 1.74374 5.08023 0.0621948 6.99999 0.0621948C8.91975 0.0621948 10.472 1.74374 10.472 3.77718C10.472 5.81062 8.91975 7.49217 6.99999 7.49217C5.08023 7.49217 3.52796 5.81062 3.52796 3.77718ZM6.99999 0.362195C5.26551 0.362195 3.82796 1.88913 3.82796 3.77718C3.82796 5.66523 5.26551 7.19217 6.99999 7.19217C8.73447 7.19217 10.172 5.66523 10.172 3.77718C10.172 1.88913 8.73447 0.362195 6.99999 0.362195ZM6.99999 1.72028C5.94574 1.72028 5.09349 2.61911 5.09349 3.77718C5.09349 4.93526 5.94574 5.83408 6.99999 5.83408C8.05424 5.83408 8.90649 4.93526 8.90649 3.77718C8.90649 2.61911 8.05424 1.72028 6.99999 1.72028ZM4.79349 3.77718C4.79349 2.47372 5.76046 1.42028 6.99999 1.42028C8.23952 1.42028 9.20649 2.47372 9.20649 3.77718C9.20649 5.08065 8.23952 6.13408 6.99999 6.13408C5.76046 6.13408 4.79349 5.08065 4.79349 3.77718ZM0.0477295 15.7878C0.0477295 11.773 3.16956 8.50782 6.99999 8.50782C10.8304 8.50782 13.9522 11.773 13.9522 15.7878V15.9378H12.3867V15.7878C12.3867 12.6812 9.98776 10.1659 6.99999 10.1659C4.01222 10.1659 1.61327 12.6812 1.61327 15.7878V15.9378H0.0477295V15.7878ZM0.349241 15.6378H1.31505C1.39098 12.447 3.88279 9.86591 6.99999 9.86591C10.1172 9.86591 12.609 12.447 12.6849 15.6378H13.6507C13.5743 11.8453 10.6046 8.80782 6.99999 8.80782C3.39534 8.80782 0.42572 11.8453 0.349241 15.6378Z"
+  />
+</svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- Early Access Modal -->
 <div class="modal" id="early-access-modal" aria-hidden="true">
   <div class="modal__overlay" data-micromodal-close tabindex="-1">
@@ -253,11 +277,131 @@
   </div>
 </div>
 
+<!-- Blog Filter -->
+<form class="filter">
+
+  <div class="filter__wrap">
+
+    <button class="hamburger hamburger--slider is-active js-close-blog-filter" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+
+    <!-- filter__container -->
+    <div class="filter__container">
+      <ul class="filter__list filter__list--visible link-tags--light">
+
+        <li class="filter__list-item">
+          <a class="link-tag link-tag--active" href="">
+            All
+            <span class="link-tag__num">99</span>
+          </a>
+        </li>
+        <li class="filter__list-item">
+          <a class="link-tag" href="">
+            #tech
+            <span class="link-tag__num">12</span>
+          </a>
+        </li>
+        <li class="filter__list-item">
+          <a class="link-tag" href="">
+            #news
+            <span class="link-tag__num">5</span>
+          </a>
+        </li>
+        <li class="filter__list-item">
+          <a class="link-tag" href="">
+            #publishing
+            <span class="link-tag__num">17</span>
+          </a>
+        </li>
+        <li class="filter__list-item">
+          <a class="link-tag" href="">
+            #tech
+            <span class="link-tag__num">12</span>
+          </a>
+        </li>
+        <li class="filter__list-item">
+          <a class="link-tag" href="">
+            #news
+            <span class="link-tag__num">5</span>
+          </a>
+        </li>
+        <li class="filter__list-item">
+          <a class="link-tag" href="">
+            #tech
+            <span class="link-tag__num">12</span>
+          </a>
+        </li>
+        <li class="filter__list-item">
+          <a class="link-tag" href="">
+            #news
+            <span class="link-tag__num">5</span>
+          </a>
+        </li>
+        <li class="filter__list-item">
+          <a class="link-tag" href="">
+            #publishing
+            <span class="link-tag__num">17</span>
+          </a>
+        </li>
+        <li class="filter__list-item">
+          <a class="link-tag" href="">
+            #tech
+            <span class="link-tag__num">12</span>
+          </a>
+        </li>
+        <li class="filter__list-item">
+          <a class="link-tag" href="">
+            #news
+            <span class="link-tag__num">5</span>
+          </a>
+        </li>
+        <li class="filter__list-item">
+          <a class="link-tag" href="">
+            #publishing
+            <span class="link-tag__num">17</span>
+          </a>
+        </li>
+        <li class="filter__list-item">
+          <a class="link-tag" href="">
+            #tech
+            <span class="link-tag__num">12</span>
+          </a>
+        </li>
+        <li class="filter__list-item">
+          <a class="link-tag" href="">
+            #news
+            <span class="link-tag__num">5</span>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+    <!-- ./filter__container -->
+
+  </div>
+
+  <div class="filter__footer--mob">
+    <button class="btn" type="submit">OK</button>
+    <button class="filter__cancel visible" type="button">
+      <svg class="i-cross" viewBox="0 0 11 11">
+  <path d="M4.88146 0.986816V5.98133M4.88146 10.9758V5.98133M4.88146 5.98133H0.0686035H10.0645" stroke-width="2" />
+</svg> Cancel
+    </button>
+  </div>
+
+  <div class="filter__overlay js-close-blog-filter"></div>
+
+</form>
 
 <main class="blog-container">
+
   <div class="blog-header">
     <div class="container">
       <h1 class="h1 blog-title">Blog</h1>
+      <button class="btn blog-filter-btn js-open-blog-filter">Filter</button>
       <div class="blog-tags link-tags--light">
         <a class="link-tag link-tag--active" href="">
           All
@@ -549,8 +693,8 @@
       </a>
     </div>
   </div>
-</main>
 
+</main>
 
 <script defer src="js/blog.js"></script>
 
