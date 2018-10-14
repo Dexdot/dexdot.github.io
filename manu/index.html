@@ -44,7 +44,7 @@
   <div class="container">
     <div class="header__inner">
       <div class="header__half header__half--left">
-        <a class="header__logo" href="">
+        <a class="header__logo" href="./index.html">
           
           <img src="img/logo.svg" alt="Manu - video game maker">
         </a>
@@ -224,7 +224,7 @@
     <nav class="menu__nav">
       <ul>
         <li class="menu__list-item">
-          <a class="menu__link" href="">Home</a>
+          <a class="menu__link" href="./index.html">Home</a>
         </li>
         <li class="menu__list-item">
           <a class="menu__link" href="./blog.html">Blog</a>
@@ -281,18 +281,26 @@
 <main>
   <section class="hero">
 
-    <img class="hero__img" src="img/main/bg.png" alt="Manu Video Game Maker">
+    <div>
+      <img class="js-observe hero__img hero__img--bg" src="img/main/hero/bg.png" alt="Manu Video Game Maker">
+      <img class="js-observe hero__img hero__img--dragon" src="img/main/hero/dragon.png" alt="Dragon">
+      <img class="js-observe hero__img hero__img--monster" src="img/main/hero/monster.png" alt="Dragon">
+      <img class="js-observe hero__img hero__img--boy" src="img/main/hero/boy.png" alt="Dragon">
+      <img class="js-observe hero__img hero__img--coin" src="img/main/hero/coin.png" alt="Dragon">
+      <img class="js-observe hero__img hero__img--diamond" src="img/main/hero/diamond.png" alt="Dragon">
+      <img class="js-observe hero__img hero__img--sparks" src="img/main/hero/sparks.png" alt="Dragon">
+    </div>
 
     <!-- hero__content -->
     <div class="container">
       <div class="hero__content">
-        <h1 class="hero__title">Manu Video<br> Game Maker</h1>
-        <div class="line"></div>
-        <p class="hero__text">
+        <h1 class="hero__title js-observe">Manu Video<br> Game Maker</h1>
+        <div class="line js-observe"></div>
+        <p class="hero__text js-observe">
           Make 2D and 3D Games.<br>
           Powerful. Easy to Use. No Coding
         </p>
-        <button class="btn" data-micromodal-trigger="early-access-modal">
+        <button class="btn hero__btn js-observe" data-micromodal-trigger="early-access-modal">
           Early Acceses
         </button>
       </div>
@@ -307,7 +315,7 @@
       <div class="advantages__content">
         <ul class="advantages__list">
 
-          <li class="advantage">
+          <li class="advantage js-observe" data-delay="100">
             <small class="advantage__num">01</small>
             <h3 class="advantage__title">
               Intuitive Interface
@@ -318,7 +326,7 @@
             </p>
           </li>
 
-          <li class="advantage">
+          <li class="advantage js-observe" data-delay="200">
             <small class="advantage__num">02</small>
             <h3 class="advantage__title">
               Flexibility
@@ -329,7 +337,7 @@
             </p>
           </li>
 
-          <li class="advantage">
+          <li class="advantage js-observe" data-delay="300">
             <small class="advantage__num">03</small>
             <h3 class="advantage__title">
               More in Less Time
@@ -340,7 +348,7 @@
             </p>
           </li>
 
-          <li class="advantage">
+          <li class="advantage js-observe" data-delay="400">
             <small class="advantage__num">04</small>
             <h3 class="advantage__title">
               High performance
@@ -359,14 +367,15 @@
   </section>
   <section class="cta">
     <img class="cta__img" src="img/main/cta.png" alt="Make 2D and 3D Games">
-    <div class="cta__cover"></div>
+    <div class="cta__cover js-observe"></div>
+    <div class="cta__shadow js-observe" data-delay="600"></div>
 
     <div class="container">
       <div class="cta__content">
-        <h2 class="main-header cta__title">
+        <h2 class="main-header cta__title js-observe">
           Make 2D and 3D Games
         </h2>
-        <p class="cta__text">
+        <p class="cta__text js-observe">
           Import your 2D/3D graphics. Adjust materials, shaders and high level components
         </p>
       </div>
@@ -377,20 +386,20 @@
 
       <!-- about-block -->
       <div class="about-block">
-        <div class="about-block__img">
-          <img src="img/main/editor.jpg" alt="Unique Character Editor">
+        <div class="about-block__img js-observe">
+          <img src="img/main/editor.png" alt="Unique Character Editor">
         </div>
         <div class="about-block__body">
-          <small class="about-block__num">01</small>
-          <h2 class="about-block__title main-header--sm">
+          <small class="about-block__num js-observe">01</small>
+          <h2 class="about-block__title main-header--sm js-observe">
             Unique Character Editor
-            <span class="line"></span>
+            <span class="line js-observe"></span>
           </h2>
-          <p class="about-block__text">
+          <p class="about-block__text js-observe">
             Create your own game interface, add levels, cutscenes, set links between them and different menu screens,
             create characters and set their states.
           </p>
-          <a class="about-block__link" href="">
+          <a class="about-block__link js-observe" href="">
             <svg class="i-circle-arrow" viewBox="0 0 48 48" fill="none">
   <mask id="path-1-inside-1" fill="white">
     <path fill-rule="evenodd" clip-rule="evenodd" d="M24 46C36.1503 46 46 36.1503 46 24C46 11.8497 36.1503 2 24 2C11.8497 2 2 11.8497 2 24C2 36.1503 11.8497 46 24 46ZM24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z" />
@@ -429,15 +438,15 @@
       <!-- about-block -->
       <div class="about-block">
         <div class="about-block__body">
-          <small class="about-block__num">02</small>
-          <h2 class="about-block__title main-header--sm">
+          <small class="about-block__num js-observe">02</small>
+          <h2 class="about-block__title main-header--sm js-observe">
             Sound Design
-            <span class="line"></span>
+            <span class="line js-observe"></span>
           </h2>
-          <p class="about-block__text">
+          <p class="about-block__text js-observe">
             Add sounds to your animations, make effects, use reverb zones and mix sounds
           </p>
-          <a class="about-block__link" href="">
+          <a class="about-block__link js-observe" href="">
             <svg class="i-circle-arrow" viewBox="0 0 48 48" fill="none">
   <mask id="path-1-inside-1" fill="white">
     <path fill-rule="evenodd" clip-rule="evenodd" d="M24 46C36.1503 46 46 36.1503 46 24C46 11.8497 36.1503 2 24 2C11.8497 2 2 11.8497 2 24C2 36.1503 11.8497 46 24 46ZM24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z" />
@@ -470,7 +479,7 @@
             <span>More info</span>
           </a>
         </div>
-        <div class="about-block__img">
+        <div class="about-block__img js-observe">
           <img src="img/main/sound.jpg" alt="Sound Design">
         </div>
       </div>
@@ -479,14 +488,14 @@
     </div>
   </section>
   <section class="export">
-    <img class="export__img" src="img/main/multiplatform.png" alt="Multiplatform Export">
+    <img class="export__img js-observe" src="img/main/multiplatform.png" alt="Multiplatform Export">
     <div class="container">
-      <h2 class="export__title main-header">
+      <h2 class="export__title main-header js-observe">
         Multiplatform Export
-        <span class="line"></span>
-        <span class="export__num">03</span>
+        <span class="line js-observe"></span>
+        <span class="export__num js-observe">03</span>
       </h2>
-      <p class="export__text">
+      <p class="export__text js-observe">
         Optimize your games for different platforms:<br>
         Android, iOS, consoles, PC and Mac.
       </p>
@@ -498,7 +507,8 @@
 
     <!-- features__list -->
     <ul class="features__list">
-      <li class="feature">
+      <li class="feature js-observe" data-delay="200">
+        <div class="feature__bg"></div>
         <small class="feature__num">01</small>
         <h3 class="feature__title">
           Balance
@@ -508,7 +518,8 @@
           Game balancing becomes easier than ever: edit all the essential parameters in one place
         </p>
       </li>
-      <li class="feature">
+      <li class="feature js-observe" data-delay="400">
+        <div class="feature__bg"></div>
         <small class="feature__num">02</small>
         <h3 class="feature__title">
           Monetisation
@@ -518,7 +529,8 @@
           Advertise and make money. Fast and easy.
         </p>
       </li>
-      <li class="feature">
+      <li class="feature js-observe" data-delay="600">
+        <div class="feature__bg"></div>
         <small class="feature__num">03</small>
         <h3 class="feature__title">
           Analitics
@@ -532,19 +544,199 @@
     <!-- ./features__list -->
 
   </section>
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="main-header--sm testimonials__title">Testimonials</h2>
+
+      <!-- testimonials__content -->
+      <div class="testimonials__content">
+
+        <!-- testimonials__arrows -->
+        <div class="testimonials__arrows">
+          <button class="testimonials__arrow testimonials__arrow--prev">
+            <svg class="i-circle-arrow" viewBox="0 0 48 48" fill="none">
+  <mask id="path-1-inside-1" fill="white">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M24 46C36.1503 46 46 36.1503 46 24C46 11.8497 36.1503 2 24 2C11.8497 2 2 11.8497 2 24C2 36.1503 11.8497 46 24 46ZM24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z" />
+  </mask>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M24 46C36.1503 46 46 36.1503 46 24C46 11.8497 36.1503 2 24 2C11.8497 2 2 11.8497 2 24C2 36.1503 11.8497 46 24 46ZM24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z"
+    fill="#0C48A9" />
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M24 46C36.1503 46 46 36.1503 46 24C46 11.8497 36.1503 2 24 2C11.8497 2 2 11.8497 2 24C2 36.1503 11.8497 46 24 46ZM24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z"
+    fill="url(#paint0_linear)" />
+  <path d="M44 24C44 35.0457 35.0457 44 24 44V48C37.2548 48 48 37.2548 48 24H44ZM24 4C35.0457 4 44 12.9543 44 24H48C48 10.7452 37.2548 0 24 0V4ZM4 24C4 12.9543 12.9543 4 24 4V0C10.7452 0 0 10.7452 0 24H4ZM24 44C12.9543 44 4 35.0457 4 24H0C0 37.2548 10.7452 48 24 48V44ZM46 24C46 36.1503 36.1503 46 24 46V50C38.3594 50 50 38.3594 50 24H46ZM24 2C36.1503 2 46 11.8497 46 24H50C50 9.6406 38.3594 -2 24 -2V2ZM2 24C2 11.8497 11.8497 2 24 2V-2C9.6406 -2 -2 9.6406 -2 24H2ZM24 46C11.8497 46 2 36.1503 2 24H-2C-2 38.3594 9.6406 50 24 50V46Z"
+    fill="#0C48A9" mask="url(#path-1-inside-1)" />
+  <path d="M44 24C44 35.0457 35.0457 44 24 44V48C37.2548 48 48 37.2548 48 24H44ZM24 4C35.0457 4 44 12.9543 44 24H48C48 10.7452 37.2548 0 24 0V4ZM4 24C4 12.9543 12.9543 4 24 4V0C10.7452 0 0 10.7452 0 24H4ZM24 44C12.9543 44 4 35.0457 4 24H0C0 37.2548 10.7452 48 24 48V44ZM46 24C46 36.1503 36.1503 46 24 46V50C38.3594 50 50 38.3594 50 24H46ZM24 2C36.1503 2 46 11.8497 46 24H50C50 9.6406 38.3594 -2 24 -2V2ZM2 24C2 11.8497 11.8497 2 24 2V-2C9.6406 -2 -2 9.6406 -2 24H2ZM24 46C11.8497 46 2 36.1503 2 24H-2C-2 38.3594 9.6406 50 24 50V46Z"
+    fill="url(#paint1_linear)" mask="url(#path-1-inside-1)" />
+  <path d="M21 17L28.5 24.5L21 32" stroke="#0C48A9" stroke-width="2" />
+  <path d="M21 17L28.5 24.5L21 32" stroke="url(#paint2_linear)" stroke-width="2" />
+  <defs>
+    <linearGradient id="paint0_linear" x1="50.0317" y1="48" x2="0" y2="48" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7FCDF3" />
+      <stop offset="1" stop-color="white" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="paint1_linear" x1="50.0317" y1="48" x2="0" y2="48" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7FCDF3" />
+      <stop offset="1" stop-color="white" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="paint2_linear" x1="28.8175" y1="32" x2="21" y2="32" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7FCDF3" />
+      <stop offset="1" stop-color="white" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+</svg>
+          </button>
+          <button class="testimonials__arrow testimonials__arrow--next">
+            <svg class="i-circle-arrow" viewBox="0 0 48 48" fill="none">
+  <mask id="path-1-inside-1" fill="white">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M24 46C36.1503 46 46 36.1503 46 24C46 11.8497 36.1503 2 24 2C11.8497 2 2 11.8497 2 24C2 36.1503 11.8497 46 24 46ZM24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z" />
+  </mask>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M24 46C36.1503 46 46 36.1503 46 24C46 11.8497 36.1503 2 24 2C11.8497 2 2 11.8497 2 24C2 36.1503 11.8497 46 24 46ZM24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z"
+    fill="#0C48A9" />
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M24 46C36.1503 46 46 36.1503 46 24C46 11.8497 36.1503 2 24 2C11.8497 2 2 11.8497 2 24C2 36.1503 11.8497 46 24 46ZM24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z"
+    fill="url(#paint0_linear)" />
+  <path d="M44 24C44 35.0457 35.0457 44 24 44V48C37.2548 48 48 37.2548 48 24H44ZM24 4C35.0457 4 44 12.9543 44 24H48C48 10.7452 37.2548 0 24 0V4ZM4 24C4 12.9543 12.9543 4 24 4V0C10.7452 0 0 10.7452 0 24H4ZM24 44C12.9543 44 4 35.0457 4 24H0C0 37.2548 10.7452 48 24 48V44ZM46 24C46 36.1503 36.1503 46 24 46V50C38.3594 50 50 38.3594 50 24H46ZM24 2C36.1503 2 46 11.8497 46 24H50C50 9.6406 38.3594 -2 24 -2V2ZM2 24C2 11.8497 11.8497 2 24 2V-2C9.6406 -2 -2 9.6406 -2 24H2ZM24 46C11.8497 46 2 36.1503 2 24H-2C-2 38.3594 9.6406 50 24 50V46Z"
+    fill="#0C48A9" mask="url(#path-1-inside-1)" />
+  <path d="M44 24C44 35.0457 35.0457 44 24 44V48C37.2548 48 48 37.2548 48 24H44ZM24 4C35.0457 4 44 12.9543 44 24H48C48 10.7452 37.2548 0 24 0V4ZM4 24C4 12.9543 12.9543 4 24 4V0C10.7452 0 0 10.7452 0 24H4ZM24 44C12.9543 44 4 35.0457 4 24H0C0 37.2548 10.7452 48 24 48V44ZM46 24C46 36.1503 36.1503 46 24 46V50C38.3594 50 50 38.3594 50 24H46ZM24 2C36.1503 2 46 11.8497 46 24H50C50 9.6406 38.3594 -2 24 -2V2ZM2 24C2 11.8497 11.8497 2 24 2V-2C9.6406 -2 -2 9.6406 -2 24H2ZM24 46C11.8497 46 2 36.1503 2 24H-2C-2 38.3594 9.6406 50 24 50V46Z"
+    fill="url(#paint1_linear)" mask="url(#path-1-inside-1)" />
+  <path d="M21 17L28.5 24.5L21 32" stroke="#0C48A9" stroke-width="2" />
+  <path d="M21 17L28.5 24.5L21 32" stroke="url(#paint2_linear)" stroke-width="2" />
+  <defs>
+    <linearGradient id="paint0_linear" x1="50.0317" y1="48" x2="0" y2="48" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7FCDF3" />
+      <stop offset="1" stop-color="white" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="paint1_linear" x1="50.0317" y1="48" x2="0" y2="48" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7FCDF3" />
+      <stop offset="1" stop-color="white" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="paint2_linear" x1="28.8175" y1="32" x2="21" y2="32" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7FCDF3" />
+      <stop offset="1" stop-color="white" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+</svg>
+          </button>
+        </div>
+        <!-- ./testimonials__arrows -->
+
+        <!-- testimonials__slider -->
+        <div class="testimonials__slider">
+
+          <div class="testimonials__col">
+            <button class="testimonials__btn is-active">
+              <img src="img/main/t1.jpg" alt="Becky Mandelbaum">
+              <span class="line"></span>
+            </button>
+            <button class="testimonials__btn">
+              <img src="img/main/t2.jpg" alt="Ilya Voznyakov">
+              <span class="line"></span>
+            </button>
+            <button class="testimonials__btn">
+              <img src="img/main/t3.jpg" alt="Pavel Malutin">
+              <span class="line"></span>
+            </button>
+          </div>
+
+          <!-- testimonials__slides -->
+          <div class="testimonials__slides">
+
+            <div class="testi-slide is-active">
+              <div>
+                <div class="testi-slide__img-wrap">
+                  <img class="testi-slide__img" src="img/main/t1.jpg" alt="Becky Mandelbaum">
+                </div>
+                <h3 class="testi-slide__name">Becky Mandelbaum</h3>
+                <p class="testi-slide__spec">Game Designer</p>
+              </div>
+              <div class="testi-slide__text-wrap">
+                <p class="testi-slide__text">
+                  “Sed ei delicata oportere, in
+                  novum aliquid consequat vis. Has
+                  integre docendi corpora ut, ius eu
+                  modo falli. Discere delenit
+                  impedit an mea, clita lobortis sea
+                  ea. Praesent dignissim interesset
+                  id has. Pri omnis luptatum et.
+                  No quo modus partem
+                  moderatius, sea et sale mazim
+                  neglegentur, no sale justo noster
+                  vis. Duo affert persius in, mollis
+                  tamquam malorum ius in.“
+                </p>
+              </div>
+            </div>
+
+            <div class="testi-slide">
+              <div>
+                <div class="testi-slide__img-wrap">
+                  <img class="testi-slide__img" src="img/main/t2.jpg" alt="Ilya Voznyakov">
+                </div>
+                <h3 class="testi-slide__name">Ilya Voznyakov</h3>
+                <p class="testi-slide__spec">SMM Manager</p>
+              </div>
+              <div class="testi-slide__text-wrap">
+                <p class="testi-slide__text">
+                  “Sed ei delicata oportere, in
+                  novum aliquid consequat vis. Has
+                  integre docendi corpora ut, ius eu
+                  modo falli. Discere delenit
+                  impedit an mea, clita lobortis sea
+                  ea. Praesent dignissim interesset
+                  id has. Pri omnis luptatum et.
+                </p>
+              </div>
+            </div>
+
+            <div class="testi-slide">
+              <div>
+                <div class="testi-slide__img-wrap">
+                  <img class="testi-slide__img" src="img/main/t3.jpg" alt="Pavel Malutin">
+                </div>
+                <h3 class="testi-slide__name">Pavel Malutin</h3>
+                <p class="testi-slide__spec">QA Engineer</p>
+              </div>
+              <div class="testi-slide__text-wrap">
+                <p class="testi-slide__text">
+                  “Sed ei delicata oportere, in
+                  novum aliquid consequat vis. Has
+                  integre docendi corpora ut, ius eu
+                  modo falli. Discere delenit
+                  impedit an mea, clita lobortis sea
+                  ea. Praesent dignissim interesset
+                  id has. Pri omnis luptatum et.
+                  No quo modus partem
+                  moderatius, sea et sale mazim
+                  neglegentur, no sale justo noster
+                  vis. Duo affert persius in, mollis
+                  tamquam malorum ius in.“
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <!-- ./testimonials__slides -->
+
+        </div>
+        <!-- ./testimonials__slider -->
+
+      </div>
+      <!-- ./testimonials__content -->
+
+    </div>
+  </section>
   <section class="alpha">
     <div class="alpha__container">
       <div class="alpha__header">
-        <p class="alpha__text">Change the way you make 2D/3D games easier</p>
+        <p class="alpha__text js-observe">Change the way you make 2D/3D games easier</p>
+        <div class="alpha__line js-observe"></div>
       </div>
       <div class="alpha__body">
-        <h2 class="main-header alpha__title">
+        <h2 class="main-header alpha__title js-observe">
           Be the first and get the alpha version
         </h2>
         <form class="alpha__form">
-          <p class="alpha__text">Get started for free</p>
+          <p class="alpha__text js-observe">Get started for free</p>
 
-          <div class="mdc-text-field-wrap">
+          <div class="mdc-text-field-wrap js-observe">
             <div class="mdc-text-field mdc-text-field--outlined">
               <input class="mdc-text-field__input" type="text" required minlength="1">
               <label class="mdc-floating-label">First Name</label>
@@ -560,7 +752,7 @@
             </p>
           </div>
 
-          <div class="mdc-text-field-wrap">
+          <div class="mdc-text-field-wrap js-observe">
             <div class="mdc-text-field mdc-text-field--outlined">
               <input class="mdc-text-field__input" type="email" required minlength="1">
               <label class="mdc-floating-label">E-mail</label>
@@ -576,7 +768,7 @@
             </p>
           </div>
 
-          <button class="alpha__send" type="submit">
+          <button class="alpha__send js-observe" type="submit">
             Sent
             <svg class="i-send" viewBox="0 0 21 18">
   <path d="M0.00999999 18L21 9L0.00999999 0L0 7L15 9L0 11L0.00999999 18Z" />
@@ -589,36 +781,36 @@
   </section>
   <section class="partners">
     <div class="container">
-      <h2 class="partners__title">Our partners</h2>
+      <h2 class="partners__title js-observe">Our partners</h2>
 
       <div class="partners__container">
         <ul class="partners__list">
-          <li class="partner">
+          <li class="partner js-observe" data-delay="100">
             <a href="">
               <img src="img/partners/cc.png" alt="Casual Connect" class="partner__img">
             </a>
           </li>
-          <li class="partner">
+          <li class="partner js-observe" data-delay="150">
             <a href="">
               <img src="img/partners/devgamm.png" alt="Dev Gamm!" class="partner__img">
             </a>
           </li>
-          <li class="partner">
+          <li class="partner js-observe" data-delay="200">
             <a href="">
               <img src="img/partners/ga.png" alt="Games Academy" class="partner__img">
             </a>
           </li>
-          <li class="partner">
+          <li class="partner js-observe" data-delay="250">
             <a href="">
               <img src="img/partners/gg.png" alt="Games Gathering" class="partner__img">
             </a>
           </li>
-          <li class="partner">
+          <li class="partner js-observe" data-delay="300">
             <a href="">
               <img src="img/partners/indieprize.png" alt="Indie Prize" class="partner__img">
             </a>
           </li>
-          <li class="partner">
+          <li class="partner js-observe" data-delay="350">
             <a href="">
               <img src="img/partners/whitenights.png" alt="White Nights" class="partner__img">
             </a>
