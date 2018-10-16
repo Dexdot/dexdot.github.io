@@ -39,6 +39,54 @@
 
 <body>
 
+<!-- Preloader -->
+<style>
+  .preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #121217;
+  }
+
+  .preloader img {
+    width: 160px;
+    height: auto;
+    position: relative;
+    z-index: 2;
+
+    opacity: 1;
+    animation: pLogo 0.4s cubic-bezier(.71, .01, .34, .99) 0.7s 1 alternate forwards;
+  }
+
+  .preloader img.hide {
+    animation: pLogo 0.4s cubic-bezier(.71, .01, .34, .99) 0.7s 1 alternate forwards;
+  }
+
+  @keyframes pLogo {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    100% {
+      opacity: 0;
+      transform: translateY(-200%);
+    }
+  }
+</style>
+
+<div class="preloader">
+  <img src="img/logo.svg" alt="Manu - video game maker">
+</div>
+
 <!-- Header -->
 <header class="header">
   <div class="container">
@@ -279,28 +327,29 @@
 </div>
 
 <main>
-  <section class="hero">
+  <section class="hero js-observe">
 
     <div>
-      <img class="js-observe hero__img hero__img--bg" src="img/main/hero/bg.png" alt="Manu Video Game Maker">
+      <img class="hero__img hero__img--bg" src="img/main/hero/bg.png" alt="Manu Video Game Maker">
       <img class="js-observe hero__img hero__img--dragon" src="img/main/hero/dragon.png" alt="Dragon">
       <img class="js-observe hero__img hero__img--monster" src="img/main/hero/monster.png" alt="Dragon">
       <img class="js-observe hero__img hero__img--boy" src="img/main/hero/boy.png" alt="Dragon">
       <img class="js-observe hero__img hero__img--coin" src="img/main/hero/coin.png" alt="Dragon">
       <img class="js-observe hero__img hero__img--diamond" src="img/main/hero/diamond.png" alt="Dragon">
+      <img class="js-observe hero__img hero__img--coin-2" src="img/main/hero/coin-2.png" alt="Dragon">
       <img class="js-observe hero__img hero__img--sparks" src="img/main/hero/sparks.png" alt="Dragon">
     </div>
 
     <!-- hero__content -->
     <div class="container">
-      <div class="hero__content">
-        <h1 class="hero__title js-observe">Manu Video<br> Game Maker</h1>
-        <div class="line js-observe"></div>
-        <p class="hero__text js-observe">
+      <div class="hero__content js-observe">
+        <h1 class="hero__title js-observe" data-delay="100">Manu Video<br> Game Maker</h1>
+        <div class="line js-observe" data-delay="200"></div>
+        <p class="hero__text js-observe" data-delay="400">
           Make 2D and 3D Games.<br>
           Powerful. Easy to Use. No Coding
         </p>
-        <button class="btn hero__btn js-observe" data-micromodal-trigger="early-access-modal">
+        <button class="btn hero__btn js-observe" data-delay="600" data-micromodal-trigger="early-access-modal">
           Early Acceses
         </button>
       </div>
@@ -315,9 +364,9 @@
       <div class="advantages__content">
         <ul class="advantages__list">
 
-          <li class="advantage js-observe" data-delay="100">
+          <li class="advantage js-observe fade3d" data-delay="100">
             <small class="advantage__num">01</small>
-            <h3 class="advantage__title">
+            <h3 class="advantage__title js-observe fade3d__title">
               Intuitive Interface
               <span class="line"></span>
             </h3>
@@ -326,9 +375,9 @@
             </p>
           </li>
 
-          <li class="advantage js-observe" data-delay="200">
+          <li class="advantage js-observe fade3d" data-delay="250">
             <small class="advantage__num">02</small>
-            <h3 class="advantage__title">
+            <h3 class="advantage__title js-observe fade3d__title">
               Flexibility
               <span class="line"></span>
             </h3>
@@ -337,9 +386,9 @@
             </p>
           </li>
 
-          <li class="advantage js-observe" data-delay="300">
+          <li class="advantage js-observe fade3d" data-delay="400">
             <small class="advantage__num">03</small>
-            <h3 class="advantage__title">
+            <h3 class="advantage__title js-observe fade3d__title">
               More in Less Time
               <span class="line"></span>
             </h3>
@@ -348,9 +397,9 @@
             </p>
           </li>
 
-          <li class="advantage js-observe" data-delay="400">
+          <li class="advantage js-observe fade3d" data-delay="550">
             <small class="advantage__num">04</small>
-            <h3 class="advantage__title">
+            <h3 class="advantage__title js-observe fade3d__title">
               High performance
               <span class="line"></span>
             </h3>
@@ -366,16 +415,15 @@
     </div>
   </section>
   <section class="cta">
-    <img class="cta__img" src="img/main/cta.png" alt="Make 2D and 3D Games">
+    <img class="cta__img js-observe" src="img/main/cta.png" alt="Make 2D and 3D Games" data-delay="600">
     <div class="cta__cover js-observe"></div>
-    <div class="cta__shadow js-observe" data-delay="600"></div>
 
     <div class="container">
       <div class="cta__content">
-        <h2 class="main-header cta__title js-observe">
+        <h2 class="main-header cta__title js-observe" data-delay="800">
           Make 2D and 3D Games
         </h2>
-        <p class="cta__text js-observe">
+        <p class="cta__text js-observe" data-delay="1000">
           Import your 2D/3D graphics. Adjust materials, shaders and high level components
         </p>
       </div>
@@ -387,11 +435,11 @@
       <!-- about-block -->
       <div class="about-block">
         <div class="about-block__img js-observe">
-          <img src="img/main/editor.png" alt="Unique Character Editor">
+          <video src="img/main/walk.mp4" autoplay loop preload="auto"></video>
         </div>
-        <div class="about-block__body">
+        <div class="about-block__body fade3d js-observe">
           <small class="about-block__num js-observe">01</small>
-          <h2 class="about-block__title main-header--sm js-observe">
+          <h2 class="about-block__title fade3d__title js-observe main-header--sm">
             Unique Character Editor
             <span class="line js-observe"></span>
           </h2>
@@ -437,9 +485,9 @@
 
       <!-- about-block -->
       <div class="about-block">
-        <div class="about-block__body">
+        <div class="about-block__body fade3d js-observe">
           <small class="about-block__num js-observe">02</small>
-          <h2 class="about-block__title main-header--sm js-observe">
+          <h2 class="about-block__title fade3d__title js-observe main-header--sm">
             Sound Design
             <span class="line js-observe"></span>
           </h2>
@@ -488,29 +536,31 @@
     </div>
   </section>
   <section class="export">
-    <img class="export__img js-observe" src="img/main/multiplatform.png" alt="Multiplatform Export">
     <div class="container">
-      <h2 class="export__title main-header js-observe">
-        Multiplatform Export
-        <span class="line js-observe"></span>
-        <span class="export__num js-observe">03</span>
-      </h2>
-      <p class="export__text js-observe">
-        Optimize your games for different platforms:<br>
-        Android, iOS, consoles, PC and Mac.
-      </p>
+      <div class="export__content">
+        <h2 class="export__title js-observe main-header ">
+          Multiplatform Export
+          <span class="line js-observe"></span>
+          <span class="export__num js-observe">03</span>
+        </h2>
+        <p class="export__text js-observe">
+          Optimize your games for different platforms:<br>
+          Android, iOS, consoles, PC and Mac.
+        </p>
+      </div>
     </div>
+    <img class="export__img visible" src="img/main/multiplatform.png" alt="Multiplatform Export">
   </section>
   <section class="features">
 
-    <h2 class="main-header--sm features__title">Advanced Features</h2>
+    <h2 class="main-header--sm features__title js-observe">Advanced Features</h2>
 
     <!-- features__list -->
     <ul class="features__list">
-      <li class="feature js-observe" data-delay="200">
+      <li class="feature fade3d js-observe" data-delay="200">
         <div class="feature__bg"></div>
         <small class="feature__num">01</small>
-        <h3 class="feature__title">
+        <h3 class="feature__title fade3d__title js-observe">
           Balance
           <span class="line"></span>
         </h3>
@@ -518,10 +568,10 @@
           Game balancing becomes easier than ever: edit all the essential parameters in one place
         </p>
       </li>
-      <li class="feature js-observe" data-delay="400">
+      <li class="feature fade3d js-observe" data-delay="350">
         <div class="feature__bg"></div>
         <small class="feature__num">02</small>
-        <h3 class="feature__title">
+        <h3 class="feature__title fade3d__title js-observe">
           Monetisation
           <span class="line"></span>
         </h3>
@@ -529,10 +579,10 @@
           Advertise and make money. Fast and easy.
         </p>
       </li>
-      <li class="feature js-observe" data-delay="600">
+      <li class="feature fade3d js-observe" data-delay="500">
         <div class="feature__bg"></div>
         <small class="feature__num">03</small>
-        <h3 class="feature__title">
+        <h3 class="feature__title fade3d__title js-observe">
           Analitics
           <span class="line"></span>
         </h3>
@@ -730,9 +780,11 @@
         <div class="alpha__line js-observe"></div>
       </div>
       <div class="alpha__body">
-        <h2 class="main-header alpha__title js-observe">
-          Be the first and get the alpha version
-        </h2>
+        <div class="fade3d js-observe">
+          <h2 class="main-header alpha__title fade3d__title js-observe">
+            Be the first and get the alpha version
+          </h2>
+        </div>
         <form class="alpha__form">
           <p class="alpha__text js-observe">Get started for free</p>
 
@@ -826,6 +878,7 @@
 
 <!-- footer -->
 <script src="js/jquery.js"></script>
+<script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
 
 <!-- footer-desktop -->
 <footer class="footer footer--desktop">
@@ -979,9 +1032,9 @@
 <footer class="footer footer--mob">
   <div class="container">
     <div class="footer__top">
-      <a class="footer__logo" href="">
+      <!-- <a class="footer__logo" href="">
         <img src="img/logo.svg" alt="Manu">
-      </a>
+      </a> -->
       <nav class="footer__nav">
         <ul class="footer__list">
           <li class="footer__list-item">
