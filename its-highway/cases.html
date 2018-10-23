@@ -40,25 +40,6 @@
 
 <body>
 
-<!-- hamburger -->
-<div class="hamburger-menu stg-fadeup-sm js-observe">
-
-  <!-- hamburger -->
-  <button class="hamburger hamburger--slider js-open-menu" type="button">
-    <span class="hamburger-text">Меню</span>
-    <span class="hamburger-box">
-      <span class="hamburger-inner"></span>
-    </span>
-  </button>
-  <!-- ./hamburger -->
-
-  <a class="back-btn" href="./cases.html">
-    <span class="hamburger-text">Все кейсы</span>
-    <svg class="i-chevron" viewBox="0 0 24 24">
-  <polyline points="15 18 9 12 15 6"></polyline>
-</svg>
-  </a>
-</div>
 <!-- header -->
 <header class="header">
   <div class="container--lg">
@@ -108,6 +89,25 @@
       </nav>
       <!-- ./header__nav -->
 
+      <div class="hamburger-menu stg-fadeup-sm js-observe">
+
+  <!-- hamburger -->
+  <button class="hamburger hamburger--slider js-open-menu" type="button">
+    <span class="hamburger-text">Меню</span>
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+  <!-- ./hamburger -->
+
+  <a class="back-btn" href="./cases.html">
+    <span class="hamburger-text">Все кейсы</span>
+    <svg class="i-chevron" viewBox="0 0 24 24">
+  <polyline points="15 18 9 12 15 6"></polyline>
+</svg>
+  </a>
+</div>
+
     </div>
     <!-- ./header__inner -->
 
@@ -137,7 +137,7 @@
   <line class="cls-1" x1="0.5" y1="0.5" x2="12.5" y2="12.5" />
 </svg>
         </button>
-        <button class="menu__btn js-lang" data-lang="en">
+        <a class="menu__btn js-lang" href="vk.com">
           <span class="menu__btn-text">English</span>
           <svg class="i-uk" viewBox="0 0 953 953">
   <g id="#cc1b2eff">
@@ -181,7 +181,7 @@
     />
   </g>
 </svg>
-        </button>
+        </a>
       </div>
       <!-- ./menu__btns -->
 
@@ -469,49 +469,49 @@
 
       <div class="page-header">
         <h1 class="page-header__title fadeup js-observe h2">Кейсы</h1>
-        <p class="page-header__text page-subtitle fadeup js-observe">
+        <p class="page-header__text fadeup js-observe">
           Мы занимаемся разработкой веб-сайтов и мобильных приложений, а так же брендингом и разработкой рекламных
           материалов. Постоянно
           совершенствуемся не стоя на месте следуя современным трендам
         </p>
         <ul class="page-header__tabs">
-          <li class="page-header__tab stg-fadeup-sm js-observe is-active">
+          <li class="page-header__tab tag stg-fadeup-sm js-observe is-active">
             <a class="page-header__tab-link" href="">
               Все
               <span class="page-header__counter">31</span>
             </a>
           </li>
-          <li class="page-header__tab stg-fadeup-sm js-observe">
+          <li class="page-header__tab tag stg-fadeup-sm js-observe">
             <a class="page-header__tab-link" href="">
               eCommerce
               <span class="page-header__counter">8</span>
             </a>
           </li>
-          <li class="page-header__tab stg-fadeup-sm js-observe">
+          <li class="page-header__tab tag stg-fadeup-sm js-observe">
             <a class="page-header__tab-link" href="">
               Промо-сайт
               <span class="page-header__counter">6</span>
             </a>
           </li>
-          <li class="page-header__tab stg-fadeup-sm js-observe">
+          <li class="page-header__tab tag stg-fadeup-sm js-observe">
             <a class="page-header__tab-link" href="">
               Корпоративный сайт
               <span class="page-header__counter">5</span>
             </a>
           </li>
-          <li class="page-header__tab stg-fadeup-sm js-observe">
+          <li class="page-header__tab tag stg-fadeup-sm js-observe">
             <a class="page-header__tab-link" href="">
               Айдентика
               <span class="page-header__counter">3</span>
             </a>
           </li>
-          <li class="page-header__tab stg-fadeup-sm js-observe">
+          <li class="page-header__tab tag stg-fadeup-sm js-observe">
             <a class="page-header__tab-link" href="">
               SMM
               <span class="page-header__counter">12</span>
             </a>
           </li>
-          <li class="page-header__tab stg-fadeup-sm js-observe">
+          <li class="page-header__tab tag stg-fadeup-sm js-observe">
             <a class="page-header__tab-link" href="">
               Концепт
               <span class="page-header__counter">8</span>
@@ -529,8 +529,8 @@
           <a class="mockup" href="./case.html">
             <div class="mockup__bg" style="background-image: url('img/cases/neurohive.jpg')"></div>
             <ul class="mockup__tags">
-              <li class="mockup__tag">Промо-сайт</li>
-              <li class="mockup__tag">Айдентика</li>
+              <li class="mockup__tag tag">Промо-сайт</li>
+              <li class="mockup__tag tag">Айдентика</li>
             </ul>
             <span class="mockup__title h4">
               Neurohive
@@ -544,7 +544,7 @@
           <a class="mockup" href="./case.html">
             <div class="mockup__bg" style="background-image: url('img/cases/larne.jpg')"></div>
             <ul class="mockup__tags">
-              <li class="mockup__tag">eCommerce</li>
+              <li class="mockup__tag tag">eCommerce</li>
             </ul>
             <span class="mockup__title h4">
               Larne
@@ -558,8 +558,8 @@
           <a class="mockup" href="./case.html">
             <div class="mockup__bg" style="background-image: url('img/cases/gradient.jpg')"></div>
             <ul class="mockup__tags">
-              <li class="mockup__tag">eCommerce</li>
-              <li class="mockup__tag">SMM</li>
+              <li class="mockup__tag tag">eCommerce</li>
+              <li class="mockup__tag tag">SMM</li>
             </ul>
             <span class="mockup__title h4">
               Бьютека
@@ -573,9 +573,9 @@
           <a class="mockup" href="./case.html">
             <div class="mockup__bg" style="background-image: url('img/cases/citycar.jpg')"></div>
             <ul class="mockup__tags">
-              <li class="mockup__tag">Веб-сайт</li>
-              <li class="mockup__tag">SMM</li>
-              <li class="mockup__tag">SEO</li>
+              <li class="mockup__tag tag">Веб-сайт</li>
+              <li class="mockup__tag tag">SMM</li>
+              <li class="mockup__tag tag">SEO</li>
             </ul>
             <span class="mockup__title h4">
               Citycar
@@ -589,7 +589,7 @@
           <a class="mockup" href="./case.html">
             <div class="mockup__bg" style="background-image: url('img/cases/saharok.jpg')"></div>
             <ul class="mockup__tags">
-              <li class="mockup__tag">eCommerce</li>
+              <li class="mockup__tag tag">eCommerce</li>
             </ul>
             <span class="mockup__title h4">
               Сахарок
@@ -603,9 +603,9 @@
           <a class="mockup" href="./case.html">
             <div class="mockup__bg" style="background-image: url('img/cases/gradient.jpg')"></div>
             <ul class="mockup__tags">
-              <li class="mockup__tag">eCommerce</li>
-              <li class="mockup__tag">SMM</li>
-              <li class="mockup__tag">SEO</li>
+              <li class="mockup__tag tag">eCommerce</li>
+              <li class="mockup__tag tag">SMM</li>
+              <li class="mockup__tag tag">SEO</li>
             </ul>
             <span class="mockup__title h4">
               Алексеевская дубрава
@@ -658,9 +658,10 @@
         </a>
         <div class="footer__block">
           <p class="footer__title">
-            LET’S TALK AND START WORKING ON YOUR PROJECT
+            Lets talk & start working on your next big project
+            together
           </p>
-          <button class="footer__btn btn btn--dot js-open-callback">
+          <button class="footer__btn js-open-callback">
             <span>Оставить заявку</span>
           </button>
         </div>

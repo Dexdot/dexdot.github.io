@@ -40,25 +40,6 @@
 
 <body>
 
-<!-- hamburger -->
-<div class="hamburger-menu stg-fadeup-sm js-observe">
-
-  <!-- hamburger -->
-  <button class="hamburger hamburger--slider js-open-menu" type="button">
-    <span class="hamburger-text">Меню</span>
-    <span class="hamburger-box">
-      <span class="hamburger-inner"></span>
-    </span>
-  </button>
-  <!-- ./hamburger -->
-
-  <a class="back-btn" href="./cases.html">
-    <span class="hamburger-text">Все кейсы</span>
-    <svg class="i-chevron" viewBox="0 0 24 24">
-  <polyline points="15 18 9 12 15 6"></polyline>
-</svg>
-  </a>
-</div>
 <!-- header -->
 <header class="header">
   <div class="container--lg">
@@ -108,6 +89,25 @@
       </nav>
       <!-- ./header__nav -->
 
+      <div class="hamburger-menu stg-fadeup-sm js-observe">
+
+  <!-- hamburger -->
+  <button class="hamburger hamburger--slider js-open-menu" type="button">
+    <span class="hamburger-text">Меню</span>
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+  <!-- ./hamburger -->
+
+  <a class="back-btn" href="./cases.html">
+    <span class="hamburger-text">Все кейсы</span>
+    <svg class="i-chevron" viewBox="0 0 24 24">
+  <polyline points="15 18 9 12 15 6"></polyline>
+</svg>
+  </a>
+</div>
+
     </div>
     <!-- ./header__inner -->
 
@@ -137,7 +137,7 @@
   <line class="cls-1" x1="0.5" y1="0.5" x2="12.5" y2="12.5" />
 </svg>
         </button>
-        <button class="menu__btn js-lang" data-lang="en">
+        <a class="menu__btn js-lang" href="vk.com">
           <span class="menu__btn-text">English</span>
           <svg class="i-uk" viewBox="0 0 953 953">
   <g id="#cc1b2eff">
@@ -181,7 +181,7 @@
     />
   </g>
 </svg>
-        </button>
+        </a>
       </div>
       <!-- ./menu__btns -->
 
@@ -476,7 +476,7 @@
 						<span class="word">agency</span>
 					</span>
 				</h1>
-				<p class="main__subtitle page-subtitle fadeup js-observe">
+				<p class="main__subtitle fadeup js-observe">
 					Премиальный дизайн, маркетинг и разработка сложных решений для бизнеса
 				</p>
 			</div>
@@ -490,8 +490,8 @@
 					<a class="mockup" href="./case.html">
 						<div class="mockup__bg" style="background-image: url('img/cases/neurohive.jpg')"></div>
 						<ul class="mockup__tags">
-							<li class="mockup__tag">Промо-сайт</li>
-							<li class="mockup__tag">Айдентика</li>
+							<li class="mockup__tag tag">Промо-сайт</li>
+							<li class="mockup__tag tag">Айдентика</li>
 						</ul>
 						<span class="mockup__title h4">
 							Neurohive
@@ -504,7 +504,7 @@
 				<div class="grid-item fadeup-lg js-observe">
 					<a class="card-block" href="./article.html">
 						<ul class="card-block__tags">
-							<li class="card-block__tag">
+							<li class="card-block__tag tag">
 								Мнение
 							</li>
 						</ul>
@@ -513,7 +513,7 @@
 							даже смешной,
 							недостаточно.
 						</p>
-						<div class="card-block__footer">
+						<div class="card-block__footer tag">
 							<p class="card-block__text">
 								<b>Марианна Лушникова</b>
 							</p>
@@ -526,7 +526,7 @@
 					<a class="mockup" href="./case.html">
 						<div class="mockup__bg" style="background-image: url('img/cases/larne.jpg')"></div>
 						<ul class="mockup__tags">
-							<li class="mockup__tag">eCommerce</li>
+							<li class="mockup__tag tag">eCommerce</li>
 						</ul>
 						<span class="mockup__title h4">
 							Larne
@@ -540,8 +540,8 @@
 					<a class="mockup" href="./case.html">
 						<div class="mockup__bg" style="background-image: url('img/cases/gradient.jpg')"></div>
 						<ul class="mockup__tags">
-							<li class="mockup__tag">eCommerce</li>
-							<li class="mockup__tag">SMM</li>
+							<li class="mockup__tag tag">eCommerce</li>
+							<li class="mockup__tag tag">SMM</li>
 						</ul>
 						<span class="mockup__title h4">
 							Бьютека
@@ -556,9 +556,9 @@
 					<a class="mockup" href="./case.html">
 						<div class="mockup__bg" style="background-image: url('img/cases/citycar.jpg')"></div>
 						<ul class="mockup__tags">
-							<li class="mockup__tag">Веб-сайт</li>
-							<li class="mockup__tag">SMM</li>
-							<li class="mockup__tag">SEO</li>
+							<li class="mockup__tag tag">Веб-сайт</li>
+							<li class="mockup__tag tag">SMM</li>
+							<li class="mockup__tag tag">SEO</li>
 						</ul>
 						<span class="mockup__title h4">
 							Citycar
@@ -572,7 +572,7 @@
 					<a class="mockup" href="./case.html">
 						<div class="mockup__bg" style="background-image: url('img/cases/saharok.jpg')"></div>
 						<ul class="mockup__tags">
-							<li class="mockup__tag">eCommerce</li>
+							<li class="mockup__tag tag">eCommerce</li>
 						</ul>
 						<span class="mockup__title h4">
 							Сахарок
@@ -585,15 +585,15 @@
 				<div class="grid-item fadeup-lg js-observe">
 					<div class="card-block">
 						<ul class="card-block__tags">
-							<li class="card-block__tag">
+							<li class="card-block__tag tag">
 								<span class="card-block__date">
 									<span>20</span> июня
 								</span>
 							</li>
-							<li class="card-block__tag">
+							<li class="card-block__tag tag">
 								13:30
 							</li>
-							<li class="card-block__tag">
+							<li class="card-block__tag tag">
 								<a href="">Oxta Lab</a>
 							</li>
 						</ul>
@@ -634,7 +634,7 @@
 				<div class="grid-item fadeup-lg js-observe">
 					<a class="card-block" href="./article.html">
 						<ul class="card-block__tags">
-							<li class="card-block__tag">
+							<li class="card-block__tag tag">
 								Мнение
 							</li>
 						</ul>
@@ -643,7 +643,7 @@
 							Или заинтересовать
 							потенциальных сотрудников. Когда цель ясна, аргументы находятся сами.
 						</p>
-						<div class="card-block__footer">
+						<div class="card-block__footer tag">
 							<p class="card-block__text">
 								<b>Филипп Бразговский</b>
 							</p>
@@ -656,9 +656,9 @@
 					<a class="mockup" href="./case.html" style="background-image: url('img/cases/gradient.jpg')">
 						<div class="mockup__bg"></div>
 						<ul class="mockup__tags">
-							<li class="mockup__tag">eCommerce</li>
-							<li class="mockup__tag">SMM</li>
-							<li class="mockup__tag">SEO</li>
+							<li class="mockup__tag tag">eCommerce</li>
+							<li class="mockup__tag tag">SMM</li>
+							<li class="mockup__tag tag">SEO</li>
 						</ul>
 						<span class="mockup__title h4">
 							Алексеевская дубрава
@@ -672,7 +672,7 @@
 					<a class="mockup" href="./case.html">
 						<div class="mockup__bg" style="background-image: url('img/cases/gradient.jpg')"></div>
 						<ul class="mockup__tags">
-							<li class="mockup__tag">Веб-сайт</li>
+							<li class="mockup__tag tag">Веб-сайт</li>
 						</ul>
 						<span class="mockup__title h4">
 							MyHome
@@ -776,9 +776,10 @@
         </a>
         <div class="footer__block">
           <p class="footer__title">
-            LET’S TALK AND START WORKING ON YOUR PROJECT
+            Lets talk & start working on your next big project
+            together
           </p>
-          <button class="footer__btn btn btn--dot js-open-callback">
+          <button class="footer__btn js-open-callback">
             <span>Оставить заявку</span>
           </button>
         </div>
