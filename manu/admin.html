@@ -314,6 +314,32 @@
     </form>
   </div>
 </div>
+<!-- Download Data Modal -->
+<div class="modal" id="download-data-modal" aria-hidden="true">
+  <div class="modal__overlay" data-micromodal-close tabindex="-1">
+    <form class="modal__container" role="dialog" aria-modal="true" aria-labelledby="download-data-modal-title">
+
+      <button class="modal__close" aria-label="Close modal" type="button" data-micromodal-close>
+        <svg class="i-close" viewBox="0 0 22 22">
+  <path d="M1 1L11 11M21 21L11 11M11 11L21 1L1 21" />
+</svg>
+      </button>
+
+      <main class="modal__content" id="download-data-modal-content">
+        <h2 class="modal__title" id="download-data-modal-title">
+          Download Data
+        </h2>
+        <div class="download-row">
+          <a href="" download class="btn btn--stroke">XML</a>
+          <a href="" download class="btn btn--stroke">JSON</a>
+          <a href="" download class="btn btn--stroke">CSV</a>
+        </div>
+
+      </main>
+
+    </form>
+  </div>
+</div>
 
 <main class="profile-container">
   <div class="profile-header">
@@ -554,56 +580,67 @@
 
             <!-- profile-group -->
             <div class="profile-group profile-group--subscribe-desktop">
-              <p class="profile-group__title">Newsletter</p>
-              <label class="checkbox checkbox--is-checked">
-                <input class="checkbox__input" type="checkbox" required checked> I agree to receive e-mail newsletters
-                from MANU video game maker with helpful information <svg class="i-daw" viewBox="0 0 24 24">
-  <polyline points="20 6 9 17 4 12"></polyline>
-</svg>
-              </label>
+  <p class="profile-group__title">Newsletter</p>
 
-              <div class="profile-subscribe">
-                <label class="checkbox checkbox--is-checked">
-                  <input class="checkbox__input" type="checkbox" required checked> All Newsletters
-                  <svg class="i-daw" viewBox="0 0 24 24">
+  <label class="checkbox checkbox--is-checked">
+    <input class="checkbox__input" type="checkbox" required checked> I agree to receive e-mail newsletters
+    from MANU video game maker with helpful information <svg class="i-daw" viewBox="0 0 24 24">
   <polyline points="20 6 9 17 4 12"></polyline>
 </svg>
-                </label>
-                <label class="checkbox checkbox--is-checked">
-                  <input class="checkbox__input" type="checkbox" required checked> Foo
-                  <svg class="i-daw" viewBox="0 0 24 24">
-  <polyline points="20 6 9 17 4 12"></polyline>
-</svg>
-                </label>
-                <label class="checkbox checkbox--is-checked">
-                  <input class="checkbox__input" type="checkbox" required checked> Bar
-                  <svg class="i-daw" viewBox="0 0 24 24">
-  <polyline points="20 6 9 17 4 12"></polyline>
-</svg>
-                </label>
-              </div>
+    <span class="checkbox__helper">Select the checkbox</span>
+  </label>
 
-              <!-- <div class="mdc-select mdc-select--outlined profile-select">
-                <select class="mdc-select__native-control">
-                  <option value="all" selected>
-                    All Newsletters
-                  </option>
-                  <option value="foo">
-                    Foo
-                  </option>
-                  <option value="bar">
-                    Bar
-                  </option>
-                </select>
-                <div class="mdc-notched-outline">
-                  <svg>
-                    <path class="mdc-notched-outline__path"></path>
-                  </svg>
-                </div>
-                <div class="mdc-notched-outline__idle"></div>
-              </div> -->
+  <div class="mdc-form-field">
+    <div class="mdc-radio">
+      <input id="radio-1" class="mdc-radio__native-control js-subscribe" type="radio" name="newsletter" data-subscribe="all"
+        required checked>
+      <div class="mdc-radio__background">
+        <div class="mdc-radio__outer-circle"></div>
+        <div class="mdc-radio__inner-circle"></div>
+      </div>
+    </div>
+    <label for="radio-1">All Newsletters</label>
+  </div>
 
-            </div>
+  <div class="mdc-form-field">
+    <div class="mdc-radio">
+      <input id="radio-2" class="mdc-radio__native-control js-subscribe" type="radio" name="newsletter" data-subscribe="choose"
+        required>
+      <div class="mdc-radio__background">
+        <div class="mdc-radio__outer-circle"></div>
+        <div class="mdc-radio__inner-circle"></div>
+      </div>
+    </div>
+    <label for="radio-2">Choose Newsletters</label>
+  </div>
+
+  <fieldset class="profile-subscribe" disabled>
+    <label class="checkbox">
+      <input class="checkbox__input" type="checkbox"> Marketing
+      <svg class="i-daw" viewBox="0 0 24 24">
+  <polyline points="20 6 9 17 4 12"></polyline>
+</svg>
+    </label>
+    <label class="checkbox">
+      <input class="checkbox__input" type="checkbox"> Gaming
+      <svg class="i-daw" viewBox="0 0 24 24">
+  <polyline points="20 6 9 17 4 12"></polyline>
+</svg>
+    </label>
+    <label class="checkbox">
+      <input class="checkbox__input" type="checkbox"> About
+      <svg class="i-daw" viewBox="0 0 24 24">
+  <polyline points="20 6 9 17 4 12"></polyline>
+</svg>
+    </label>
+    <label class="checkbox">
+      <input class="checkbox__input" type="checkbox"> Design
+      <svg class="i-daw" viewBox="0 0 24 24">
+  <polyline points="20 6 9 17 4 12"></polyline>
+</svg>
+    </label>
+  </fieldset>
+</div>
             <!-- ./profile-group -->
 
           </div>
@@ -753,64 +790,75 @@
                 </label>
               </div>
             </div>
-            <!-- profile-group -->
+
             <div class="profile-group profile-group--subscribe-mobile">
-              <p class="profile-group__title">Newsletter</p>
-              <label class="checkbox checkbox--is-checked">
-                <input class="checkbox__input" type="checkbox" required checked> I agree to receive e-mail newsletters
-                from MANU video game maker with helpful information <svg class="i-daw" viewBox="0 0 24 24">
-  <polyline points="20 6 9 17 4 12"></polyline>
-</svg>
-              </label>
+  <p class="profile-group__title">Newsletter</p>
 
-              <div class="profile-subscribe">
-                <label class="checkbox checkbox--is-checked">
-                  <input class="checkbox__input" type="checkbox" required checked> All Newsletters
-                  <svg class="i-daw" viewBox="0 0 24 24">
+  <label class="checkbox checkbox--is-checked">
+    <input class="checkbox__input" type="checkbox" required checked> I agree to receive e-mail newsletters
+    from MANU video game maker with helpful information <svg class="i-daw" viewBox="0 0 24 24">
   <polyline points="20 6 9 17 4 12"></polyline>
 </svg>
-                </label>
-                <label class="checkbox checkbox--is-checked">
-                  <input class="checkbox__input" type="checkbox" required checked> Foo
-                  <svg class="i-daw" viewBox="0 0 24 24">
-  <polyline points="20 6 9 17 4 12"></polyline>
-</svg>
-                </label>
-                <label class="checkbox checkbox--is-checked">
-                  <input class="checkbox__input" type="checkbox" required checked> Bar
-                  <svg class="i-daw" viewBox="0 0 24 24">
-  <polyline points="20 6 9 17 4 12"></polyline>
-</svg>
-                </label>
-              </div>
+    <span class="checkbox__helper">Select the checkbox</span>
+  </label>
 
-              <!-- <div class="mdc-select mdc-select--outlined profile-select">
-                <select class="mdc-select__native-control">
-                  <option value="all" selected>
-                    All Newsletters
-                  </option>
-                  <option value="foo">
-                    Foo
-                  </option>
-                  <option value="bar">
-                    Bar
-                  </option>
-                </select>
-                <div class="mdc-notched-outline">
-                  <svg>
-                    <path class="mdc-notched-outline__path"></path>
-                  </svg>
-                </div>
-                <div class="mdc-notched-outline__idle"></div>
-              </div> -->
+  <div class="mdc-form-field">
+    <div class="mdc-radio">
+      <input id="radio-3" class="mdc-radio__native-control js-subscribe" type="radio" name="newsletter-mob"
+        data-subscribe="all" required checked>
+      <div class="mdc-radio__background">
+        <div class="mdc-radio__outer-circle"></div>
+        <div class="mdc-radio__inner-circle"></div>
+      </div>
+    </div>
+    <label for="radio-3">All Newsletters</label>
+  </div>
 
-            </div>
-            <!-- ./profile-group -->
+  <div class="mdc-form-field">
+    <div class="mdc-radio">
+      <input id="radio-4" class="mdc-radio__native-control js-subscribe" type="radio" name="newsletter-mob"
+        data-subscribe="choose" required>
+      <div class="mdc-radio__background">
+        <div class="mdc-radio__outer-circle"></div>
+        <div class="mdc-radio__inner-circle"></div>
+      </div>
+    </div>
+    <label for="radio-4">Choose Newsletters</label>
+  </div>
+
+  <fieldset class="profile-subscribe" disabled>
+    <label class="checkbox">
+      <input class="checkbox__input" type="checkbox"> Marketing
+      <svg class="i-daw" viewBox="0 0 24 24">
+  <polyline points="20 6 9 17 4 12"></polyline>
+</svg>
+    </label>
+    <label class="checkbox">
+      <input class="checkbox__input" type="checkbox"> Gaming
+      <svg class="i-daw" viewBox="0 0 24 24">
+  <polyline points="20 6 9 17 4 12"></polyline>
+</svg>
+    </label>
+    <label class="checkbox">
+      <input class="checkbox__input" type="checkbox"> About
+      <svg class="i-daw" viewBox="0 0 24 24">
+  <polyline points="20 6 9 17 4 12"></polyline>
+</svg>
+    </label>
+    <label class="checkbox">
+      <input class="checkbox__input" type="checkbox"> Design
+      <svg class="i-daw" viewBox="0 0 24 24">
+  <polyline points="20 6 9 17 4 12"></polyline>
+</svg>
+    </label>
+  </fieldset>
+</div>
+
           </div>
         </div>
         <div class="profile-info__footer">
           <span class="profile-link" data-micromodal-trigger="delete-acc-modal">Delete Account</span>
-          <a class="profile-link" download href="../../fonts/roboto/Roboto-Bold.woff2">Download Data</a>
+          <span class="profile-link" data-micromodal-trigger="download-data-modal">Download Data</span>
           <button class="btn profile-submit" type="submit">Save</button>
         </div>
       </form>
@@ -5195,6 +5243,7 @@
             <svg class="i-daw" viewBox="0 0 24 24">
   <polyline points="20 6 9 17 4 12"></polyline>
 </svg>
+            <span class="checkbox__helper">Select the checkbox</span>
           </label>
           <button class="footer__send" type="submit">
             <svg class="i-send" viewBox="0 0 21 18">
@@ -5238,7 +5287,7 @@
             <a class="footer__link" href="">Forum</a>
           </li>
           <li class="footer__list-item">
-            <a class="footer__link" href=./cases.html "">Showcases</a>
+            <a class="footer__link" href="./cases.html">Showcases</a>
           </li>
           <li class="footer__list-item">
             <a class="footer__link" href="./support.html">Support</a>
@@ -5346,6 +5395,7 @@
                   <svg class="i-daw" viewBox="0 0 24 24">
   <polyline points="20 6 9 17 4 12"></polyline>
 </svg>
+                  <span class="checkbox__helper">Select the checkbox</span>
                 </label>
                 <button class="footer__send" type="submit">
                   <svg class="i-send" viewBox="0 0 21 18">
