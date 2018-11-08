@@ -38,16 +38,31 @@
 </head>
 
 <body>
+<!-- Cookie -->
+<div class="cookie">
+  <div class="container">
+    <div class="cookie__inner">
+      <div class="cookie__text">
+        <p>
+          Cookies help us deliver our services. By using our services, you agree
+          to our use of cookies.
+        </p>
+        <a href="">Learn more</a>
+      </div>
+      <button class="btn js-close-cookie">OK</button>
+    </div>
+  </div>
+</div>
+
 
 <manu class="auth-container">
   <form class="auth js-validate" novalidate>
     <a class="auth__logo" href="./index.html">
-      <img src="img/logo.svg" alt="Manu - video game maker">
+      <img src="img/logo.svg" alt="Manu - video game maker" />
     </a>
     <h1 class="auth__title">Create account</h1>
     <button class="auth__signin" type="button">
-      <div>
-        <svg class="i-google" viewBox="0 0 15 15" fill="none">
+      <div><svg class="i-google" viewBox="0 0 15 15" fill="none">
   <path d="M3.32432 9.06465L2.80219 11.0138L0.893818 11.0542C0.323496 9.99638 0 8.78609 0 7.49996C0 6.25628 0.302461 5.08347 0.838594 4.05078H0.839004L2.53799 4.36227L3.28225 6.05105C3.12647 6.50519 3.04157 6.99269 3.04157 7.49996C3.04163 8.05051 3.14136 8.578 3.32432 9.06465Z"
     fill="#FBBB00" />
   <path d="M14.8691 6.09863C14.9552 6.55232 15.0002 7.02087 15.0002 7.49973C15.0002 8.03668 14.9437 8.56045 14.8362 9.06567C14.4711 10.7849 13.5171 12.2861 12.1955 13.3485L12.1951 13.3481L10.0551 13.2389L9.75227 11.3482C10.6292 10.8339 11.3145 10.0291 11.6755 9.06567H7.66504V6.09863H11.734H14.8691Z"
@@ -56,116 +71,148 @@
     fill="#28B446" />
   <path d="M12.287 1.72664L9.85734 3.71578C9.17369 3.28846 8.36557 3.0416 7.49979 3.0416C5.54483 3.0416 3.8837 4.30011 3.28206 6.05109L0.838789 4.05082H0.838379C2.0866 1.64423 4.60115 0 7.49979 0C9.31956 0 10.9881 0.648223 12.287 1.72664Z"
     fill="#F14336" />
-</svg>
-        Sign in with Google
-      </div>
+</svg> Sign in with Google</div>
     </button>
     <button class="auth__signin" type="button">
-      <div>
-        <svg class="i-fb" viewBox="0 0 16 16" fill="none">
+      <div><svg class="i-fb" viewBox="0 0 16 16" fill="none">
   <path d="M14.8966 16H1.10344C0.496563 16 0 15.5034 0 14.8966V1.10344C0 0.496563 0.496563 0 1.10344 0H14.8966C15.5034 0 16 0.496563 16 1.10344V14.8966C16 15.5034 15.5034 16 14.8966 16Z"
     fill="#4D6FA9" />
   <path d="M13.5171 2.75882V5.51745H11.0343C10.7309 5.51745 10.4826 5.76573 10.4826 6.06916V7.72435H13.2412V10.483H10.4826V16.0002H7.724V10.4829H5.51709V7.72432H7.724V6.06913C7.724 4.3312 9.04812 2.89673 10.7585 2.75879H13.5171V2.75882Z"
     fill="white" />
-</svg>
-        Sign in with Facebook
-      </div>
+</svg> Sign in with Facebook</div>
     </button>
     <button class="auth__signin" type="button">
-      <div>
-        <svg class="i-twitter" viewBox="0 0 10 8">
+      <div><svg class="i-twitter" viewBox="0 0 10 8">
   <path d="M10 0.947007C9.63203 1.10763 9.23668 1.2162 8.82168 1.26501C9.24524 1.01507 9.57055 0.619289 9.72375 0.14766C9.32729 0.37913 8.88826 0.547189 8.42092 0.637747C8.0467 0.245235 7.51348 0 6.92338 0C5.79036 0 4.87179 0.904208 4.87179 2.01954C4.87179 2.17784 4.88993 2.33198 4.92491 2.47981C3.21984 2.39556 1.7081 1.59154 0.696229 0.369632C0.519628 0.667913 0.418437 1.01484 0.418437 1.38497C0.418437 2.08566 0.780623 2.70384 1.33113 3.06601C0.994822 3.05551 0.678475 2.96467 0.401894 2.81339C0.401698 2.82181 0.401698 2.83027 0.401698 2.83879C0.401698 3.81731 1.1089 4.63356 2.04742 4.81913C1.87529 4.86526 1.69402 4.89002 1.50691 4.89002C1.3747 4.89002 1.24619 4.87733 1.1209 4.85372C1.38199 5.65605 2.13964 6.24004 3.03742 6.25628C2.33527 6.79801 1.45064 7.12084 0.489413 7.12084C0.323808 7.12084 0.160508 7.11131 0 7.09256C0.907928 7.66565 1.98634 8 3.14494 8C6.91858 8 8.98219 4.92255 8.98219 2.2537C8.98219 2.16615 8.98016 2.07905 8.97623 1.99242C9.37713 1.70769 9.72496 1.352 10 0.947007Z"
   />
-</svg>
-        Sign in with Twitter
-      </div>
+</svg> Sign in with Twitter</div>
     </button>
-    <div class="or">
-      <div class="or__inner">or</div>
-    </div>
+    <div class="or"><div class="or__inner">or</div></div>
 
     <div class="auth__half">
-
       <div class="mdc-text-field-wrap">
         <div class="mdc-text-field mdc-text-field--outlined">
-          <input class="mdc-text-field__input" type="text" required minlength="1">
+          <input
+            class="mdc-text-field__input"
+            type="text"
+            required
+            minlength="1"
+          />
           <label class="mdc-floating-label">First Name</label>
           <div class="mdc-notched-outline">
-            <svg>
-              <path class="mdc-notched-outline__path" />
-            </svg>
+            <svg><path class="mdc-notched-outline__path" /></svg>
           </div>
           <div class="mdc-notched-outline__idle"></div>
         </div>
-        <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" aria-hidden="true">
+        <p
+          class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
+          aria-hidden="true"
+        >
           Enter your name
         </p>
       </div>
 
       <div class="mdc-text-field-wrap">
         <div class="mdc-text-field mdc-text-field--outlined">
-          <input class="mdc-text-field__input" type="text" required minlength="1">
+          <input
+            class="mdc-text-field__input"
+            type="text"
+            required
+            minlength="1"
+          />
           <label class="mdc-floating-label">Last Name</label>
           <div class="mdc-notched-outline">
-            <svg>
-              <path class="mdc-notched-outline__path" />
-            </svg>
+            <svg><path class="mdc-notched-outline__path" /></svg>
           </div>
           <div class="mdc-notched-outline__idle"></div>
         </div>
-        <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" aria-hidden="true">
+        <p
+          class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
+          aria-hidden="true"
+        >
           Enter your last name
         </p>
       </div>
-
     </div>
 
     <div class="mdc-text-field-wrap">
       <div class="mdc-text-field mdc-text-field--outlined">
-        <input class="mdc-text-field__input" type="email" required minlength="1">
+        <input
+          class="mdc-text-field__input"
+          type="email"
+          required
+          minlength="1"
+        />
         <label class="mdc-floating-label">Email</label>
         <div class="mdc-notched-outline">
-          <svg>
-            <path class="mdc-notched-outline__path" />
-          </svg>
+          <svg><path class="mdc-notched-outline__path" /></svg>
         </div>
         <div class="mdc-notched-outline__idle"></div>
       </div>
-      <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" aria-hidden="true">
+      <p
+        class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
+        aria-hidden="true"
+      >
         Enter your e-mail
       </p>
     </div>
 
     <div class="mdc-text-field-wrap">
       <div class="mdc-text-field mdc-text-field--outlined">
-        <input class="mdc-text-field__input" type="password" required minlength="1">
+        <input
+          id="password"
+          class="mdc-text-field__input"
+          type="password"
+          required
+          minlength="1"
+        />
         <label class="mdc-floating-label">Password</label>
         <div class="mdc-notched-outline">
-          <svg>
-            <path class="mdc-notched-outline__path" />
-          </svg>
+          <svg><path class="mdc-notched-outline__path" /></svg>
         </div>
         <div class="mdc-notched-outline__idle"></div>
       </div>
-      <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" aria-hidden="true">
+      <p
+        class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
+        aria-hidden="true"
+      >
         Enter your password
       </p>
     </div>
 
+    <div class="mdc-text-field-wrap">
+      <div class="mdc-text-field mdc-text-field--outlined">
+        <input
+          id="confirm_password"
+          class="mdc-text-field__input"
+          type="password"
+        />
+        <label class="mdc-floating-label">Confirm Password</label>
+        <div class="mdc-notched-outline">
+          <svg><path class="mdc-notched-outline__path" /></svg>
+        </div>
+        <div class="mdc-notched-outline__idle"></div>
+      </div>
+      <p
+        class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
+        aria-hidden="true"
+      >
+        Confirm your password
+      </p>
+    </div>
+
     <label class="checkbox">
-      <input class="checkbox__input" type="checkbox" required> I agree with
-      <a href="">Privacy Policy</a>,
-      <a href="">Data Protection Policy</a>,
-      <a href="">Terms of Use</a>
-      <svg class="i-daw" viewBox="0 0 24 24">
+      <input class="checkbox__input" type="checkbox" required /> I agree with
+      <a href="">Privacy Policy</a>, <a href="">Data Protection Policy</a>,
+      <a href="">Terms of Use</a> <svg class="i-daw" viewBox="0 0 24 24">
   <polyline points="20 6 9 17 4 12"></polyline>
 </svg>
       <span class="checkbox__helper">Select the checkbox</span>
     </label>
 
     <label class="checkbox">
-      <input class="checkbox__input" type="checkbox" required> I agree to receive e-mail newsletters from MANU
-      video game maker with helpful information
+      <input class="checkbox__input" type="checkbox" /> I agree to receive
+      e-mail newsletters from MANU video game maker with helpful information
       <svg class="i-daw" viewBox="0 0 24 24">
   <polyline points="20 6 9 17 4 12"></polyline>
 </svg>
@@ -176,7 +223,6 @@
       <button class="btn auth__btn" type="submit">Create Account</button>
       <a class="auth__link" href="./login.html">Have an account?</a>
     </div>
-
   </form>
 </manu>
 

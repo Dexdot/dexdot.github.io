@@ -46,31 +46,23 @@
       <div class="header__half header__half--left">
         <a class="header__logo" href="./index.html">
           
-          <img src="img/logo.svg" alt="Manu - video game maker">
+          <img src="img/logo.svg" alt="Manu - video game maker" />
         </a>
       </div>
       <div class="header__half header__half--right">
         <nav class="header__nav">
           <ul class="header__list">
             <li class="header__list-item">
-              <a class="header__link" href="./blog.html">
-                Blog
-              </a>
+              <a class="header__link" href="./blog.html"> Blog </a>
             </li>
             <li class="header__list-item">
-              <a class="header__link" href="">
-                Forum
-              </a>
+              <a class="header__link" href=""> Forum </a>
             </li>
             <li class="header__list-item">
-              <a class="header__link" href="./cases.html">
-                Showcases
-              </a>
+              <a class="header__link" href="./cases.html"> Showcases </a>
             </li>
             <li class="header__list-item">
-              <a class="header__link" href="./support.html">
-                Support
-              </a>
+              <a class="header__link" href="./support.html"> Support </a>
             </li>
           </ul>
         </nav>
@@ -89,8 +81,36 @@
   />
 </svg>
           </a>
+          <a class="header__logout" href="./reg.html">
+            <svg class="i-logout" viewBox="0 0 512 512">
+  <path
+    d="M255.15,468.625H63.787c-11.737,0-21.262-9.526-21.262-21.262V64.638c0-11.737,9.526-21.262,21.262-21.262H255.15
+
+	c11.758,0,21.262-9.504,21.262-21.262S266.908,0.85,255.15,0.85H63.787C28.619,0.85,0,29.47,0,64.638v382.724
+
+	c0,35.168,28.619,63.787,63.787,63.787H255.15c11.758,0,21.262-9.504,21.262-21.262
+
+	C276.412,478.129,266.908,468.625,255.15,468.625z"
+  />
+  <path
+    d="M505.664,240.861L376.388,113.286c-8.335-8.25-21.815-8.143-30.065,0.213s-8.165,21.815,0.213,30.065l92.385,91.173
+
+	H191.362c-11.758,0-21.262,9.504-21.262,21.262c0,11.758,9.504,21.263,21.262,21.263h247.559l-92.385,91.173
+
+	c-8.377,8.25-8.441,21.709-0.213,30.065c4.167,4.21,9.653,6.336,15.139,6.336c5.401,0,10.801-2.041,14.926-6.124l129.276-127.575
+
+	c4.04-3.997,6.336-9.441,6.336-15.139C512,250.302,509.725,244.88,505.664,240.861z"
+  />
+</svg>
+
+          </a>
         </div>
-        <button class="btn header__btn" data-micromodal-trigger="early-access-modal">Early Acceses</button>
+        <button
+          class="btn header__btn"
+          data-micromodal-trigger="early-access-modal"
+        >
+          Early Acceses
+        </button>
       </div>
       <button class="hamburger hamburger--slider js-open-menu" type="button">
   <span class="hamburger-box">
@@ -104,7 +124,12 @@
 <div class="header-fixed">
   <div class="container">
     <div class="header-fixed__inner">
-      <button class="btn header__btn" data-micromodal-trigger="early-access-modal">Early Acceses</button>
+      <button
+        class="btn header__btn"
+        data-micromodal-trigger="early-access-modal"
+      >
+        Early Acceses
+      </button>
       <div>
         <button class="header__search" data-micromodal-trigger="search-modal">
           <svg class="i-search" viewBox="0 0 16 16">
@@ -124,6 +149,7 @@
     </div>
   </div>
 </div>
+
 <!-- Early Access Modal -->
 <div class="modal" id="early-access-modal" aria-hidden="true">
   <div class="modal__overlay" data-micromodal-close tabindex="-1">
@@ -214,6 +240,110 @@
     </form>
   </div>
 </div>
+<!-- Success -->
+<div class="modal" id="success-modal" aria-hidden="true">
+  <div class="modal__overlay" data-micromodal-close tabindex="-1">
+    <form
+      class="modal__container"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="success-modal-title"
+    >
+      <button
+        class="modal__close"
+        aria-label="Close modal"
+        type="button"
+        data-micromodal-close
+      >
+        <svg class="i-close" viewBox="0 0 22 22">
+  <path d="M1 1L11 11M21 21L11 11M11 11L21 1L1 21" />
+</svg>
+      </button>
+
+      <main class="modal__content" id="success-modal-content">
+        <div class="sa-wrap">
+          <div class="sa-icon sa-success animate">
+            <span class="sa-line sa-tip animateSuccessTip"></span>
+            <span class="sa-line sa-long animateSuccessLong"></span>
+            <div class="sa-placeholder"></div>
+            <div class="sa-fix"></div>
+          </div>
+        </div>
+        <h2 class="modal__title" id="success-modal-title">
+          Data sent successfully
+        </h2>
+      </main>
+    </form>
+  </div>
+</div>
+
+<!-- Error -->
+<div class="modal" id="error-modal" aria-hidden="true">
+  <div class="modal__overlay" data-micromodal-close tabindex="-1">
+    <form
+      class="modal__container"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="error-modal-title"
+    >
+      <button
+        class="modal__close"
+        aria-label="Close modal"
+        type="button"
+        data-micromodal-close
+      >
+        <svg class="i-close" viewBox="0 0 22 22">
+  <path d="M1 1L11 11M21 21L11 11M11 11L21 1L1 21" />
+</svg>
+      </button>
+
+      <main class="modal__content" id="error-modal-content">
+        <div class="sa-wrap">
+          <svg viewBox="0 0 130.2 130.2">
+            <circle
+              class="path circle"
+              fill="none"
+              stroke="#D06079"
+              stroke-width="6"
+              stroke-miterlimit="10"
+              cx="65.1"
+              cy="65.1"
+              r="62.1"
+            />
+            <line
+              class="path line"
+              fill="none"
+              stroke="#D06079"
+              stroke-width="6"
+              stroke-linecap="round"
+              stroke-miterlimit="10"
+              x1="34.4"
+              y1="37.9"
+              x2="95.8"
+              y2="92.3"
+            />
+            <line
+              class="path line"
+              fill="none"
+              stroke="#D06079"
+              stroke-width="6"
+              stroke-linecap="round"
+              stroke-miterlimit="10"
+              x1="95.8"
+              y1="38"
+              x2="34.4"
+              y2="92.2"
+            />
+          </svg>
+        </div>
+        <h2 class="modal__title" id="error-modal-title">
+          Something went wrong
+        </h2>
+      </main>
+    </form>
+  </div>
+</div>
+
 <!-- Menu -->
 <div class="menu">
   <div class="menu__container">
@@ -278,6 +408,22 @@
     </div>
   </div>
 </div>
+<!-- Cookie -->
+<div class="cookie">
+  <div class="container">
+    <div class="cookie__inner">
+      <div class="cookie__text">
+        <p>
+          Cookies help us deliver our services. By using our services, you agree
+          to our use of cookies.
+        </p>
+        <a href="">Learn more</a>
+      </div>
+      <button class="btn js-close-cookie">OK</button>
+    </div>
+  </div>
+</div>
+
 
 <!-- Blog Filter -->
 <form class="filter">
@@ -399,67 +545,52 @@
 </form>
 
 <main class="blog-container">
-
   <div class="blog-header">
     <div class="container">
       <h1 class="h1 blog-title">Blog</h1>
       <button class="btn blog-filter-btn js-open-blog-filter">Filter</button>
       <div class="blog-tags link-tags--light">
         <a class="link-tag link-tag--active" href="">
-          All
-          <span class="link-tag__num">99</span>
+          All <span class="link-tag__num">99</span>
         </a>
         <a class="link-tag" href="">
-          #tech
-          <span class="link-tag__num">12</span>
+          #tech <span class="link-tag__num">12</span>
         </a>
         <a class="link-tag" href="">
-          #news
-          <span class="link-tag__num">5</span>
+          #news <span class="link-tag__num">5</span>
         </a>
         <a class="link-tag" href="">
-          #publishing
-          <span class="link-tag__num">17</span>
+          #publishing <span class="link-tag__num">17</span>
         </a>
         <a class="link-tag" href="">
-          #tech
-          <span class="link-tag__num">12</span>
+          #tech <span class="link-tag__num">12</span>
         </a>
         <a class="link-tag" href="">
-          #news
-          <span class="link-tag__num">5</span>
+          #news <span class="link-tag__num">5</span>
         </a>
         <a class="link-tag" href="">
-          #tech
-          <span class="link-tag__num">12</span>
+          #tech <span class="link-tag__num">12</span>
         </a>
         <a class="link-tag" href="">
-          #news
-          <span class="link-tag__num">5</span>
+          #news <span class="link-tag__num">5</span>
         </a>
         <a class="link-tag" href="">
-          #publishing
-          <span class="link-tag__num">17</span>
+          #publishing <span class="link-tag__num">17</span>
         </a>
         <a class="link-tag" href="">
-          #tech
-          <span class="link-tag__num">12</span>
+          #tech <span class="link-tag__num">12</span>
         </a>
         <a class="link-tag" href="">
-          #news
-          <span class="link-tag__num">5</span>
+          #news <span class="link-tag__num">5</span>
         </a>
         <a class="link-tag" href="">
-          #publishing
-          <span class="link-tag__num">17</span>
+          #publishing <span class="link-tag__num">17</span>
         </a>
         <a class="link-tag" href="">
-          #tech
-          <span class="link-tag__num">12</span>
+          #tech <span class="link-tag__num">12</span>
         </a>
         <a class="link-tag" href="">
-          #news
-          <span class="link-tag__num">5</span>
+          #news <span class="link-tag__num">5</span>
         </a>
       </div>
     </div>
@@ -536,18 +667,21 @@
     </div>
 
     <div class="blog-news">
-
       <div class="news-block">
         <a class="news-block__img-wrap" href="">
-          <img src="img/news2.jpg" alt="Nintendo Switch Open Beta Now" class="news-block__img">
+          <img
+            src="img/news2.jpg"
+            alt="Nintendo Switch Open Beta Now"
+            class="news-block__img"
+          />
         </a>
         <div class="news-block__body">
           <p class="news-block__title h4">
             <a href="">Nintendo Switch Open Beta Now</a>
           </p>
           <p class="news-block__text">
-            We are now at the open beta phase of the Manu Nintendo Switch licence. Its full com We are now at the open
-            beta...
+            We are now at the open beta phase of the Manu Nintendo Switch
+            licence. Its full com We are now at the open beta...
           </p>
           <div class="news-block__footer">
             <a class="news-block__tag" href="">12 JUL</a>
@@ -558,15 +692,19 @@
       </div>
       <div class="news-block">
         <a class="news-block__img-wrap" href="">
-          <img src="img/news1.jpg" alt="Nintendo Switch Open Beta Now" class="news-block__img">
+          <img
+            src="img/news1.jpg"
+            alt="Nintendo Switch Open Beta Now"
+            class="news-block__img"
+          />
         </a>
         <div class="news-block__body">
           <p class="news-block__title h4">
             <a href="">Nintendo Switch Open Beta Now</a>
           </p>
           <p class="news-block__text">
-            We are now at the open beta phase of the Manu Nintendo Switch licence. Its full com We are now at the open
-            beta...
+            We are now at the open beta phase of the Manu Nintendo Switch
+            licence. Its full com We are now at the open beta...
           </p>
           <div class="news-block__footer">
             <a class="news-block__tag" href="">12 JUL</a>
@@ -577,15 +715,19 @@
       </div>
       <div class="news-block">
         <a class="news-block__img-wrap" href="">
-          <img src="img/news2.jpg" alt="Nintendo Switch Open Beta Now" class="news-block__img">
+          <img
+            src="img/news2.jpg"
+            alt="Nintendo Switch Open Beta Now"
+            class="news-block__img"
+          />
         </a>
         <div class="news-block__body">
           <p class="news-block__title h4">
             <a href="">Nintendo Switch Open Beta Now</a>
           </p>
           <p class="news-block__text">
-            We are now at the open beta phase of the Manu Nintendo Switch licence. Its full com We are now at the open
-            beta...
+            We are now at the open beta phase of the Manu Nintendo Switch
+            licence. Its full com We are now at the open beta...
           </p>
           <div class="news-block__footer">
             <a class="news-block__tag" href="">12 JUL</a>
@@ -596,15 +738,19 @@
       </div>
       <div class="news-block">
         <a class="news-block__img-wrap" href="">
-          <img src="img/news1.jpg" alt="Nintendo Switch Open Beta Now" class="news-block__img">
+          <img
+            src="img/news1.jpg"
+            alt="Nintendo Switch Open Beta Now"
+            class="news-block__img"
+          />
         </a>
         <div class="news-block__body">
           <p class="news-block__title h4">
             <a href="">Nintendo Switch Open Beta Now</a>
           </p>
           <p class="news-block__text">
-            We are now at the open beta phase of the Manu Nintendo Switch licence. Its full com We are now at the open
-            beta...
+            We are now at the open beta phase of the Manu Nintendo Switch
+            licence. Its full com We are now at the open beta...
           </p>
           <div class="news-block__footer">
             <a class="news-block__tag" href="">12 JUL</a>
@@ -615,15 +761,19 @@
       </div>
       <div class="news-block">
         <a class="news-block__img-wrap" href="">
-          <img src="img/news2.jpg" alt="Nintendo Switch Open Beta Now" class="news-block__img">
+          <img
+            src="img/news2.jpg"
+            alt="Nintendo Switch Open Beta Now"
+            class="news-block__img"
+          />
         </a>
         <div class="news-block__body">
           <p class="news-block__title h4">
             <a href="">Nintendo Switch Open Beta Now</a>
           </p>
           <p class="news-block__text">
-            We are now at the open beta phase of the Manu Nintendo Switch licence. Its full com We are now at the open
-            beta...
+            We are now at the open beta phase of the Manu Nintendo Switch
+            licence. Its full com We are now at the open beta...
           </p>
           <div class="news-block__footer">
             <a class="news-block__tag" href="">12 JUL</a>
@@ -634,15 +784,19 @@
       </div>
       <div class="news-block">
         <a class="news-block__img-wrap" href="">
-          <img src="img/news1.jpg" alt="Nintendo Switch Open Beta Now" class="news-block__img">
+          <img
+            src="img/news1.jpg"
+            alt="Nintendo Switch Open Beta Now"
+            class="news-block__img"
+          />
         </a>
         <div class="news-block__body">
           <p class="news-block__title h4">
             <a href="">Nintendo Switch Open Beta Now</a>
           </p>
           <p class="news-block__text">
-            We are now at the open beta phase of the Manu Nintendo Switch licence. Its full com We are now at the open
-            beta...
+            We are now at the open beta phase of the Manu Nintendo Switch
+            licence. Its full com We are now at the open beta...
           </p>
           <div class="news-block__footer">
             <a class="news-block__tag" href="">12 JUL</a>
@@ -653,15 +807,19 @@
       </div>
       <div class="news-block">
         <a class="news-block__img-wrap" href="">
-          <img src="img/news2.jpg" alt="Nintendo Switch Open Beta Now" class="news-block__img">
+          <img
+            src="img/news2.jpg"
+            alt="Nintendo Switch Open Beta Now"
+            class="news-block__img"
+          />
         </a>
         <div class="news-block__body">
           <p class="news-block__title h4">
             <a href="">Nintendo Switch Open Beta Now</a>
           </p>
           <p class="news-block__text">
-            We are now at the open beta phase of the Manu Nintendo Switch licence. Its full com We are now at the open
-            beta...
+            We are now at the open beta phase of the Manu Nintendo Switch
+            licence. Its full com We are now at the open beta...
           </p>
           <div class="news-block__footer">
             <a class="news-block__tag" href="">12 JUL</a>
@@ -673,12 +831,10 @@
     </div>
 
     <div class="pagination">
-      <a class="pagination__arrow" href="">
-        <svg class="i-polygon" viewBox="0 0 7 9">
+      <a class="pagination__arrow" href=""> <svg class="i-polygon" viewBox="0 0 7 9">
   <path d="M0.6 4.15359C0.333333 4.30755 0.333334 4.69245 0.6 4.84641L6.15 8.0507C6.41667 8.20466 6.75 8.01221 6.75 7.70429L6.75 1.29571C6.75 0.987785 6.41667 0.795335 6.15 0.949296L0.6 4.15359Z"
   />
-</svg>
-      </a>
+</svg> </a>
       <div>
         <a class="pagination__num pagination__num--active" href="">1</a>
         <a class="pagination__num" href="">2</a>
@@ -687,15 +843,12 @@
         <a class="pagination__num" href="">......</a>
         <a class="pagination__num" href="">37</a>
       </div>
-      <a class="pagination__arrow" href="">
-        <svg class="i-polygon" viewBox="0 0 7 9">
+      <a class="pagination__arrow" href=""> <svg class="i-polygon" viewBox="0 0 7 9">
   <path d="M0.6 4.15359C0.333333 4.30755 0.333334 4.69245 0.6 4.84641L6.15 8.0507C6.41667 8.20466 6.75 8.01221 6.75 7.70429L6.75 1.29571C6.75 0.987785 6.41667 0.795335 6.15 0.949296L0.6 4.15359Z"
   />
-</svg>
-      </a>
+</svg> </a>
     </div>
   </div>
-
 </main>
 
 <script defer src="js/blog.js"></script>

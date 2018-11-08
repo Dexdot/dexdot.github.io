@@ -94,31 +94,23 @@
       <div class="header__half header__half--left">
         <a class="header__logo" href="./index.html">
           
-          <img src="img/logo.svg" alt="Manu - video game maker">
+          <img src="img/logo.svg" alt="Manu - video game maker" />
         </a>
       </div>
       <div class="header__half header__half--right">
         <nav class="header__nav">
           <ul class="header__list">
             <li class="header__list-item">
-              <a class="header__link" href="./blog.html">
-                Blog
-              </a>
+              <a class="header__link" href="./blog.html"> Blog </a>
             </li>
             <li class="header__list-item">
-              <a class="header__link" href="">
-                Forum
-              </a>
+              <a class="header__link" href=""> Forum </a>
             </li>
             <li class="header__list-item">
-              <a class="header__link" href="./cases.html">
-                Showcases
-              </a>
+              <a class="header__link" href="./cases.html"> Showcases </a>
             </li>
             <li class="header__list-item">
-              <a class="header__link" href="./support.html">
-                Support
-              </a>
+              <a class="header__link" href="./support.html"> Support </a>
             </li>
           </ul>
         </nav>
@@ -137,8 +129,36 @@
   />
 </svg>
           </a>
+          <a class="header__logout" href="./reg.html">
+            <svg class="i-logout" viewBox="0 0 512 512">
+  <path
+    d="M255.15,468.625H63.787c-11.737,0-21.262-9.526-21.262-21.262V64.638c0-11.737,9.526-21.262,21.262-21.262H255.15
+
+	c11.758,0,21.262-9.504,21.262-21.262S266.908,0.85,255.15,0.85H63.787C28.619,0.85,0,29.47,0,64.638v382.724
+
+	c0,35.168,28.619,63.787,63.787,63.787H255.15c11.758,0,21.262-9.504,21.262-21.262
+
+	C276.412,478.129,266.908,468.625,255.15,468.625z"
+  />
+  <path
+    d="M505.664,240.861L376.388,113.286c-8.335-8.25-21.815-8.143-30.065,0.213s-8.165,21.815,0.213,30.065l92.385,91.173
+
+	H191.362c-11.758,0-21.262,9.504-21.262,21.262c0,11.758,9.504,21.263,21.262,21.263h247.559l-92.385,91.173
+
+	c-8.377,8.25-8.441,21.709-0.213,30.065c4.167,4.21,9.653,6.336,15.139,6.336c5.401,0,10.801-2.041,14.926-6.124l129.276-127.575
+
+	c4.04-3.997,6.336-9.441,6.336-15.139C512,250.302,509.725,244.88,505.664,240.861z"
+  />
+</svg>
+
+          </a>
         </div>
-        <button class="btn header__btn" data-micromodal-trigger="early-access-modal">Early Acceses</button>
+        <button
+          class="btn header__btn"
+          data-micromodal-trigger="early-access-modal"
+        >
+          Early Acceses
+        </button>
       </div>
       <button class="hamburger hamburger--slider js-open-menu" type="button">
   <span class="hamburger-box">
@@ -152,7 +172,12 @@
 <div class="header-fixed">
   <div class="container">
     <div class="header-fixed__inner">
-      <button class="btn header__btn" data-micromodal-trigger="early-access-modal">Early Acceses</button>
+      <button
+        class="btn header__btn"
+        data-micromodal-trigger="early-access-modal"
+      >
+        Early Acceses
+      </button>
       <div>
         <button class="header__search" data-micromodal-trigger="search-modal">
           <svg class="i-search" viewBox="0 0 16 16">
@@ -172,6 +197,7 @@
     </div>
   </div>
 </div>
+
 <!-- Early Access Modal -->
 <div class="modal" id="early-access-modal" aria-hidden="true">
   <div class="modal__overlay" data-micromodal-close tabindex="-1">
@@ -262,6 +288,110 @@
     </form>
   </div>
 </div>
+<!-- Success -->
+<div class="modal" id="success-modal" aria-hidden="true">
+  <div class="modal__overlay" data-micromodal-close tabindex="-1">
+    <form
+      class="modal__container"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="success-modal-title"
+    >
+      <button
+        class="modal__close"
+        aria-label="Close modal"
+        type="button"
+        data-micromodal-close
+      >
+        <svg class="i-close" viewBox="0 0 22 22">
+  <path d="M1 1L11 11M21 21L11 11M11 11L21 1L1 21" />
+</svg>
+      </button>
+
+      <main class="modal__content" id="success-modal-content">
+        <div class="sa-wrap">
+          <div class="sa-icon sa-success animate">
+            <span class="sa-line sa-tip animateSuccessTip"></span>
+            <span class="sa-line sa-long animateSuccessLong"></span>
+            <div class="sa-placeholder"></div>
+            <div class="sa-fix"></div>
+          </div>
+        </div>
+        <h2 class="modal__title" id="success-modal-title">
+          Data sent successfully
+        </h2>
+      </main>
+    </form>
+  </div>
+</div>
+
+<!-- Error -->
+<div class="modal" id="error-modal" aria-hidden="true">
+  <div class="modal__overlay" data-micromodal-close tabindex="-1">
+    <form
+      class="modal__container"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="error-modal-title"
+    >
+      <button
+        class="modal__close"
+        aria-label="Close modal"
+        type="button"
+        data-micromodal-close
+      >
+        <svg class="i-close" viewBox="0 0 22 22">
+  <path d="M1 1L11 11M21 21L11 11M11 11L21 1L1 21" />
+</svg>
+      </button>
+
+      <main class="modal__content" id="error-modal-content">
+        <div class="sa-wrap">
+          <svg viewBox="0 0 130.2 130.2">
+            <circle
+              class="path circle"
+              fill="none"
+              stroke="#D06079"
+              stroke-width="6"
+              stroke-miterlimit="10"
+              cx="65.1"
+              cy="65.1"
+              r="62.1"
+            />
+            <line
+              class="path line"
+              fill="none"
+              stroke="#D06079"
+              stroke-width="6"
+              stroke-linecap="round"
+              stroke-miterlimit="10"
+              x1="34.4"
+              y1="37.9"
+              x2="95.8"
+              y2="92.3"
+            />
+            <line
+              class="path line"
+              fill="none"
+              stroke="#D06079"
+              stroke-width="6"
+              stroke-linecap="round"
+              stroke-miterlimit="10"
+              x1="95.8"
+              y1="38"
+              x2="34.4"
+              y2="92.2"
+            />
+          </svg>
+        </div>
+        <h2 class="modal__title" id="error-modal-title">
+          Something went wrong
+        </h2>
+      </main>
+    </form>
+  </div>
+</div>
+
 <!-- Menu -->
 <div class="menu">
   <div class="menu__container">
@@ -326,112 +456,159 @@
     </div>
   </div>
 </div>
+<!-- Cookie -->
+<div class="cookie">
+  <div class="container">
+    <div class="cookie__inner">
+      <div class="cookie__text">
+        <p>
+          Cookies help us deliver our services. By using our services, you agree
+          to our use of cookies.
+        </p>
+        <a href="">Learn more</a>
+      </div>
+      <button class="btn js-close-cookie">OK</button>
+    </div>
+  </div>
+</div>
+
 
 <main>
   <section class="hero js-observe">
-
     <div class="hero__images">
-      <img class="js-observe hero__img hero__img--dragon" src="img/main/hero/dragon.png" alt="Dragon">
-      <img class="js-observe hero__img hero__img--monster" src="img/main/hero/monster.png" alt="Monster">
-      <img class="js-observe hero__img hero__img--boy" src="img/main/hero/boy.png" alt="Boy">
-      <img class="js-observe hero__img hero__img--coin" src="img/main/hero/coin.png" alt="Coin">
-      <img class="js-observe hero__img hero__img--diamond" src="img/main/hero/diamond.png" alt="Diamond">
-      <img class="js-observe hero__img hero__img--coin-2" src="img/main/hero/coin-2.png" alt="Coin">
-      <img class="js-observe hero__img hero__img--sparks" src="img/main/hero/sparks.png" alt="Sparks">
+      <img
+        class="js-observe hero__img hero__img--dragon"
+        src="img/main/hero/dragon.png"
+        alt="Dragon"
+      />
+      <img
+        class="js-observe hero__img hero__img--monster"
+        src="img/main/hero/monster.png"
+        alt="Monster"
+      />
+      <img
+        class="js-observe hero__img hero__img--boy"
+        src="img/main/hero/boy.png"
+        alt="Boy"
+      />
+      <img
+        class="js-observe hero__img hero__img--coin"
+        src="img/main/hero/coin.png"
+        alt="Coin"
+      />
+      <img
+        class="js-observe hero__img hero__img--diamond"
+        src="img/main/hero/diamond.png"
+        alt="Diamond"
+      />
+      <img
+        class="js-observe hero__img hero__img--coin-2"
+        src="img/main/hero/coin-2.png"
+        alt="Coin"
+      />
+      <img
+        class="js-observe hero__img hero__img--sparks"
+        src="img/main/hero/sparks.png"
+        alt="Sparks"
+      />
     </div>
 
     <!-- hero__content -->
     <div class="container">
       <div class="hero__content js-observe">
-        <h1 class="hero__title js-observe" data-delay="100">MANU Video<br> Game Maker</h1>
+        <h1 class="hero__title js-observe" data-delay="100">
+          MANU Video<br />
+          Game Maker
+        </h1>
         <div class="line js-observe" data-delay="200"></div>
         <p class="hero__text js-observe" data-delay="400">
-          Make 2D and 3D Games.<br>
+          Make 2D and 3D Games.<br />
           Powerful. Easy to Use. No Coding
         </p>
-        <button class="btn hero__btn js-observe" data-delay="600" data-micromodal-trigger="early-access-modal">
+        <button
+          class="btn hero__btn js-observe"
+          data-delay="600"
+          data-micromodal-trigger="early-access-modal"
+        >
           Early Acceses
         </button>
       </div>
     </div>
     <!-- ./hero__content -->
-
   </section>
   <section class="advantages">
     <div class="container">
-
       <!-- advantages__content -->
       <div class="advantages__content">
         <ul class="advantages__list">
-
           <li class="advantage js-observe fade3d" data-delay="100">
             <small class="advantage__num">01</small>
             <h3 class="advantage__title js-observe fade3d__title">
-              Intuitive Interface
-              <span class="line"></span>
+              Intuitive Interface <span class="line"></span>
             </h3>
-            <p class="advantage__text">
-              Click, drag&drop and get started
-            </p>
+            <p class="advantage__text">Click, drag&drop and get started</p>
           </li>
 
           <li class="advantage js-observe fade3d" data-delay="250">
             <small class="advantage__num">02</small>
             <h3 class="advantage__title js-observe fade3d__title">
-              Flexibility
-              <span class="line"></span>
+              Flexibility <span class="line"></span>
             </h3>
-            <p class="advantage__text">
-              No limits to your imagination
-            </p>
+            <p class="advantage__text">No limits to your imagination</p>
           </li>
 
           <li class="advantage js-observe fade3d" data-delay="400">
             <small class="advantage__num">03</small>
             <h3 class="advantage__title js-observe fade3d__title">
-              More in Less Time
-              <span class="line"></span>
+              More in Less Time <span class="line"></span>
             </h3>
             <p class="advantage__text">
-              Speed up your game development, increase productivity and decrease costs
+              Speed up your game development, increase productivity and decrease
+              costs
             </p>
           </li>
 
           <li class="advantage js-observe fade3d" data-delay="550">
             <small class="advantage__num">04</small>
             <h3 class="advantage__title js-observe fade3d__title">
-              High performance
-              <span class="line"></span>
+              High performance <span class="line"></span>
             </h3>
             <p class="advantage__text">
-              High performance: allows you to work with complex projects and large scenes
+              High performance: allows you to work with complex projects and
+              large scenes
             </p>
           </li>
-
         </ul>
       </div>
       <!-- ./advantages__content -->
-
     </div>
   </section>
   <section class="cta">
-    <img class="cta__img js-observe" src="img/main/cta.png" alt="Make 2D and 3D Games" data-delay="600">
+    <img
+      class="cta__img js-observe"
+      src="img/main/cta.png"
+      alt="Make 2D and 3D Games"
+      data-delay="600"
+    />
     <div class="cta__cover js-observe"></div>
 
     <div class="container">
       <div class="cta__content fade3d js-observe" data-delay="800">
-        <h2 class="main-header cta__title fade3d__title js-observe" data-delay="800">
+        <h2
+          class="main-header cta__title fade3d__title js-observe"
+          data-delay="800"
+        >
           Make 2D and 3D Games
         </h2>
         <p class="cta__text js-observe" data-delay="1000">
-          Import your 2D/3D graphics. Adjust materials, shaders and high level components
+          Import your 2D/3D graphics. Adjust materials, shaders and high level
+          components
         </p>
       </div>
     </div>
   </section>
   <section class="about">
     <div class="container">
-
       <!-- about-block -->
       <div class="about-block">
         <div class="about-block__img js-observe">
@@ -441,13 +618,15 @@
         </div>
         <div class="about-block__body fade3d js-observe">
           <small class="about-block__num js-observe">01</small>
-          <h2 class="about-block__title fade3d__title js-observe main-header--sm">
-            Unique Character Editor
-            <span class="line js-observe"></span>
+          <h2
+            class="about-block__title fade3d__title js-observe main-header--sm"
+          >
+            Unique Character Editor <span class="line js-observe"></span>
           </h2>
           <p class="about-block__text js-observe">
-            Create your own game interface, add levels, cutscenes, set links between them and different menu screens,
-            create characters and set their states.
+            Create your own game interface, add levels, cutscenes, set links
+            between them and different menu screens, create characters and set
+            their states.
           </p>
           <a class="about-block__link js-observe" href="">
             <svg class="i-circle-arrow" viewBox="0 0 48 48" fill="none">
@@ -478,8 +657,7 @@
       <stop offset="1" stop-color="white" stop-opacity="0" />
     </linearGradient>
   </defs>
-</svg>
-            <span>More info</span>
+</svg> <span>More info</span>
           </a>
         </div>
       </div>
@@ -489,12 +667,14 @@
       <div class="about-block">
         <div class="about-block__body fade3d js-observe">
           <small class="about-block__num js-observe">02</small>
-          <h2 class="about-block__title fade3d__title js-observe main-header--sm">
-            Sound Design
-            <span class="line js-observe"></span>
+          <h2
+            class="about-block__title fade3d__title js-observe main-header--sm"
+          >
+            Sound Design <span class="line js-observe"></span>
           </h2>
           <p class="about-block__text js-observe">
-            Add sounds to your animations, make effects, use reverb zones and mix sounds
+            Add sounds to your animations, make effects, use reverb zones and
+            mix sounds
           </p>
           <a class="about-block__link js-observe" href="">
             <svg class="i-circle-arrow" viewBox="0 0 48 48" fill="none">
@@ -525,38 +705,40 @@
       <stop offset="1" stop-color="white" stop-opacity="0" />
     </linearGradient>
   </defs>
-</svg>
-            <span>More info</span>
+</svg> <span>More info</span>
           </a>
         </div>
         <div class="about-block__img js-observe">
-          <img src="img/main/sound.jpg" alt="Sound Design">
+          <img src="img/main/sound.jpg" alt="Sound Design" />
         </div>
       </div>
       <!-- ./about-block -->
-
     </div>
   </section>
   <section class="export">
     <div class="container">
       <div class="export__content fade3d js-observe">
         <h2 class="export__title fade3d__title js-observe main-header">
-          Multiplatform Export
-          <span class="line js-observe"></span>
+          Multiplatform Export <span class="line js-observe"></span>
           <span class="export__num js-observe">03</span>
         </h2>
         <p class="export__text js-observe">
-          Optimize your games for different platforms:<br>
+          Optimize your games for different platforms:<br />
           Android, iOS, consoles, PC and Mac.
         </p>
       </div>
     </div>
-    <img class="export__img visible" src="img/main/multiplatform.png" alt="Multiplatform Export">
+    <img
+      class="export__img visible"
+      src="img/main/multiplatform.png"
+      alt="Multiplatform Export"
+    />
   </section>
   <section class="features">
-
     <div class="features__header fade3d js-observe">
-      <h2 class="main-header--sm features__title fade3d__title js-observe">Advanced Features</h2>
+      <h2 class="main-header--sm features__title fade3d__title js-observe">
+        Advanced Features
+      </h2>
     </div>
 
     <!-- features__list -->
@@ -565,30 +747,26 @@
         <div class="feature__bg"></div>
         <small class="feature__num">01</small>
         <h3 class="feature__title fade3d__title js-observe">
-          Balance
-          <span class="line"></span>
+          Balance <span class="line"></span>
         </h3>
         <p class="feature__text">
-          Game balancing becomes easier than ever: edit all the essential parameters in one place
+          Game balancing becomes easier than ever: edit all the essential
+          parameters in one place
         </p>
       </li>
       <li class="feature fade3d js-observe" data-delay="350">
         <div class="feature__bg"></div>
         <small class="feature__num">02</small>
         <h3 class="feature__title fade3d__title js-observe">
-          Monetisation
-          <span class="line"></span>
+          Monetisation <span class="line"></span>
         </h3>
-        <p class="feature__text">
-          Advertise and make money. Fast and easy.
-        </p>
+        <p class="feature__text">Advertise and make money. Fast and easy.</p>
       </li>
       <li class="feature fade3d js-observe" data-delay="500">
         <div class="feature__bg"></div>
         <small class="feature__num">03</small>
         <h3 class="feature__title fade3d__title js-observe">
-          Analitics
-          <span class="line"></span>
+          Analitics <span class="line"></span>
         </h3>
         <p class="feature__text">
           Analyse your gamer's behavior, improve your games
@@ -596,17 +774,19 @@
       </li>
     </ul>
     <!-- ./features__list -->
-
   </section>
   <section class="testimonials">
     <div class="container">
       <div class="testimonials__header fade3d js-observe">
-        <h2 class="main-header--sm fade3d__title js-observe testimonials__title">Testimonials</h2>
+        <h2
+          class="main-header--sm fade3d__title js-observe testimonials__title"
+        >
+          Testimonials
+        </h2>
       </div>
 
       <!-- testimonials__content -->
       <div class="testimonials__content">
-
         <!-- testimonials__arrows -->
         <div class="testimonials__arrows">
           <button class="testimonials__arrow testimonials__arrow--prev">
@@ -676,47 +856,52 @@
 
         <!-- testimonials__slider -->
         <div class="testimonials__slider">
-
           <div class="testimonials__col">
             <button class="testimonials__btn is-active">
-              <div class="testimonials__btn-img" style="background-image: url('img/main/t1.jpg')"></div>
+              <div
+                class="testimonials__btn-img"
+                style="background-image: url('img/main/t1.jpg')"
+              ></div>
               <span class="line"></span>
             </button>
             <button class="testimonials__btn">
-              <div class="testimonials__btn-img" style="background-image: url('img/main/t2.jpg')"></div>
+              <div
+                class="testimonials__btn-img"
+                style="background-image: url('img/main/t2.jpg')"
+              ></div>
               <span class="line"></span>
             </button>
             <button class="testimonials__btn">
-              <div class="testimonials__btn-img" style="background-image: url('img/main/t3.jpg')"></div>
+              <div
+                class="testimonials__btn-img"
+                style="background-image: url('img/main/t3.jpg')"
+              ></div>
               <span class="line"></span>
             </button>
           </div>
 
           <!-- testimonials__slides -->
           <div class="testimonials__slides">
-
             <div class="testi-slide is-active">
               <div>
                 <div class="testi-slide__img-wrap">
-                  <div class="testi-slide__img" style="background-image: url('img/main/t1.jpg')"></div>
+                  <div
+                    class="testi-slide__img"
+                    style="background-image: url('img/main/t1.jpg')"
+                  ></div>
                 </div>
                 <h3 class="testi-slide__name">Becky Mandelbaum</h3>
                 <p class="testi-slide__spec">Game Designer</p>
               </div>
               <div class="testi-slide__text-wrap">
                 <p class="testi-slide__text">
-                  “Sed ei delicata oportere, in
-                  novum aliquid consequat vis. Has
-                  integre docendi corpora ut, ius eu
-                  modo falli. Discere delenit
-                  impedit an mea, clita lobortis sea
-                  ea. Praesent dignissim interesset
-                  id has. Pri omnis luptatum et.
-                  No quo modus partem
-                  moderatius, sea et sale mazim
-                  neglegentur, no sale justo noster
-                  vis. Duo affert persius in, mollis
-                  tamquam malorum ius in.“
+                  “Sed ei delicata oportere, in novum aliquid consequat vis. Has
+                  integre docendi corpora ut, ius eu modo falli. Discere delenit
+                  impedit an mea, clita lobortis sea ea. Praesent dignissim
+                  interesset id has. Pri omnis luptatum et. No quo modus partem
+                  moderatius, sea et sale mazim neglegentur, no sale justo
+                  noster vis. Duo affert persius in, mollis tamquam malorum ius
+                  in.“
                 </p>
               </div>
             </div>
@@ -724,20 +909,20 @@
             <div class="testi-slide">
               <div>
                 <div class="testi-slide__img-wrap">
-                  <div class="testi-slide__img" style="background-image: url('img/main/t2.jpg')"></div>
+                  <div
+                    class="testi-slide__img"
+                    style="background-image: url('img/main/t2.jpg')"
+                  ></div>
                 </div>
                 <h3 class="testi-slide__name">Ilya Voznyakov</h3>
                 <p class="testi-slide__spec">SMM Manager</p>
               </div>
               <div class="testi-slide__text-wrap">
                 <p class="testi-slide__text">
-                  “Sed ei delicata oportere, in
-                  novum aliquid consequat vis. Has
-                  integre docendi corpora ut, ius eu
-                  modo falli. Discere delenit
-                  impedit an mea, clita lobortis sea
-                  ea. Praesent dignissim interesset
-                  id has. Pri omnis luptatum et.
+                  “Sed ei delicata oportere, in novum aliquid consequat vis. Has
+                  integre docendi corpora ut, ius eu modo falli. Discere delenit
+                  impedit an mea, clita lobortis sea ea. Praesent dignissim
+                  interesset id has. Pri omnis luptatum et.
                 </p>
               </div>
             </div>
@@ -745,44 +930,40 @@
             <div class="testi-slide">
               <div>
                 <div class="testi-slide__img-wrap">
-                  <div class="testi-slide__img" style="background-image: url('img/main/t3.jpg')"></div>
+                  <div
+                    class="testi-slide__img"
+                    style="background-image: url('img/main/t3.jpg')"
+                  ></div>
                 </div>
                 <h3 class="testi-slide__name">Pavel Malutin</h3>
                 <p class="testi-slide__spec">QA Engineer</p>
               </div>
               <div class="testi-slide__text-wrap">
                 <p class="testi-slide__text">
-                  “Sed ei delicata oportere, in
-                  novum aliquid consequat vis. Has
-                  integre docendi corpora ut, ius eu
-                  modo falli. Discere delenit
-                  impedit an mea, clita lobortis sea
-                  ea. Praesent dignissim interesset
-                  id has. Pri omnis luptatum et.
-                  No quo modus partem
-                  moderatius, sea et sale mazim
-                  neglegentur, no sale justo noster
-                  vis. Duo affert persius in, mollis
-                  tamquam malorum ius in.“
+                  “Sed ei delicata oportere, in novum aliquid consequat vis. Has
+                  integre docendi corpora ut, ius eu modo falli. Discere delenit
+                  impedit an mea, clita lobortis sea ea. Praesent dignissim
+                  interesset id has. Pri omnis luptatum et. No quo modus partem
+                  moderatius, sea et sale mazim neglegentur, no sale justo
+                  noster vis. Duo affert persius in, mollis tamquam malorum ius
+                  in.“
                 </p>
               </div>
             </div>
-
           </div>
           <!-- ./testimonials__slides -->
-
         </div>
         <!-- ./testimonials__slider -->
-
       </div>
       <!-- ./testimonials__content -->
-
     </div>
   </section>
   <section class="alpha">
     <div class="alpha__container">
       <div class="alpha__header">
-        <p class="alpha__text js-observe">Change the way you make 2D/3D games easier</p>
+        <p class="alpha__text js-observe">
+          Change the way you make 2D/3D games easier
+        </p>
         <div class="alpha__line js-observe"></div>
       </div>
       <div class="alpha__body">
@@ -796,43 +977,53 @@
 
           <div class="mdc-text-field-wrap js-observe">
             <div class="mdc-text-field mdc-text-field--outlined">
-              <input class="mdc-text-field__input" type="text" required minlength="1">
+              <input
+                class="mdc-text-field__input"
+                type="text"
+                required
+                minlength="1"
+              />
               <label class="mdc-floating-label">First Name</label>
               <div class="mdc-notched-outline">
-                <svg>
-                  <path class="mdc-notched-outline__path" />
-                </svg>
+                <svg><path class="mdc-notched-outline__path" /></svg>
               </div>
               <div class="mdc-notched-outline__idle"></div>
             </div>
-            <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" aria-hidden="true">
+            <p
+              class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
+              aria-hidden="true"
+            >
               Enter your name
             </p>
           </div>
 
           <div class="mdc-text-field-wrap js-observe">
             <div class="mdc-text-field mdc-text-field--outlined">
-              <input class="mdc-text-field__input" type="email" required minlength="1">
+              <input
+                class="mdc-text-field__input"
+                type="email"
+                required
+                minlength="1"
+              />
               <label class="mdc-floating-label">E-mail</label>
               <div class="mdc-notched-outline">
-                <svg>
-                  <path class="mdc-notched-outline__path" />
-                </svg>
+                <svg><path class="mdc-notched-outline__path" /></svg>
               </div>
               <div class="mdc-notched-outline__idle"></div>
             </div>
-            <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" aria-hidden="true">
+            <p
+              class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
+              aria-hidden="true"
+            >
               Enter your e-mail
             </p>
           </div>
 
           <button class="alpha__send js-observe" type="submit">
-            Send
-            <svg class="i-send" viewBox="0 0 21 18">
+            Send <svg class="i-send" viewBox="0 0 21 18">
   <path d="M0.00999999 18L21 9L0.00999999 0L0 7L15 9L0 11L0.00999999 18Z" />
 </svg>
           </button>
-
         </form>
       </div>
     </div>
@@ -847,32 +1038,56 @@
         <ul class="partners__list">
           <li class="partner js-observe" data-delay="100">
             <a href="">
-              <img src="img/partners/cc.png" alt="Casual Connect" class="partner__img">
+              <img
+                src="img/partners/cc.png"
+                alt="Casual Connect"
+                class="partner__img"
+              />
             </a>
           </li>
           <li class="partner js-observe" data-delay="150">
             <a href="">
-              <img src="img/partners/devgamm.png" alt="Dev Gamm!" class="partner__img">
+              <img
+                src="img/partners/devgamm.png"
+                alt="Dev Gamm!"
+                class="partner__img"
+              />
             </a>
           </li>
           <li class="partner js-observe" data-delay="200">
             <a href="">
-              <img src="img/partners/ga.png" alt="Games Academy" class="partner__img">
+              <img
+                src="img/partners/ga.png"
+                alt="Games Academy"
+                class="partner__img"
+              />
             </a>
           </li>
           <li class="partner js-observe" data-delay="250">
             <a href="">
-              <img src="img/partners/gg.png" alt="Games Gathering" class="partner__img">
+              <img
+                src="img/partners/gg.png"
+                alt="Games Gathering"
+                class="partner__img"
+              />
             </a>
           </li>
           <li class="partner js-observe" data-delay="300">
             <a href="">
-              <img src="img/partners/indieprize.png" alt="Indie Prize" class="partner__img">
+              <img
+                src="img/partners/indieprize.png"
+                alt="Indie Prize"
+                class="partner__img"
+              />
             </a>
           </li>
           <li class="partner js-observe" data-delay="350">
             <a href="">
-              <img src="img/partners/whitenights.png" alt="White Nights" class="partner__img">
+              <img
+                src="img/partners/whitenights.png"
+                alt="White Nights"
+                class="partner__img"
+              />
             </a>
           </li>
         </ul>
@@ -880,7 +1095,6 @@
     </div>
   </section>
 </main>
-
 
 <script defer src="js/index.js"></script>
 

@@ -46,31 +46,23 @@
       <div class="header__half header__half--left">
         <a class="header__logo" href="./index.html">
           
-          <img src="img/logo.svg" alt="Manu - video game maker">
+          <img src="img/logo.svg" alt="Manu - video game maker" />
         </a>
       </div>
       <div class="header__half header__half--right">
         <nav class="header__nav">
           <ul class="header__list">
             <li class="header__list-item">
-              <a class="header__link" href="./blog.html">
-                Blog
-              </a>
+              <a class="header__link" href="./blog.html"> Blog </a>
             </li>
             <li class="header__list-item">
-              <a class="header__link" href="">
-                Forum
-              </a>
+              <a class="header__link" href=""> Forum </a>
             </li>
             <li class="header__list-item">
-              <a class="header__link" href="./cases.html">
-                Showcases
-              </a>
+              <a class="header__link" href="./cases.html"> Showcases </a>
             </li>
             <li class="header__list-item">
-              <a class="header__link" href="./support.html">
-                Support
-              </a>
+              <a class="header__link" href="./support.html"> Support </a>
             </li>
           </ul>
         </nav>
@@ -89,8 +81,36 @@
   />
 </svg>
           </a>
+          <a class="header__logout" href="./reg.html">
+            <svg class="i-logout" viewBox="0 0 512 512">
+  <path
+    d="M255.15,468.625H63.787c-11.737,0-21.262-9.526-21.262-21.262V64.638c0-11.737,9.526-21.262,21.262-21.262H255.15
+
+	c11.758,0,21.262-9.504,21.262-21.262S266.908,0.85,255.15,0.85H63.787C28.619,0.85,0,29.47,0,64.638v382.724
+
+	c0,35.168,28.619,63.787,63.787,63.787H255.15c11.758,0,21.262-9.504,21.262-21.262
+
+	C276.412,478.129,266.908,468.625,255.15,468.625z"
+  />
+  <path
+    d="M505.664,240.861L376.388,113.286c-8.335-8.25-21.815-8.143-30.065,0.213s-8.165,21.815,0.213,30.065l92.385,91.173
+
+	H191.362c-11.758,0-21.262,9.504-21.262,21.262c0,11.758,9.504,21.263,21.262,21.263h247.559l-92.385,91.173
+
+	c-8.377,8.25-8.441,21.709-0.213,30.065c4.167,4.21,9.653,6.336,15.139,6.336c5.401,0,10.801-2.041,14.926-6.124l129.276-127.575
+
+	c4.04-3.997,6.336-9.441,6.336-15.139C512,250.302,509.725,244.88,505.664,240.861z"
+  />
+</svg>
+
+          </a>
         </div>
-        <button class="btn header__btn" data-micromodal-trigger="early-access-modal">Early Acceses</button>
+        <button
+          class="btn header__btn"
+          data-micromodal-trigger="early-access-modal"
+        >
+          Early Acceses
+        </button>
       </div>
       <button class="hamburger hamburger--slider js-open-menu" type="button">
   <span class="hamburger-box">
@@ -104,7 +124,12 @@
 <div class="header-fixed">
   <div class="container">
     <div class="header-fixed__inner">
-      <button class="btn header__btn" data-micromodal-trigger="early-access-modal">Early Acceses</button>
+      <button
+        class="btn header__btn"
+        data-micromodal-trigger="early-access-modal"
+      >
+        Early Acceses
+      </button>
       <div>
         <button class="header__search" data-micromodal-trigger="search-modal">
           <svg class="i-search" viewBox="0 0 16 16">
@@ -124,6 +149,7 @@
     </div>
   </div>
 </div>
+
 <!-- Early Access Modal -->
 <div class="modal" id="early-access-modal" aria-hidden="true">
   <div class="modal__overlay" data-micromodal-close tabindex="-1">
@@ -214,6 +240,110 @@
     </form>
   </div>
 </div>
+<!-- Success -->
+<div class="modal" id="success-modal" aria-hidden="true">
+  <div class="modal__overlay" data-micromodal-close tabindex="-1">
+    <form
+      class="modal__container"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="success-modal-title"
+    >
+      <button
+        class="modal__close"
+        aria-label="Close modal"
+        type="button"
+        data-micromodal-close
+      >
+        <svg class="i-close" viewBox="0 0 22 22">
+  <path d="M1 1L11 11M21 21L11 11M11 11L21 1L1 21" />
+</svg>
+      </button>
+
+      <main class="modal__content" id="success-modal-content">
+        <div class="sa-wrap">
+          <div class="sa-icon sa-success animate">
+            <span class="sa-line sa-tip animateSuccessTip"></span>
+            <span class="sa-line sa-long animateSuccessLong"></span>
+            <div class="sa-placeholder"></div>
+            <div class="sa-fix"></div>
+          </div>
+        </div>
+        <h2 class="modal__title" id="success-modal-title">
+          Data sent successfully
+        </h2>
+      </main>
+    </form>
+  </div>
+</div>
+
+<!-- Error -->
+<div class="modal" id="error-modal" aria-hidden="true">
+  <div class="modal__overlay" data-micromodal-close tabindex="-1">
+    <form
+      class="modal__container"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="error-modal-title"
+    >
+      <button
+        class="modal__close"
+        aria-label="Close modal"
+        type="button"
+        data-micromodal-close
+      >
+        <svg class="i-close" viewBox="0 0 22 22">
+  <path d="M1 1L11 11M21 21L11 11M11 11L21 1L1 21" />
+</svg>
+      </button>
+
+      <main class="modal__content" id="error-modal-content">
+        <div class="sa-wrap">
+          <svg viewBox="0 0 130.2 130.2">
+            <circle
+              class="path circle"
+              fill="none"
+              stroke="#D06079"
+              stroke-width="6"
+              stroke-miterlimit="10"
+              cx="65.1"
+              cy="65.1"
+              r="62.1"
+            />
+            <line
+              class="path line"
+              fill="none"
+              stroke="#D06079"
+              stroke-width="6"
+              stroke-linecap="round"
+              stroke-miterlimit="10"
+              x1="34.4"
+              y1="37.9"
+              x2="95.8"
+              y2="92.3"
+            />
+            <line
+              class="path line"
+              fill="none"
+              stroke="#D06079"
+              stroke-width="6"
+              stroke-linecap="round"
+              stroke-miterlimit="10"
+              x1="95.8"
+              y1="38"
+              x2="34.4"
+              y2="92.2"
+            />
+          </svg>
+        </div>
+        <h2 class="modal__title" id="error-modal-title">
+          Something went wrong
+        </h2>
+      </main>
+    </form>
+  </div>
+</div>
+
 <!-- Menu -->
 <div class="menu">
   <div class="menu__container">
@@ -278,29 +408,57 @@
     </div>
   </div>
 </div>
+<!-- Cookie -->
+<div class="cookie">
+  <div class="container">
+    <div class="cookie__inner">
+      <div class="cookie__text">
+        <p>
+          Cookies help us deliver our services. By using our services, you agree
+          to our use of cookies.
+        </p>
+        <a href="">Learn more</a>
+      </div>
+      <button class="btn js-close-cookie">OK</button>
+    </div>
+  </div>
+</div>
+
 
 <main class="support-container">
   <div class="support-header">
     <div class="container">
       <h1 class="h1 support-title">Support</h1>
       <div>
-        <button class="support-tab support-tab--active" type="button" data-support-tab="video">Video Tutorials</button>
-        <button class="support-tab" type="button" data-support-tab="faq">FAQ</button>
+        <button
+          class="support-tab support-tab--active"
+          type="button"
+          data-support-tab="video"
+        >
+          Video Tutorials
+        </button>
+        <button class="support-tab" type="button" data-support-tab="faq">
+          FAQ
+        </button>
       </div>
     </div>
   </div>
   <div class="support-content">
-
     <!-- support-tab-content/video -->
     <div class="support-tab-content" data-support-tab="video">
       <div class="video">
         <div class="video__info">
           <span class="video__duration">5:32</span>
           <h2 class="h3 video__name">Manu Video Game Maker Reviue</h2>
-          <p class="video__text">Create your own game interface, levels, cutscenes, set links between</p>
+          <p class="video__text">
+            Create your own game interface, levels, cutscenes, set links between
+          </p>
         </div>
         <div class="video__wrap">
-          <button class="embed js-video" data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1">
+          <button
+            class="embed js-video"
+            data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1"
+          >
             <svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
   <rect fill="#16161B" width="100%" height="100%" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="#0C48A9" stroke-width="2" />
@@ -324,16 +482,18 @@
       <ul class="accordion-container accordion-container--support">
         <li class="accordion">
           <button class="accordion__btn" type="button">
-            <span class="accordion__num">01</span>
-            Getting Started <svg class="i-close" viewBox="0 0 22 22">
+            <span class="accordion__num">01</span> Getting Started
+            <svg class="i-close" viewBox="0 0 22 22">
   <path d="M1 1L11 11M21 21L11 11M11 11L21 1L1 21" />
 </svg>
           </button>
           <div class="accordion__content">
             <div class="video-list">
-              <div class="video-list__item js-video" data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1">
-                <button class="embed">
-                  <svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
+              <div
+                class="video-list__item js-video"
+                data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1"
+              >
+                <button class="embed"><svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
   <rect fill="#16161B" width="100%" height="100%" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="#0C48A9" stroke-width="2" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="url(#paint0_linear)" stroke-width="2" />
@@ -349,15 +509,16 @@
       <stop offset="1" stop-color="white" stop-opacity="0" />
     </linearGradient>
   </defs>
-</svg>
-                </button>
+</svg></button>
                 <span class="video-name">
                   Create your own game interface Create your own game interface
                 </span>
               </div>
-              <div class="video-list__item js-video" data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1">
-                <button class="embed">
-                  <svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
+              <div
+                class="video-list__item js-video"
+                data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1"
+              >
+                <button class="embed"><svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
   <rect fill="#16161B" width="100%" height="100%" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="#0C48A9" stroke-width="2" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="url(#paint0_linear)" stroke-width="2" />
@@ -373,15 +534,16 @@
       <stop offset="1" stop-color="white" stop-opacity="0" />
     </linearGradient>
   </defs>
-</svg>
-                </button>
+</svg></button>
                 <span class="video-name">
                   Create your own game interface Create your own game interface
                 </span>
               </div>
-              <div class="video-list__item js-video" data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1">
-                <button class="embed">
-                  <svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
+              <div
+                class="video-list__item js-video"
+                data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1"
+              >
+                <button class="embed"><svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
   <rect fill="#16161B" width="100%" height="100%" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="#0C48A9" stroke-width="2" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="url(#paint0_linear)" stroke-width="2" />
@@ -397,15 +559,16 @@
       <stop offset="1" stop-color="white" stop-opacity="0" />
     </linearGradient>
   </defs>
-</svg>
-                </button>
+</svg></button>
                 <span class="video-name">
                   Create your own game interface Create your own game interface
                 </span>
               </div>
-              <div class="video-list__item js-video" data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1">
-                <button class="embed">
-                  <svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
+              <div
+                class="video-list__item js-video"
+                data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1"
+              >
+                <button class="embed"><svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
   <rect fill="#16161B" width="100%" height="100%" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="#0C48A9" stroke-width="2" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="url(#paint0_linear)" stroke-width="2" />
@@ -421,8 +584,7 @@
       <stop offset="1" stop-color="white" stop-opacity="0" />
     </linearGradient>
   </defs>
-</svg>
-                </button>
+</svg></button>
                 <span class="video-name">
                   Create your own game interface Create your own game interface
                 </span>
@@ -432,16 +594,18 @@
         </li>
         <li class="accordion">
           <button class="accordion__btn" type="button">
-            <span class="accordion__num">02</span>
-            Menu <svg class="i-close" viewBox="0 0 22 22">
+            <span class="accordion__num">02</span> Menu
+            <svg class="i-close" viewBox="0 0 22 22">
   <path d="M1 1L11 11M21 21L11 11M11 11L21 1L1 21" />
 </svg>
           </button>
           <div class="accordion__content">
             <div class="video-list">
-              <div class="video-list__item js-video" data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1">
-                <button class="embed">
-                  <svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
+              <div
+                class="video-list__item js-video"
+                data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1"
+              >
+                <button class="embed"><svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
   <rect fill="#16161B" width="100%" height="100%" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="#0C48A9" stroke-width="2" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="url(#paint0_linear)" stroke-width="2" />
@@ -457,15 +621,16 @@
       <stop offset="1" stop-color="white" stop-opacity="0" />
     </linearGradient>
   </defs>
-</svg>
-                </button>
+</svg></button>
                 <span class="video-name">
                   Create your own game interface Create your own game interface
                 </span>
               </div>
-              <div class="video-list__item js-video" data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1">
-                <button class="embed">
-                  <svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
+              <div
+                class="video-list__item js-video"
+                data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1"
+              >
+                <button class="embed"><svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
   <rect fill="#16161B" width="100%" height="100%" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="#0C48A9" stroke-width="2" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="url(#paint0_linear)" stroke-width="2" />
@@ -481,15 +646,16 @@
       <stop offset="1" stop-color="white" stop-opacity="0" />
     </linearGradient>
   </defs>
-</svg>
-                </button>
+</svg></button>
                 <span class="video-name">
                   Create your own game interface Create your own game interface
                 </span>
               </div>
-              <div class="video-list__item js-video" data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1">
-                <button class="embed">
-                  <svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
+              <div
+                class="video-list__item js-video"
+                data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1"
+              >
+                <button class="embed"><svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
   <rect fill="#16161B" width="100%" height="100%" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="#0C48A9" stroke-width="2" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="url(#paint0_linear)" stroke-width="2" />
@@ -505,15 +671,16 @@
       <stop offset="1" stop-color="white" stop-opacity="0" />
     </linearGradient>
   </defs>
-</svg>
-                </button>
+</svg></button>
                 <span class="video-name">
                   Create your own game interface Create your own game interface
                 </span>
               </div>
-              <div class="video-list__item js-video" data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1">
-                <button class="embed">
-                  <svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
+              <div
+                class="video-list__item js-video"
+                data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1"
+              >
+                <button class="embed"><svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
   <rect fill="#16161B" width="100%" height="100%" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="#0C48A9" stroke-width="2" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="url(#paint0_linear)" stroke-width="2" />
@@ -529,8 +696,7 @@
       <stop offset="1" stop-color="white" stop-opacity="0" />
     </linearGradient>
   </defs>
-</svg>
-                </button>
+</svg></button>
                 <span class="video-name">
                   Create your own game interface Create your own game interface
                 </span>
@@ -540,16 +706,18 @@
         </li>
         <li class="accordion">
           <button class="accordion__btn" type="button">
-            <span class="accordion__num">03</span>
-            UI Editor <svg class="i-close" viewBox="0 0 22 22">
+            <span class="accordion__num">03</span> UI Editor
+            <svg class="i-close" viewBox="0 0 22 22">
   <path d="M1 1L11 11M21 21L11 11M11 11L21 1L1 21" />
 </svg>
           </button>
           <div class="accordion__content">
             <div class="video-list">
-              <div class="video-list__item js-video" data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1">
-                <button class="embed">
-                  <svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
+              <div
+                class="video-list__item js-video"
+                data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1"
+              >
+                <button class="embed"><svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
   <rect fill="#16161B" width="100%" height="100%" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="#0C48A9" stroke-width="2" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="url(#paint0_linear)" stroke-width="2" />
@@ -565,15 +733,16 @@
       <stop offset="1" stop-color="white" stop-opacity="0" />
     </linearGradient>
   </defs>
-</svg>
-                </button>
+</svg></button>
                 <span class="video-name">
                   Create your own game interface Create your own game interface
                 </span>
               </div>
-              <div class="video-list__item js-video" data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1">
-                <button class="embed">
-                  <svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
+              <div
+                class="video-list__item js-video"
+                data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1"
+              >
+                <button class="embed"><svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
   <rect fill="#16161B" width="100%" height="100%" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="#0C48A9" stroke-width="2" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="url(#paint0_linear)" stroke-width="2" />
@@ -589,15 +758,16 @@
       <stop offset="1" stop-color="white" stop-opacity="0" />
     </linearGradient>
   </defs>
-</svg>
-                </button>
+</svg></button>
                 <span class="video-name">
                   Create your own game interface Create your own game interface
                 </span>
               </div>
-              <div class="video-list__item js-video" data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1">
-                <button class="embed">
-                  <svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
+              <div
+                class="video-list__item js-video"
+                data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1"
+              >
+                <button class="embed"><svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
   <rect fill="#16161B" width="100%" height="100%" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="#0C48A9" stroke-width="2" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="url(#paint0_linear)" stroke-width="2" />
@@ -613,15 +783,16 @@
       <stop offset="1" stop-color="white" stop-opacity="0" />
     </linearGradient>
   </defs>
-</svg>
-                </button>
+</svg></button>
                 <span class="video-name">
                   Create your own game interface Create your own game interface
                 </span>
               </div>
-              <div class="video-list__item js-video" data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1">
-                <button class="embed">
-                  <svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
+              <div
+                class="video-list__item js-video"
+                data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1"
+              >
+                <button class="embed"><svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
   <rect fill="#16161B" width="100%" height="100%" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="#0C48A9" stroke-width="2" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="url(#paint0_linear)" stroke-width="2" />
@@ -637,8 +808,7 @@
       <stop offset="1" stop-color="white" stop-opacity="0" />
     </linearGradient>
   </defs>
-</svg>
-                </button>
+</svg></button>
                 <span class="video-name">
                   Create your own game interface Create your own game interface
                 </span>
@@ -648,16 +818,18 @@
         </li>
         <li class="accordion">
           <button class="accordion__btn" type="button">
-            <span class="accordion__num">04</span>
-            Levels Editor <svg class="i-close" viewBox="0 0 22 22">
+            <span class="accordion__num">04</span> Levels Editor
+            <svg class="i-close" viewBox="0 0 22 22">
   <path d="M1 1L11 11M21 21L11 11M11 11L21 1L1 21" />
 </svg>
           </button>
           <div class="accordion__content">
             <div class="video-list">
-              <div class="video-list__item js-video" data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1">
-                <button class="embed">
-                  <svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
+              <div
+                class="video-list__item js-video"
+                data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1"
+              >
+                <button class="embed"><svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
   <rect fill="#16161B" width="100%" height="100%" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="#0C48A9" stroke-width="2" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="url(#paint0_linear)" stroke-width="2" />
@@ -673,15 +845,16 @@
       <stop offset="1" stop-color="white" stop-opacity="0" />
     </linearGradient>
   </defs>
-</svg>
-                </button>
+</svg></button>
                 <span class="video-name">
                   Create your own game interface Create your own game interface
                 </span>
               </div>
-              <div class="video-list__item js-video" data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1">
-                <button class="embed">
-                  <svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
+              <div
+                class="video-list__item js-video"
+                data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1"
+              >
+                <button class="embed"><svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
   <rect fill="#16161B" width="100%" height="100%" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="#0C48A9" stroke-width="2" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="url(#paint0_linear)" stroke-width="2" />
@@ -697,15 +870,16 @@
       <stop offset="1" stop-color="white" stop-opacity="0" />
     </linearGradient>
   </defs>
-</svg>
-                </button>
+</svg></button>
                 <span class="video-name">
                   Create your own game interface Create your own game interface
                 </span>
               </div>
-              <div class="video-list__item js-video" data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1">
-                <button class="embed">
-                  <svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
+              <div
+                class="video-list__item js-video"
+                data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1"
+              >
+                <button class="embed"><svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
   <rect fill="#16161B" width="100%" height="100%" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="#0C48A9" stroke-width="2" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="url(#paint0_linear)" stroke-width="2" />
@@ -721,15 +895,16 @@
       <stop offset="1" stop-color="white" stop-opacity="0" />
     </linearGradient>
   </defs>
-</svg>
-                </button>
+</svg></button>
                 <span class="video-name">
                   Create your own game interface Create your own game interface
                 </span>
               </div>
-              <div class="video-list__item js-video" data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1">
-                <button class="embed">
-                  <svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
+              <div
+                class="video-list__item js-video"
+                data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1"
+              >
+                <button class="embed"><svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
   <rect fill="#16161B" width="100%" height="100%" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="#0C48A9" stroke-width="2" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="url(#paint0_linear)" stroke-width="2" />
@@ -745,8 +920,7 @@
       <stop offset="1" stop-color="white" stop-opacity="0" />
     </linearGradient>
   </defs>
-</svg>
-                </button>
+</svg></button>
                 <span class="video-name">
                   Create your own game interface Create your own game interface
                 </span>
@@ -756,16 +930,18 @@
         </li>
         <li class="accordion">
           <button class="accordion__btn" type="button">
-            <span class="accordion__num">05</span>
-            Sound <svg class="i-close" viewBox="0 0 22 22">
+            <span class="accordion__num">05</span> Sound
+            <svg class="i-close" viewBox="0 0 22 22">
   <path d="M1 1L11 11M21 21L11 11M11 11L21 1L1 21" />
 </svg>
           </button>
           <div class="accordion__content">
             <div class="video-list">
-              <div class="video-list__item js-video" data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1">
-                <button class="embed">
-                  <svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
+              <div
+                class="video-list__item js-video"
+                data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1"
+              >
+                <button class="embed"><svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
   <rect fill="#16161B" width="100%" height="100%" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="#0C48A9" stroke-width="2" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="url(#paint0_linear)" stroke-width="2" />
@@ -781,15 +957,16 @@
       <stop offset="1" stop-color="white" stop-opacity="0" />
     </linearGradient>
   </defs>
-</svg>
-                </button>
+</svg></button>
                 <span class="video-name">
                   Create your own game interface Create your own game interface
                 </span>
               </div>
-              <div class="video-list__item js-video" data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1">
-                <button class="embed">
-                  <svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
+              <div
+                class="video-list__item js-video"
+                data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1"
+              >
+                <button class="embed"><svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
   <rect fill="#16161B" width="100%" height="100%" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="#0C48A9" stroke-width="2" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="url(#paint0_linear)" stroke-width="2" />
@@ -805,15 +982,16 @@
       <stop offset="1" stop-color="white" stop-opacity="0" />
     </linearGradient>
   </defs>
-</svg>
-                </button>
+</svg></button>
                 <span class="video-name">
                   Create your own game interface Create your own game interface
                 </span>
               </div>
-              <div class="video-list__item js-video" data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1">
-                <button class="embed">
-                  <svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
+              <div
+                class="video-list__item js-video"
+                data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1"
+              >
+                <button class="embed"><svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
   <rect fill="#16161B" width="100%" height="100%" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="#0C48A9" stroke-width="2" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="url(#paint0_linear)" stroke-width="2" />
@@ -829,15 +1007,16 @@
       <stop offset="1" stop-color="white" stop-opacity="0" />
     </linearGradient>
   </defs>
-</svg>
-                </button>
+</svg></button>
                 <span class="video-name">
                   Create your own game interface Create your own game interface
                 </span>
               </div>
-              <div class="video-list__item js-video" data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1">
-                <button class="embed">
-                  <svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
+              <div
+                class="video-list__item js-video"
+                data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1"
+              >
+                <button class="embed"><svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
   <rect fill="#16161B" width="100%" height="100%" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="#0C48A9" stroke-width="2" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="url(#paint0_linear)" stroke-width="2" />
@@ -853,8 +1032,7 @@
       <stop offset="1" stop-color="white" stop-opacity="0" />
     </linearGradient>
   </defs>
-</svg>
-                </button>
+</svg></button>
                 <span class="video-name">
                   Create your own game interface Create your own game interface
                 </span>
@@ -864,16 +1042,18 @@
         </li>
         <li class="accordion">
           <button class="accordion__btn" type="button">
-            <span class="accordion__num">06</span>
-            Export <svg class="i-close" viewBox="0 0 22 22">
+            <span class="accordion__num">06</span> Export
+            <svg class="i-close" viewBox="0 0 22 22">
   <path d="M1 1L11 11M21 21L11 11M11 11L21 1L1 21" />
 </svg>
           </button>
           <div class="accordion__content">
             <div class="video-list">
-              <div class="video-list__item js-video" data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1">
-                <button class="embed">
-                  <svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
+              <div
+                class="video-list__item js-video"
+                data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1"
+              >
+                <button class="embed"><svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
   <rect fill="#16161B" width="100%" height="100%" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="#0C48A9" stroke-width="2" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="url(#paint0_linear)" stroke-width="2" />
@@ -889,15 +1069,16 @@
       <stop offset="1" stop-color="white" stop-opacity="0" />
     </linearGradient>
   </defs>
-</svg>
-                </button>
+</svg></button>
                 <span class="video-name">
                   Create your own game interface Create your own game interface
                 </span>
               </div>
-              <div class="video-list__item js-video" data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1">
-                <button class="embed">
-                  <svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
+              <div
+                class="video-list__item js-video"
+                data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1"
+              >
+                <button class="embed"><svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
   <rect fill="#16161B" width="100%" height="100%" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="#0C48A9" stroke-width="2" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="url(#paint0_linear)" stroke-width="2" />
@@ -913,15 +1094,16 @@
       <stop offset="1" stop-color="white" stop-opacity="0" />
     </linearGradient>
   </defs>
-</svg>
-                </button>
+</svg></button>
                 <span class="video-name">
                   Create your own game interface Create your own game interface
                 </span>
               </div>
-              <div class="video-list__item js-video" data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1">
-                <button class="embed">
-                  <svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
+              <div
+                class="video-list__item js-video"
+                data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1"
+              >
+                <button class="embed"><svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
   <rect fill="#16161B" width="100%" height="100%" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="#0C48A9" stroke-width="2" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="url(#paint0_linear)" stroke-width="2" />
@@ -937,15 +1119,16 @@
       <stop offset="1" stop-color="white" stop-opacity="0" />
     </linearGradient>
   </defs>
-</svg>
-                </button>
+</svg></button>
                 <span class="video-name">
                   Create your own game interface Create your own game interface
                 </span>
               </div>
-              <div class="video-list__item js-video" data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1">
-                <button class="embed">
-                  <svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
+              <div
+                class="video-list__item js-video"
+                data-src="https://youtube.com/embed/LsnlWc4xv3A?enablejsapi=1"
+              >
+                <button class="embed"><svg class="i-preview" preserveAspectRatio="none" viewBox="0 0 668 407" fill="none">
   <rect fill="#16161B" width="100%" height="100%" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="#0C48A9" stroke-width="2" />
   <circle cx="334.5" cy="203.5" r="35.5" stroke="url(#paint0_linear)" stroke-width="2" />
@@ -961,8 +1144,7 @@
       <stop offset="1" stop-color="white" stop-opacity="0" />
     </linearGradient>
   </defs>
-</svg>
-                </button>
+</svg></button>
                 <span class="video-name">
                   Create your own game interface Create your own game interface
                 </span>
@@ -976,136 +1158,132 @@
 
     <!-- support-tab-content/faq -->
     <div class="support-tab-content" data-support-tab="faq">
-      <ul class="accordion-container accordion-container--support accordion-container--faq">
+      <ul
+        class="accordion-container accordion-container--support accordion-container--faq"
+      >
         <li class="accordion">
           <button class="accordion__btn" type="button">
-            <span class="accordion__num">01</span>
-            How to get MANU video game maker Trial? <svg class="i-close" viewBox="0 0 22 22">
+            <span class="accordion__num">01</span> How to get MANU video game
+            maker Trial? <svg class="i-close" viewBox="0 0 22 22">
   <path d="M1 1L11 11M21 21L11 11M11 11L21 1L1 21" />
 </svg>
           </button>
           <div class="accordion__content">
             <p class="accordion__text">
-              Ancient labyrinth by hopping between two sides of a split screen. In this blog post, which will be the
-              first in a
-              series of posts about the development of DYO, I’ll briefly talk about how we got started, inspirations
-              behind the
-              concept, and the history of the game. Ancient labyrinth by hopping between two sides of a split screen.
-              In
-              this blog
-              post, which will be the first in a series of posts about the development of DYO, I’ll briefly talk about
-              how we got
-              started, inspirations behind the concept, and the history of the game.
+              Ancient labyrinth by hopping between two sides of a split screen.
+              In this blog post, which will be the first in a series of posts
+              about the development of DYO, I’ll briefly talk about how we got
+              started, inspirations behind the concept, and the history of the
+              game. Ancient labyrinth by hopping between two sides of a split
+              screen. In this blog post, which will be the first in a series of
+              posts about the development of DYO, I’ll briefly talk about how we
+              got started, inspirations behind the concept, and the history of
+              the game.
             </p>
           </div>
         </li>
         <li class="accordion">
           <button class="accordion__btn" type="button">
-            <span class="accordion__num">02</span>
-            How to start working <svg class="i-close" viewBox="0 0 22 22">
+            <span class="accordion__num">02</span> How to start working
+            <svg class="i-close" viewBox="0 0 22 22">
   <path d="M1 1L11 11M21 21L11 11M11 11L21 1L1 21" />
 </svg>
           </button>
           <div class="accordion__content">
             <p class="accordion__text">
-              Ancient labyrinth by hopping between two sides of a split screen. In this blog post, which will be the
-              first in a
-              series of posts about the development of DYO, I’ll briefly talk about how we got started, inspirations
-              behind the
-              concept, and the history of the game. Ancient labyrinth by hopping between two sides of a split screen.
-              In
-              this blog
-              post, which will be the first in a series of posts about the development of DYO, I’ll briefly talk about
-              how we got
-              started, inspirations behind the concept, and the history of the game.
+              Ancient labyrinth by hopping between two sides of a split screen.
+              In this blog post, which will be the first in a series of posts
+              about the development of DYO, I’ll briefly talk about how we got
+              started, inspirations behind the concept, and the history of the
+              game. Ancient labyrinth by hopping between two sides of a split
+              screen. In this blog post, which will be the first in a series of
+              posts about the development of DYO, I’ll briefly talk about how we
+              got started, inspirations behind the concept, and the history of
+              the game.
             </p>
           </div>
         </li>
         <li class="accordion">
           <button class="accordion__btn" type="button">
-            <span class="accordion__num">03</span>
-            How to edit characters <svg class="i-close" viewBox="0 0 22 22">
+            <span class="accordion__num">03</span> How to edit characters
+            <svg class="i-close" viewBox="0 0 22 22">
   <path d="M1 1L11 11M21 21L11 11M11 11L21 1L1 21" />
 </svg>
           </button>
           <div class="accordion__content">
             <p class="accordion__text">
-              Ancient labyrinth by hopping between two sides of a split screen. In this blog post, which will be the
-              first in a
-              series of posts about the development of DYO, I’ll briefly talk about how we got started, inspirations
-              behind the
-              concept, and the history of the game. Ancient labyrinth by hopping between two sides of a split screen.
-              In
-              this blog
-              post, which will be the first in a series of posts about the development of DYO, I’ll briefly talk about
-              how we got
-              started, inspirations behind the concept, and the history of the game.
+              Ancient labyrinth by hopping between two sides of a split screen.
+              In this blog post, which will be the first in a series of posts
+              about the development of DYO, I’ll briefly talk about how we got
+              started, inspirations behind the concept, and the history of the
+              game. Ancient labyrinth by hopping between two sides of a split
+              screen. In this blog post, which will be the first in a series of
+              posts about the development of DYO, I’ll briefly talk about how we
+              got started, inspirations behind the concept, and the history of
+              the game.
             </p>
           </div>
         </li>
         <li class="accordion">
           <button class="accordion__btn" type="button">
-            <span class="accordion__num">04</span>
-            How to manage sound <svg class="i-close" viewBox="0 0 22 22">
+            <span class="accordion__num">04</span> How to manage sound
+            <svg class="i-close" viewBox="0 0 22 22">
   <path d="M1 1L11 11M21 21L11 11M11 11L21 1L1 21" />
 </svg>
           </button>
           <div class="accordion__content">
             <p class="accordion__text">
-              Ancient labyrinth by hopping between two sides of a split screen. In this blog post, which will be the
-              first in a
-              series of posts about the development of DYO, I’ll briefly talk about how we got started, inspirations
-              behind the
-              concept, and the history of the game. Ancient labyrinth by hopping between two sides of a split screen.
-              In
-              this blog
-              post, which will be the first in a series of posts about the development of DYO, I’ll briefly talk about
-              how we got
-              started, inspirations behind the concept, and the history of the game.
+              Ancient labyrinth by hopping between two sides of a split screen.
+              In this blog post, which will be the first in a series of posts
+              about the development of DYO, I’ll briefly talk about how we got
+              started, inspirations behind the concept, and the history of the
+              game. Ancient labyrinth by hopping between two sides of a split
+              screen. In this blog post, which will be the first in a series of
+              posts about the development of DYO, I’ll briefly talk about how we
+              got started, inspirations behind the concept, and the history of
+              the game.
             </p>
           </div>
         </li>
         <li class="accordion">
           <button class="accordion__btn" type="button">
-            <span class="accordion__num">05</span>
-            How to export game <svg class="i-close" viewBox="0 0 22 22">
+            <span class="accordion__num">05</span> How to export game
+            <svg class="i-close" viewBox="0 0 22 22">
   <path d="M1 1L11 11M21 21L11 11M11 11L21 1L1 21" />
 </svg>
           </button>
           <div class="accordion__content">
             <p class="accordion__text">
-              Ancient labyrinth by hopping between two sides of a split screen. In this blog post, which will be the
-              first in a
-              series of posts about the development of DYO, I’ll briefly talk about how we got started, inspirations
-              behind the
-              concept, and the history of the game. Ancient labyrinth by hopping between two sides of a split screen.
-              In
-              this blog
-              post, which will be the first in a series of posts about the development of DYO, I’ll briefly talk about
-              how we got
-              started, inspirations behind the concept, and the history of the game.
+              Ancient labyrinth by hopping between two sides of a split screen.
+              In this blog post, which will be the first in a series of posts
+              about the development of DYO, I’ll briefly talk about how we got
+              started, inspirations behind the concept, and the history of the
+              game. Ancient labyrinth by hopping between two sides of a split
+              screen. In this blog post, which will be the first in a series of
+              posts about the development of DYO, I’ll briefly talk about how we
+              got started, inspirations behind the concept, and the history of
+              the game.
             </p>
           </div>
         </li>
         <li class="accordion">
           <button class="accordion__btn" type="button">
-            <span class="accordion__num">06</span>
-            Export <svg class="i-close" viewBox="0 0 22 22">
+            <span class="accordion__num">06</span> Export
+            <svg class="i-close" viewBox="0 0 22 22">
   <path d="M1 1L11 11M21 21L11 11M11 11L21 1L1 21" />
 </svg>
           </button>
           <div class="accordion__content">
             <p class="accordion__text">
-              Ancient labyrinth by hopping between two sides of a split screen. In this blog post, which will be the
-              first in a
-              series of posts about the development of DYO, I’ll briefly talk about how we got started, inspirations
-              behind the
-              concept, and the history of the game. Ancient labyrinth by hopping between two sides of a split screen.
-              In
-              this blog
-              post, which will be the first in a series of posts about the development of DYO, I’ll briefly talk about
-              how we got
-              started, inspirations behind the concept, and the history of the game.
+              Ancient labyrinth by hopping between two sides of a split screen.
+              In this blog post, which will be the first in a series of posts
+              about the development of DYO, I’ll briefly talk about how we got
+              started, inspirations behind the concept, and the history of the
+              game. Ancient labyrinth by hopping between two sides of a split
+              screen. In this blog post, which will be the first in a series of
+              posts about the development of DYO, I’ll briefly talk about how we
+              got started, inspirations behind the concept, and the history of
+              the game.
             </p>
           </div>
         </li>
@@ -1114,61 +1292,79 @@
       <!-- support-form -->
       <div class="support-form">
         <div class="support-form__left">
-          <p class="support-form__title">If you have questions, feel free to contact us.</p>
+          <p class="support-form__title">
+            If you have questions, feel free to contact us.
+          </p>
         </div>
         <div class="support-form__right">
           <form class="support-form__form js-validate" novalidate>
-
             <div class="mdc-text-field-wrap support-form__name">
               <div class="mdc-text-field mdc-text-field--outlined">
-                <input class="mdc-text-field__input" type="text" required minlength="1">
+                <input
+                  class="mdc-text-field__input"
+                  type="text"
+                  required
+                  minlength="1"
+                />
                 <label class="mdc-floating-label">Name</label>
                 <div class="mdc-notched-outline">
-                  <svg>
-                    <path class="mdc-notched-outline__path" />
-                  </svg>
+                  <svg><path class="mdc-notched-outline__path" /></svg>
                 </div>
                 <div class="mdc-notched-outline__idle"></div>
               </div>
-              <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" aria-hidden="true">
+              <p
+                class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
+                aria-hidden="true"
+              >
                 Enter your name
               </p>
             </div>
 
             <div class="mdc-text-field-wrap support-form__email">
               <div class="mdc-text-field mdc-text-field--outlined">
-                <input class="mdc-text-field__input" type="email" required minlength="1">
+                <input
+                  class="mdc-text-field__input"
+                  type="email"
+                  required
+                  minlength="1"
+                />
                 <label class="mdc-floating-label">E-mail</label>
                 <div class="mdc-notched-outline">
-                  <svg>
-                    <path class="mdc-notched-outline__path" />
-                  </svg>
+                  <svg><path class="mdc-notched-outline__path" /></svg>
                 </div>
                 <div class="mdc-notched-outline__idle"></div>
               </div>
-              <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" aria-hidden="true">
+              <p
+                class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
+                aria-hidden="true"
+              >
                 Enter your e-mail
               </p>
             </div>
 
             <div class="mdc-text-field-wrap">
               <div class="mdc-text-field mdc-text-field--textarea autosize">
-                <textarea class="mdc-text-field__input" required minlength="1"></textarea>
-                <label class="mdc-floating-label">
-                  Message</label>
+                <textarea
+                  class="mdc-text-field__input"
+                  required
+                  minlength="1"
+                ></textarea>
+                <label class="mdc-floating-label"> Message</label>
               </div>
-              <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" aria-hidden="true">
+              <p
+                class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
+                aria-hidden="true"
+              >
                 Enter your message
               </p>
             </div>
 
             <div class="support-form__policy">
               <label class="checkbox">
-                <input class="checkbox__input" type="checkbox" required> I agree with
-                <a href="">Privacy Policy</a>,
+                <input class="checkbox__input" type="checkbox" required /> I
+                agree with <a href="">Privacy Policy</a>,
                 <a href="">Data Protection Policy</a>,
-                <a href="">Terms of Use</a>
-                <svg class="i-daw" viewBox="0 0 24 24">
+                <a href="">Terms of Use</a> <svg class="i-daw" viewBox="0 0 24 24">
   <polyline points="20 6 9 17 4 12"></polyline>
 </svg>
                 <span class="checkbox__helper">Select the checkbox</span>
@@ -1187,7 +1383,6 @@
     <!-- ./support-tab-content/faq -->
   </div>
 </main>
-
 
 <script defer src="js/support.js"></script>
 

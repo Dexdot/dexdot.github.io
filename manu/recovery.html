@@ -38,38 +38,63 @@
 </head>
 
 <body>
+<!-- Cookie -->
+<div class="cookie">
+  <div class="container">
+    <div class="cookie__inner">
+      <div class="cookie__text">
+        <p>
+          Cookies help us deliver our services. By using our services, you agree
+          to our use of cookies.
+        </p>
+        <a href="">Learn more</a>
+      </div>
+      <button class="btn js-close-cookie">OK</button>
+    </div>
+  </div>
+</div>
+
 
 <manu class="auth-container">
   <form class="auth auth--recovery js-validate" novalidate>
     <a class="auth__logo" href="./index.html">
-      <img src="img/logo.svg" alt="Manu - video game maker">
+      <img src="img/logo.svg" alt="Manu - video game maker" />
     </a>
     <h1 class="auth__title">Reset Your Password</h1>
     <p class="auth__text">
-      Enter the e-mail address you used to register. We will send you a link to reset your password.
+      Enter the e-mail address you used to register. We will send you a link to
+      reset your password.
     </p>
 
     <div class="mdc-text-field-wrap">
       <div class="mdc-text-field mdc-text-field--outlined">
-        <input class="mdc-text-field__input" type="email" required minlength="1">
+        <input
+          class="mdc-text-field__input"
+          type="email"
+          required
+          minlength="1"
+        />
         <label class="mdc-floating-label">Email</label>
         <div class="mdc-notched-outline">
-          <svg>
-            <path class="mdc-notched-outline__path" />
-          </svg>
+          <svg><path class="mdc-notched-outline__path" /></svg>
         </div>
         <div class="mdc-notched-outline__idle"></div>
       </div>
-      <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" aria-hidden="true">
+      <p
+        class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
+        aria-hidden="true"
+      >
         Enter your e-mail
       </p>
     </div>
 
-    <button class="btn btn--grey as-fs" type="submit">Send Reset Instructions</button>
+    <button class="btn btn--grey as-fs" type="submit">
+      Send Reset Instructions
+    </button>
     <div class="auth__back">
-      Go back to <a class="auth__link auth__link--blue" href="./login.html">Login page</a>
+      Go back to
+      <a class="auth__link auth__link--blue" href="./login.html">Login page</a>
     </div>
-
   </form>
 </manu>
 
