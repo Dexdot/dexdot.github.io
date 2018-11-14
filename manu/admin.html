@@ -640,19 +640,25 @@
               <div class="profile-group__half">
 
                 <div class="mdc-text-field-wrap">
-                  <div class="mdc-text-field mdc-text-field--outlined">
-                    <input class="mdc-text-field__input" type="text" required minlength="1">
-                    <label class="mdc-floating-label">Country</label>
+                  <div class="mdc-select mdc-select--outlined">
+                    <select class="mdc-select__native-control">
+                      <option value="all" selected>
+                        USA
+                      </option>
+                      <option value="foo">
+                        China
+                      </option>
+                      <option value="bar">
+                        Russia
+                      </option>
+                    </select>
                     <div class="mdc-notched-outline">
                       <svg>
-                        <path class="mdc-notched-outline__path" />
+                        <path class="mdc-notched-outline__path"></path>
                       </svg>
                     </div>
                     <div class="mdc-notched-outline__idle"></div>
                   </div>
-                  <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" aria-hidden="true">
-                    Enter the name of your country
-                  </p>
                 </div>
 
                 <div class="mdc-text-field-wrap">
@@ -721,16 +727,67 @@
                 </p>
               </div>
 
+              <button class="btn btn--stroke js-show-pass" type="button">
+                Change password
+              </button>
+
+              <div class="profile-group__half profile-group__half--password">
+                <div class="mdc-text-field-wrap">
+                  <div class="mdc-text-field mdc-text-field--outlined">
+                    <input class="mdc-text-field__input mdc-text-field__input--password" id="password" type="password" required minlength="1">
+                    <label class="mdc-floating-label">Password</label>
+                    <button class="mdc-text-field__eye" type="button">
+                      <svg class="i-eye" viewBox="0 0 16 10">
+  <path d="M8.00003 0C4.81156 0 1.95116 1.93497 0 5C1.95119 8.06507 4.81153 10 8.00003 10C11.1885 10 14.0489 8.0651 16 5C14.0488 1.93497 11.1885 0 8.00003 0ZM8.00003 7.49998C6.64506 7.49998 5.54691 6.3808 5.54691 4.99997C5.54691 3.6197 6.64506 2.50002 8.00003 2.50002C9.35498 2.50002 10.4537 3.6197 10.4537 4.99997C10.4536 6.3808 9.35498 7.49998 8.00003 7.49998Z"
+  />
+</svg>
+                    </button>
+                    <div class="mdc-notched-outline">
+                      <svg>
+                        <path class="mdc-notched-outline__path" />
+                      </svg>
+                    </div>
+                    <div class="mdc-notched-outline__idle"></div>
+                  </div>
+                  <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" aria-hidden="true">
+                    Enter your password
+                  </p>
+                </div>
+
+                <div class="mdc-text-field-wrap">
+                  <div class="mdc-text-field mdc-text-field--outlined">
+                    <input class="mdc-text-field__input mdc-text-field__input--password" id="confirm_password" type="password" required>
+                    <label class="mdc-floating-label">Confirm Password</label>
+                    <button class="mdc-text-field__eye" type="button">
+                      <svg class="i-eye" viewBox="0 0 16 10">
+  <path d="M8.00003 0C4.81156 0 1.95116 1.93497 0 5C1.95119 8.06507 4.81153 10 8.00003 10C11.1885 10 14.0489 8.0651 16 5C14.0488 1.93497 11.1885 0 8.00003 0ZM8.00003 7.49998C6.64506 7.49998 5.54691 6.3808 5.54691 4.99997C5.54691 3.6197 6.64506 2.50002 8.00003 2.50002C9.35498 2.50002 10.4537 3.6197 10.4537 4.99997C10.4536 6.3808 9.35498 7.49998 8.00003 7.49998Z"
+  />
+</svg>
+                    </button>
+                    <div class="mdc-notched-outline">
+                      <svg>
+                        <path class="mdc-notched-outline__path" />
+                      </svg>
+                    </div>
+                    <div class="mdc-notched-outline__idle"></div>
+                  </div>
+                  <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" aria-hidden="true">
+                    Confirm password
+                  </p>
+                </div>
+              </div>
+
             </div>
             <!-- ./profile-group -->
 
             <!-- profile-group -->
-            <div class="profile-group profile-group--subscribe-desktop">
+            <fieldset class="profile-group profile-group--subscribe-desktop">
   <p class="profile-group__title">Newsletter</p>
 
   <label class="checkbox checkbox--is-checked">
-    <input class="checkbox__input" type="checkbox" required checked> I agree to receive e-mail newsletters
-    from MANU video game maker with helpful information <svg class="i-daw" viewBox="0 0 24 24">
+    <input class="checkbox__input" type="checkbox" required checked /> I agree
+    to receive e-mail newsletters from MANU video game maker with helpful
+    information <svg class="i-daw" viewBox="0 0 24 24">
   <polyline points="20 6 9 17 4 12"></polyline>
 </svg>
     <span class="checkbox__helper">Select the checkbox</span>
@@ -738,8 +795,15 @@
 
   <div class="mdc-form-field">
     <div class="mdc-radio">
-      <input id="radio-1" class="mdc-radio__native-control js-subscribe" type="radio" name="newsletter" data-subscribe="all"
-        required checked>
+      <input
+        id="radio-1"
+        class="mdc-radio__native-control js-subscribe"
+        type="radio"
+        name="newsletter"
+        data-subscribe="all"
+        required
+        checked
+      />
       <div class="mdc-radio__background">
         <div class="mdc-radio__outer-circle"></div>
         <div class="mdc-radio__inner-circle"></div>
@@ -750,8 +814,14 @@
 
   <div class="mdc-form-field">
     <div class="mdc-radio">
-      <input id="radio-2" class="mdc-radio__native-control js-subscribe" type="radio" name="newsletter" data-subscribe="choose"
-        required>
+      <input
+        id="radio-2"
+        class="mdc-radio__native-control js-subscribe"
+        type="radio"
+        name="newsletter"
+        data-subscribe="choose"
+        required
+      />
       <div class="mdc-radio__background">
         <div class="mdc-radio__outer-circle"></div>
         <div class="mdc-radio__inner-circle"></div>
@@ -762,31 +832,32 @@
 
   <fieldset class="profile-subscribe" disabled>
     <label class="checkbox">
-      <input class="checkbox__input" type="checkbox"> Marketing
+      <input class="checkbox__input" type="checkbox" /> Marketing
       <svg class="i-daw" viewBox="0 0 24 24">
   <polyline points="20 6 9 17 4 12"></polyline>
 </svg>
     </label>
     <label class="checkbox">
-      <input class="checkbox__input" type="checkbox"> Gaming
+      <input class="checkbox__input" type="checkbox" /> Gaming
       <svg class="i-daw" viewBox="0 0 24 24">
   <polyline points="20 6 9 17 4 12"></polyline>
 </svg>
     </label>
     <label class="checkbox">
-      <input class="checkbox__input" type="checkbox"> About
+      <input class="checkbox__input" type="checkbox" /> About
       <svg class="i-daw" viewBox="0 0 24 24">
   <polyline points="20 6 9 17 4 12"></polyline>
 </svg>
     </label>
     <label class="checkbox">
-      <input class="checkbox__input" type="checkbox"> Design
+      <input class="checkbox__input" type="checkbox" /> Design
       <svg class="i-daw" viewBox="0 0 24 24">
   <polyline points="20 6 9 17 4 12"></polyline>
 </svg>
     </label>
   </fieldset>
-</div>
+</fieldset>
+
             <!-- ./profile-group -->
 
           </div>
@@ -856,8 +927,11 @@
                 </label>
               </div>
             </div>
-            <div class="profile-group">
+            <div class="profile-group profile-group--profession">
               <p class="profile-group__title">Profession</p>
+              <p class="profile-group__subtitle">
+                You can add up to three professions
+              </p>
               <div class="profile-checkboxes">
                 <label class="checkbox-btn">
                   <input type="checkbox">
@@ -937,12 +1011,13 @@
               </div>
             </div>
 
-            <div class="profile-group profile-group--subscribe-mobile">
+            <fieldset class="profile-group profile-group--subscribe-mobile">
   <p class="profile-group__title">Newsletter</p>
 
   <label class="checkbox checkbox--is-checked">
-    <input class="checkbox__input" type="checkbox" required checked> I agree to receive e-mail newsletters
-    from MANU video game maker with helpful information <svg class="i-daw" viewBox="0 0 24 24">
+    <input class="checkbox__input" type="checkbox" required checked /> I agree
+    to receive e-mail newsletters from MANU video game maker with helpful
+    information <svg class="i-daw" viewBox="0 0 24 24">
   <polyline points="20 6 9 17 4 12"></polyline>
 </svg>
     <span class="checkbox__helper">Select the checkbox</span>
@@ -950,8 +1025,15 @@
 
   <div class="mdc-form-field">
     <div class="mdc-radio">
-      <input id="radio-3" class="mdc-radio__native-control js-subscribe" type="radio" name="newsletter-mob"
-        data-subscribe="all" required checked>
+      <input
+        id="radio-3"
+        class="mdc-radio__native-control js-subscribe"
+        type="radio"
+        name="newsletter-mob"
+        data-subscribe="all"
+        required
+        checked
+      />
       <div class="mdc-radio__background">
         <div class="mdc-radio__outer-circle"></div>
         <div class="mdc-radio__inner-circle"></div>
@@ -962,8 +1044,14 @@
 
   <div class="mdc-form-field">
     <div class="mdc-radio">
-      <input id="radio-4" class="mdc-radio__native-control js-subscribe" type="radio" name="newsletter-mob"
-        data-subscribe="choose" required>
+      <input
+        id="radio-4"
+        class="mdc-radio__native-control js-subscribe"
+        type="radio"
+        name="newsletter-mob"
+        data-subscribe="choose"
+        required
+      />
       <div class="mdc-radio__background">
         <div class="mdc-radio__outer-circle"></div>
         <div class="mdc-radio__inner-circle"></div>
@@ -974,31 +1062,32 @@
 
   <fieldset class="profile-subscribe" disabled>
     <label class="checkbox">
-      <input class="checkbox__input" type="checkbox"> Marketing
+      <input class="checkbox__input" type="checkbox" /> Marketing
       <svg class="i-daw" viewBox="0 0 24 24">
   <polyline points="20 6 9 17 4 12"></polyline>
 </svg>
     </label>
     <label class="checkbox">
-      <input class="checkbox__input" type="checkbox"> Gaming
+      <input class="checkbox__input" type="checkbox" /> Gaming
       <svg class="i-daw" viewBox="0 0 24 24">
   <polyline points="20 6 9 17 4 12"></polyline>
 </svg>
     </label>
     <label class="checkbox">
-      <input class="checkbox__input" type="checkbox"> About
+      <input class="checkbox__input" type="checkbox" /> About
       <svg class="i-daw" viewBox="0 0 24 24">
   <polyline points="20 6 9 17 4 12"></polyline>
 </svg>
     </label>
     <label class="checkbox">
-      <input class="checkbox__input" type="checkbox"> Design
+      <input class="checkbox__input" type="checkbox" /> Design
       <svg class="i-daw" viewBox="0 0 24 24">
   <polyline points="20 6 9 17 4 12"></polyline>
 </svg>
     </label>
   </fieldset>
-</div>
+</fieldset>
+
 
           </div>
         </div>
