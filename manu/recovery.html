@@ -69,6 +69,7 @@
     <div class="mdc-text-field-wrap">
       <div class="mdc-text-field mdc-text-field--outlined">
         <input
+          autocomplete="pleasestop"
           class="mdc-text-field__input"
           type="email"
           required
@@ -133,97 +134,108 @@
       <p class="footer__text mb">
         Feel free to contact us with questions, ideas and potential partnerships
       </p>
-      <p class="footer__text">
-        3000 20th St. San Francisco, CA 94110
-      </p>
-      <a class="footer__text footer__phone" href="tel:8774127753">(877) 412-7753</a>
+      <p class="footer__text">3000 20th St. San Francisco, CA 94110</p>
+      <a class="footer__text footer__phone" href="tel:8774127753"
+        >(877) 412-7753</a
+      >
       <ul class="footer__social">
         <li class="footer__social-item">
-          <a href="">
-            <svg class="i-twitter" viewBox="0 0 10 8">
+          <a href=""> <svg class="i-twitter" viewBox="0 0 10 8">
   <path d="M10 0.947007C9.63203 1.10763 9.23668 1.2162 8.82168 1.26501C9.24524 1.01507 9.57055 0.619289 9.72375 0.14766C9.32729 0.37913 8.88826 0.547189 8.42092 0.637747C8.0467 0.245235 7.51348 0 6.92338 0C5.79036 0 4.87179 0.904208 4.87179 2.01954C4.87179 2.17784 4.88993 2.33198 4.92491 2.47981C3.21984 2.39556 1.7081 1.59154 0.696229 0.369632C0.519628 0.667913 0.418437 1.01484 0.418437 1.38497C0.418437 2.08566 0.780623 2.70384 1.33113 3.06601C0.994822 3.05551 0.678475 2.96467 0.401894 2.81339C0.401698 2.82181 0.401698 2.83027 0.401698 2.83879C0.401698 3.81731 1.1089 4.63356 2.04742 4.81913C1.87529 4.86526 1.69402 4.89002 1.50691 4.89002C1.3747 4.89002 1.24619 4.87733 1.1209 4.85372C1.38199 5.65605 2.13964 6.24004 3.03742 6.25628C2.33527 6.79801 1.45064 7.12084 0.489413 7.12084C0.323808 7.12084 0.160508 7.11131 0 7.09256C0.907928 7.66565 1.98634 8 3.14494 8C6.91858 8 8.98219 4.92255 8.98219 2.2537C8.98219 2.16615 8.98016 2.07905 8.97623 1.99242C9.37713 1.70769 9.72496 1.352 10 0.947007Z"
   />
-</svg>
-          </a>
+</svg> </a>
         </li>
         <li class="footer__social-item">
-          <a href="">
-            <svg class="i-facebook" viewBox="0 0 17 16">
+          <a href=""> <svg class="i-facebook" viewBox="0 0 17 16">
   <path d="M8.54227 0C3.98676 0 0.293701 3.59676 0.293701 8.03349C0.293701 12.0127 3.26747 15.3082 7.16657 15.9463V9.7095H5.17678V7.46511H7.16657V5.81019C7.16657 3.89001 8.37076 2.84362 10.1298 2.84362C10.9723 2.84362 11.6963 2.90476 11.9065 2.93169V4.93879L10.6864 4.93937C9.73002 4.93937 9.54563 5.38192 9.54563 6.03156V7.46396H11.8278L11.5301 9.70835H9.54563V16C13.6268 15.5162 16.7907 12.1368 16.7907 8.03119C16.7907 3.59676 13.0977 0 8.54227 0Z" />
-</svg>
-          </a>
+</svg> </a>
         </li>
         <li class="footer__social-item">
-          <a href="">
-            <svg class="i-instagram" viewBox="0 0 17 16">
+          <a href=""> <svg class="i-instagram" viewBox="0 0 17 16">
 <path d="M16.12 1.66642C16.0222 0.713737 15.2345 0.000516079 14.2775 0C10.1919 0 6.10679 0 2.02119 0.00103216C1.90948 0.00103216 1.7957 0.00928942 1.68759 0.0304487C0.78254 0.203851 0.167847 0.95423 0.167847 1.8775C0.167847 3.9191 0.167847 5.96071 0.167847 8.00232C0.167847 10.0398 0.167847 12.0773 0.168876 14.1148C0.168876 14.2185 0.176599 14.3227 0.189469 14.4265C0.307877 15.3126 1.09298 15.9995 1.98619 16C6.09392 16 10.2022 16 14.3099 15.9995C14.3804 15.9995 14.4499 15.9954 14.5205 15.9876C15.4229 15.8813 16.1246 15.0912 16.1246 14.1803C16.1262 10.0615 16.1262 5.94317 16.1252 1.82486C16.1262 1.77118 16.1272 1.71906 16.12 1.66642ZM8.14702 4.92443C9.84283 4.92391 11.2153 6.29771 11.2174 7.99923C11.2195 9.69971 9.84901 11.0761 8.15217 11.0771C6.45224 11.0776 5.07767 9.70022 5.07973 7.99716C5.08179 6.30133 6.45533 4.92443 8.14702 4.92443ZM14.2893 6.85405C14.2893 9.06338 14.2893 11.2732 14.2893 13.4841C14.2893 13.9001 14.0371 14.1555 13.6216 14.1555C10.212 14.1555 6.80231 14.1555 3.39215 14.1555C3.14659 14.1555 2.90256 14.156 2.65648 14.1555C2.27191 14.155 2.0109 13.8928 2.0109 13.5079C2.01038 11.2877 2.0109 9.06751 2.0109 6.84682C2.0109 6.82463 2.0109 6.80192 2.0109 6.7756C2.47475 6.7756 2.93294 6.7756 3.39576 6.7756C3.08584 8.02916 3.22793 9.22853 3.84005 10.3629C4.28742 11.1907 4.92889 11.8342 5.74693 12.2971C7.36243 13.2111 9.37229 13.1249 10.9106 12.0711C11.7641 11.4859 12.3778 10.7076 12.7438 9.7379C13.1078 8.77025 13.1552 7.78247 12.9009 6.77354C13.3647 6.77354 13.8219 6.77354 14.2883 6.77354C14.2893 6.80089 14.2893 6.82721 14.2893 6.85405ZM14.2893 4.29429C14.2883 4.65813 14.0211 4.92339 13.6566 4.92391C13.652 4.92391 13.6468 4.92391 13.6442 4.92391C13.3487 4.92391 13.0512 4.92391 12.7536 4.92391C12.4509 4.92391 12.1472 4.92443 11.8434 4.92339C11.4939 4.92339 11.222 4.66174 11.22 4.31132C11.2159 3.69461 11.2159 3.0779 11.22 2.46221C11.222 2.10767 11.4928 1.84808 11.8486 1.84756C12.454 1.84705 13.0579 1.84705 13.6623 1.84756C14.0206 1.84808 14.2888 2.11489 14.2898 2.47615C14.2903 3.08306 14.2903 3.68842 14.2893 4.29429Z" />
 </svg>
-
-          </a>
+ </a>
         </li>
         <li class="footer__social-item">
-          <a href="">
-            <svg class="i-linkedin" viewBox="0 0 16 16">
+          <a href=""> <svg class="i-linkedin" viewBox="0 0 16 16">
 <path d="M14.8217 0H1.22109C0.569842 0 0.0419922 0.513087 0.0419922 1.14636V14.8532C0.0419922 15.4865 0.570027 16 1.22109 16H14.8217C15.4728 16 16 15.4861 16 14.8532V1.14636C16 0.513273 15.4728 0 14.8217 0ZM4.88002 13.3931H2.46887V6.16928H4.88002V13.3931ZM3.67468 5.18239H3.65847C2.84991 5.18239 2.32577 4.62798 2.32577 3.93388C2.32577 3.22579 2.8653 2.68641 3.6899 2.68641C4.51456 2.68641 5.02182 3.22565 5.03785 3.93388C5.03785 4.62813 4.51475 5.18239 3.67468 5.18239ZM13.5715 13.3931H11.1611V9.5281C11.1611 8.55694 10.8119 7.89428 9.94021 7.89428C9.27337 7.89428 8.87753 8.34134 8.70371 8.77296C8.6393 8.92711 8.62335 9.14272 8.62335 9.35803V13.3929H6.21342C6.21342 13.3929 6.24496 6.84668 6.21342 6.16917H8.62372V7.1933C8.94368 6.70119 9.51546 5.99921 10.7954 5.99921C12.3819 5.99921 13.5715 7.03108 13.5715 9.25093V13.3931ZM8.60813 7.21625C8.61225 7.20948 8.618 7.20134 8.62372 7.19341V7.21625H8.60813Z"/>
 </svg>
-
-          </a>
+ </a>
         </li>
       </ul>
     </div>
     <div class="footer__right">
       <form class="footer__form js-validate" novalidate>
-
         <div class="mdc-text-field-wrap footer__name">
           <div class=" mdc-text-field mdc-text-field--outlined">
-            <input class="mdc-text-field__input" type="text" required minlength="1">
+            <input
+              class="mdc-text-field__input"
+              autocomplete="pleasestop"
+              type="text"
+              required
+              minlength="1"
+            />
             <label class="mdc-floating-label">Name</label>
             <div class="mdc-notched-outline">
-              <svg>
-                <path class="mdc-notched-outline__path" />
-              </svg>
+              <svg><path class="mdc-notched-outline__path" /></svg>
             </div>
             <div class="mdc-notched-outline__idle"></div>
           </div>
-          <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" aria-hidden="true">
+          <p
+            class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
+            aria-hidden="true"
+          >
             Enter your name
           </p>
         </div>
 
         <div class="mdc-text-field-wrap footer__email">
           <div class=" mdc-text-field mdc-text-field--outlined">
-            <input class="mdc-text-field__input" type="email" required minlength="1">
+            <input
+              class="mdc-text-field__input"
+              autocomplete="pleasestop"
+              type="email"
+              required
+              minlength="1"
+            />
             <label class="mdc-floating-label">E-mail</label>
             <div class="mdc-notched-outline">
-              <svg>
-                <path class="mdc-notched-outline__path" />
-              </svg>
+              <svg><path class="mdc-notched-outline__path" /></svg>
             </div>
             <div class="mdc-notched-outline__idle"></div>
           </div>
-          <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" aria-hidden="true">
+          <p
+            class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
+            aria-hidden="true"
+          >
             Enter your e-mail
           </p>
         </div>
 
         <div class="mdc-text-field-wrap">
           <div class="mdc-text-field mdc-text-field--textarea autosize">
-            <textarea class="mdc-text-field__input" required minlength="1"></textarea>
-            <label class="mdc-floating-label">
-              Message</label>
+            <textarea
+              class="mdc-text-field__input"
+              autocomplete="pleasestop"
+              required
+              minlength="1"
+            ></textarea>
+            <label class="mdc-floating-label"> Message</label>
           </div>
-          <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" aria-hidden="true">
+          <p
+            class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
+            aria-hidden="true"
+          >
             Enter your message
           </p>
         </div>
 
         <div class="footer__policy">
           <label class="checkbox">
-            <input class="checkbox__input" type="checkbox" required> I agree with
-            <a href="">Privacy Policy</a>,
+            <input class="checkbox__input" type="checkbox" required /> I agree
+            with <a href="">Privacy Policy</a>,
             <a href="">Data Protection Policy</a>,
-            <a href="">Terms of Use</a>
-            <svg class="i-daw" viewBox="0 0 24 24">
+            <a href="">Terms of Use</a> <svg class="i-daw" viewBox="0 0 24 24">
   <polyline points="20 6 9 17 4 12"></polyline>
 </svg>
             <span class="checkbox__helper">Select the checkbox</span>
@@ -234,7 +246,6 @@
 </svg>
           </button>
         </div>
-
       </form>
     </div>
   </div>
@@ -242,25 +253,29 @@
     <div class="footer__bottom">
       <div class="footer__bottom-half footer__bottom-half--copyright">
         <p>© 2018, MANU Video Game Maker. All Rights Reserved.</p>
-        <!-- <p>Made in
-          <a href="https://its.agency/" rel="nofollow" target="_blank">its.agency</a>
-        </p> -->
+        <!--
+          <p>Made in
+            <a href="https://its.agency/" rel="nofollow" target="_blank">its.agency</a>
+          </p>
+        -->
       </div>
       <div class="footer__bottom-half footer__bottom-half--help">
-        <a href="">Terms of Service</a>
-        <a href="">Privacy Policy</a>
+        <a href="">Terms of Service</a> <a href="">Privacy Policy</a>
         <a href="">Data protection policy</a>
       </div>
     </div>
   </div>
 </footer>
+
 <!-- footer--mob -->
 <footer class="footer footer--mob">
   <div class="container">
     <div class="footer__top">
-      <!-- <a class="footer__logo" href="">
-        <img src="img/logo.svg" alt="Manu">
-      </a> -->
+      <!--
+        <a class="footer__logo" href="">
+          <img src="img/logo.svg" alt="Manu">
+        </a>
+      -->
       <nav class="footer__nav">
         <ul class="footer__list">
           <li class="footer__list-item">
@@ -283,35 +298,27 @@
     <div class="footer__left">
       <ul class="footer__social">
         <li class="footer__social-item">
-          <a href="">
-            <svg class="i-twitter" viewBox="0 0 10 8">
+          <a href=""> <svg class="i-twitter" viewBox="0 0 10 8">
   <path d="M10 0.947007C9.63203 1.10763 9.23668 1.2162 8.82168 1.26501C9.24524 1.01507 9.57055 0.619289 9.72375 0.14766C9.32729 0.37913 8.88826 0.547189 8.42092 0.637747C8.0467 0.245235 7.51348 0 6.92338 0C5.79036 0 4.87179 0.904208 4.87179 2.01954C4.87179 2.17784 4.88993 2.33198 4.92491 2.47981C3.21984 2.39556 1.7081 1.59154 0.696229 0.369632C0.519628 0.667913 0.418437 1.01484 0.418437 1.38497C0.418437 2.08566 0.780623 2.70384 1.33113 3.06601C0.994822 3.05551 0.678475 2.96467 0.401894 2.81339C0.401698 2.82181 0.401698 2.83027 0.401698 2.83879C0.401698 3.81731 1.1089 4.63356 2.04742 4.81913C1.87529 4.86526 1.69402 4.89002 1.50691 4.89002C1.3747 4.89002 1.24619 4.87733 1.1209 4.85372C1.38199 5.65605 2.13964 6.24004 3.03742 6.25628C2.33527 6.79801 1.45064 7.12084 0.489413 7.12084C0.323808 7.12084 0.160508 7.11131 0 7.09256C0.907928 7.66565 1.98634 8 3.14494 8C6.91858 8 8.98219 4.92255 8.98219 2.2537C8.98219 2.16615 8.98016 2.07905 8.97623 1.99242C9.37713 1.70769 9.72496 1.352 10 0.947007Z"
   />
-</svg>
-          </a>
+</svg> </a>
         </li>
         <li class="footer__social-item">
-          <a href="">
-            <svg class="i-facebook" viewBox="0 0 17 16">
+          <a href=""> <svg class="i-facebook" viewBox="0 0 17 16">
   <path d="M8.54227 0C3.98676 0 0.293701 3.59676 0.293701 8.03349C0.293701 12.0127 3.26747 15.3082 7.16657 15.9463V9.7095H5.17678V7.46511H7.16657V5.81019C7.16657 3.89001 8.37076 2.84362 10.1298 2.84362C10.9723 2.84362 11.6963 2.90476 11.9065 2.93169V4.93879L10.6864 4.93937C9.73002 4.93937 9.54563 5.38192 9.54563 6.03156V7.46396H11.8278L11.5301 9.70835H9.54563V16C13.6268 15.5162 16.7907 12.1368 16.7907 8.03119C16.7907 3.59676 13.0977 0 8.54227 0Z" />
-</svg>
-          </a>
+</svg> </a>
         </li>
         <li class="footer__social-item">
-          <a href="">
-            <svg class="i-instagram" viewBox="0 0 17 16">
+          <a href=""> <svg class="i-instagram" viewBox="0 0 17 16">
 <path d="M16.12 1.66642C16.0222 0.713737 15.2345 0.000516079 14.2775 0C10.1919 0 6.10679 0 2.02119 0.00103216C1.90948 0.00103216 1.7957 0.00928942 1.68759 0.0304487C0.78254 0.203851 0.167847 0.95423 0.167847 1.8775C0.167847 3.9191 0.167847 5.96071 0.167847 8.00232C0.167847 10.0398 0.167847 12.0773 0.168876 14.1148C0.168876 14.2185 0.176599 14.3227 0.189469 14.4265C0.307877 15.3126 1.09298 15.9995 1.98619 16C6.09392 16 10.2022 16 14.3099 15.9995C14.3804 15.9995 14.4499 15.9954 14.5205 15.9876C15.4229 15.8813 16.1246 15.0912 16.1246 14.1803C16.1262 10.0615 16.1262 5.94317 16.1252 1.82486C16.1262 1.77118 16.1272 1.71906 16.12 1.66642ZM8.14702 4.92443C9.84283 4.92391 11.2153 6.29771 11.2174 7.99923C11.2195 9.69971 9.84901 11.0761 8.15217 11.0771C6.45224 11.0776 5.07767 9.70022 5.07973 7.99716C5.08179 6.30133 6.45533 4.92443 8.14702 4.92443ZM14.2893 6.85405C14.2893 9.06338 14.2893 11.2732 14.2893 13.4841C14.2893 13.9001 14.0371 14.1555 13.6216 14.1555C10.212 14.1555 6.80231 14.1555 3.39215 14.1555C3.14659 14.1555 2.90256 14.156 2.65648 14.1555C2.27191 14.155 2.0109 13.8928 2.0109 13.5079C2.01038 11.2877 2.0109 9.06751 2.0109 6.84682C2.0109 6.82463 2.0109 6.80192 2.0109 6.7756C2.47475 6.7756 2.93294 6.7756 3.39576 6.7756C3.08584 8.02916 3.22793 9.22853 3.84005 10.3629C4.28742 11.1907 4.92889 11.8342 5.74693 12.2971C7.36243 13.2111 9.37229 13.1249 10.9106 12.0711C11.7641 11.4859 12.3778 10.7076 12.7438 9.7379C13.1078 8.77025 13.1552 7.78247 12.9009 6.77354C13.3647 6.77354 13.8219 6.77354 14.2883 6.77354C14.2893 6.80089 14.2893 6.82721 14.2893 6.85405ZM14.2893 4.29429C14.2883 4.65813 14.0211 4.92339 13.6566 4.92391C13.652 4.92391 13.6468 4.92391 13.6442 4.92391C13.3487 4.92391 13.0512 4.92391 12.7536 4.92391C12.4509 4.92391 12.1472 4.92443 11.8434 4.92339C11.4939 4.92339 11.222 4.66174 11.22 4.31132C11.2159 3.69461 11.2159 3.0779 11.22 2.46221C11.222 2.10767 11.4928 1.84808 11.8486 1.84756C12.454 1.84705 13.0579 1.84705 13.6623 1.84756C14.0206 1.84808 14.2888 2.11489 14.2898 2.47615C14.2903 3.08306 14.2903 3.68842 14.2893 4.29429Z" />
 </svg>
-
-          </a>
+ </a>
         </li>
         <li class="footer__social-item">
-          <a href="">
-            <svg class="i-linkedin" viewBox="0 0 16 16">
+          <a href=""> <svg class="i-linkedin" viewBox="0 0 16 16">
 <path d="M14.8217 0H1.22109C0.569842 0 0.0419922 0.513087 0.0419922 1.14636V14.8532C0.0419922 15.4865 0.570027 16 1.22109 16H14.8217C15.4728 16 16 15.4861 16 14.8532V1.14636C16 0.513273 15.4728 0 14.8217 0ZM4.88002 13.3931H2.46887V6.16928H4.88002V13.3931ZM3.67468 5.18239H3.65847C2.84991 5.18239 2.32577 4.62798 2.32577 3.93388C2.32577 3.22579 2.8653 2.68641 3.6899 2.68641C4.51456 2.68641 5.02182 3.22565 5.03785 3.93388C5.03785 4.62813 4.51475 5.18239 3.67468 5.18239ZM13.5715 13.3931H11.1611V9.5281C11.1611 8.55694 10.8119 7.89428 9.94021 7.89428C9.27337 7.89428 8.87753 8.34134 8.70371 8.77296C8.6393 8.92711 8.62335 9.14272 8.62335 9.35803V13.3929H6.21342C6.21342 13.3929 6.24496 6.84668 6.21342 6.16917H8.62372V7.1933C8.94368 6.70119 9.51546 5.99921 10.7954 5.99921C12.3819 5.99921 13.5715 7.03108 13.5715 9.25093V13.3931ZM8.60813 7.21625C8.61225 7.20948 8.618 7.20134 8.62372 7.19341V7.21625H8.60813Z"/>
 </svg>
-
-          </a>
+ </a>
         </li>
       </ul>
     </div>
@@ -325,57 +332,76 @@
           </button>
           <div class="accordion__content">
             <form class="footer__form js-validate" novalidate>
-
               <div class="mdc-text-field-wrap footer__name">
                 <div class=" mdc-text-field mdc-text-field--outlined">
-                  <input class="mdc-text-field__input" type="text" required minlength="1">
+                  <input
+                    class="mdc-text-field__input"
+                    autocomplete="pleasestop"
+                    type="text"
+                    required
+                    minlength="1"
+                  />
                   <label class="mdc-floating-label">Name</label>
                   <div class="mdc-notched-outline">
-                    <svg>
-                      <path class="mdc-notched-outline__path" />
-                    </svg>
+                    <svg><path class="mdc-notched-outline__path" /></svg>
                   </div>
                   <div class="mdc-notched-outline__idle"></div>
                 </div>
-                <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" aria-hidden="true">
+                <p
+                  class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
+                  aria-hidden="true"
+                >
                   Enter your name
                 </p>
               </div>
 
               <div class="mdc-text-field-wrap footer__email">
                 <div class=" mdc-text-field mdc-text-field--outlined">
-                  <input class="mdc-text-field__input" type="email" required minlength="1">
+                  <input
+                    class="mdc-text-field__input"
+                    autocomplete="pleasestop"
+                    type="email"
+                    required
+                    minlength="1"
+                  />
                   <label class="mdc-floating-label">E-mail</label>
                   <div class="mdc-notched-outline">
-                    <svg>
-                      <path class="mdc-notched-outline__path" />
-                    </svg>
+                    <svg><path class="mdc-notched-outline__path" /></svg>
                   </div>
                   <div class="mdc-notched-outline__idle"></div>
                 </div>
-                <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" aria-hidden="true">
+                <p
+                  class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
+                  aria-hidden="true"
+                >
                   Enter your e-mail
                 </p>
               </div>
 
               <div class="mdc-text-field-wrap">
                 <div class="mdc-text-field mdc-text-field--textarea autosize">
-                  <textarea class="mdc-text-field__input" required minlength="1"></textarea>
-                  <label class="mdc-floating-label">
-                    Message</label>
+                  <textarea
+                    class="mdc-text-field__input"
+                    autocomplete="pleasestop"
+                    required
+                    minlength="1"
+                  ></textarea>
+                  <label class="mdc-floating-label"> Message</label>
                 </div>
-                <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" aria-hidden="true">
+                <p
+                  class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
+                  aria-hidden="true"
+                >
                   Enter your message
                 </p>
               </div>
 
               <div class="footer__policy">
                 <label class="checkbox">
-                  <input class="checkbox__input" type="checkbox" required> I agree with
-                  <a href="">Privacy Policy</a>,
+                  <input class="checkbox__input" type="checkbox" required /> I
+                  agree with <a href="">Privacy Policy</a>,
                   <a href="">Data Protection Policy</a>,
-                  <a href="">Terms of Use</a>
-                  <svg class="i-daw" viewBox="0 0 24 24">
+                  <a href="">Terms of Use</a> <svg class="i-daw" viewBox="0 0 24 24">
   <polyline points="20 6 9 17 4 12"></polyline>
 </svg>
                   <span class="checkbox__helper">Select the checkbox</span>
@@ -386,42 +412,30 @@
 </svg>
                 </button>
               </div>
-
             </form>
           </div>
         </li>
       </ul>
-
     </div>
   </div>
   <div class="container">
     <div class="footer__bottom">
       <ul class="footer__bottom-half">
-        <li>
-          <a href="tel:8774127753">
-            (877) 412-7753
-          </a>
-
-        </li>
-        <li>
-          <p>
-            3000 20th St. San Francisco, CA 94110
-          </p>
-
-        </li>
-        <li>
-          <p>© 2018, MANU Video Game Maker. All Rights Reserved.</p>
-
-        </li>
-        <!-- <li>
-          <p>Made in
-            <a href="https://its.agency/" rel="nofollow" target="_blank">its.agency</a>
-          </p>
-        </li> -->
+        <li><a href="tel:8774127753"> (877) 412-7753 </a></li>
+        <li><p>3000 20th St. San Francisco, CA 94110</p></li>
+        <li><p>© 2018, MANU Video Game Maker. All Rights Reserved.</p></li>
+        <!--
+          <li>
+            <p>Made in
+              <a href="https://its.agency/" rel="nofollow" target="_blank">its.agency</a>
+            </p>
+          </li>
+        -->
       </ul>
     </div>
   </div>
 </footer>
+
 
 
 
