@@ -510,7 +510,13 @@
       <div class="section-8__block flex flex-column align-center">
         <h2 class="text-block__title split-text">Узнайте больше</h2>
 
-        <form class="form flex align-center">
+        <form
+          class="form flex align-center"
+          id="subscribe-form"
+          action="/ajax/callback"
+          onsubmit="sendSubscribeForm(this);return false;"
+          method="post"
+        >
           <fieldset class="form__body">
             <div class="input">
               <label>
@@ -588,6 +594,76 @@
 </main>
 
 <script defer src="js/index.js"></script>
+
+<div class="modal js-modal">
+  <button type="button" class="modal__close js-modal-close"></button>
+  <div class="modal__wrap">
+    <p class="modal__title">Спасибо</p>
+    <p class="modal__descr">Мы скоро вам позвоним.</p>
+  </div>
+</div>
+<div class="overlay js-overlay"></div>
+
+<script>
+  var modal = document.querySelector('.js-modal'),
+    overlay = document.querySelector('.js-overlay'),
+    modalCloseBtn = document.querySelector('.js-modal-close');
+
+  modalCloseBtn.addEventListener(
+    'click',
+    removeMessage.bind(this, modal, overlay)
+  );
+
+  function sendSubscribeForm(form) {
+    ajaxPost(form, function() {
+      if (this.status === 200) {
+        //alert("Форма успешно отправлена! Наши менеджеры свяжутся с вами в ближайшее время");
+        renderMessage(modal, overlay);
+      }
+    });
+  }
+  /**
+   * Takes a form node and sends it over AJAX.
+   * @param {HTMLFormElement} form - Form node to send
+   * @param {function} callback - Function to handle onload.
+   *                              this variable will be bound correctly.
+   */
+
+  function renderMessage(modal, overlay) {
+    modal.classList.add('modal--active');
+    overlay.classList.add('overlay--active');
+  }
+
+  function removeMessage() {
+    modal.classList.remove('modal--active');
+    overlay.classList.remove('overlay--active');
+  }
+
+  function ajaxPost(form, callback) {
+    var url = form.action,
+      xhr = new XMLHttpRequest();
+
+    //Filtering all of the fields on the form
+    var params = [].filter
+      .call(form.elements, function(el) {
+        return !!el.name; //Filter nameless elements.
+      })
+      .map(function(el) {
+        //Map each field into a name=value string, make sure to properly escape!
+        return encodeURIComponent(el.name) + '=' + encodeURIComponent(el.value);
+      })
+      .join('&'); //Then join all the strings by &
+    params += '&form_id=' + form.id;
+    xhr.open('POST', url);
+    xhr.setRequestHeader('Content-type', 'application/x-form-urlencoded');
+
+    //.bind ensures that this inside of the function is the XHR object.
+    xhr.onload = callback.bind(xhr);
+
+    //All preparations are clear, send the request!
+    xhr.send(params);
+  }
+</script>
 
 <!-- footer -->
 <script>
