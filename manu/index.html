@@ -1,43 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
 
-<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
 
-  <meta charset="utf-8">
+    <title>Manu</title>
+    <meta name="description" content="Manu" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="index, follow" />
 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Manu" />
+    <meta property="og:url" content="" />
+    <meta
+      property="og:image"
+      content="img/favicon/android-chrome-512x512.png"
+    />
+    <meta property="og:description" content="Manu" />
 
-  <title>Manu</title>
-  <meta name="description" content="Manu">
-  <meta name="keywords" content="">
-  <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="css/main.min.css" />
 
-  <meta property="og:locale" content="ru_RU">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Manu">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="img/favicon/android-chrome-512x512.png">
-  <meta property="og:description" content="Manu">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="img/favicon/safari-pinned-tab.svg"
+      color="#7fcdf3"
+    />
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
 
-  <link rel="stylesheet" href="css/main.min.css">
+    <link rel="preload" href="./fonts/lato/latobold.woff2" as="font" />
+    <link rel="preload" href="./fonts/roboto/Roboto-Bold.woff2" as="font" />
+  </head>
 
-  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-  <link rel="manifest" href="img/favicon/site.webmanifest">
-  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#7fcdf3">
-  <link rel="shortcut icon" href="img/favicon/favicon.ico">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
+  <body></body>
+</html>
 
-  <link rel="preload" href="./fonts/lato/Lato-Bold.woff2" as="font">
-  <link rel="preload" href="./fonts/roboto/Roboto-Bold.woff2" as="font">
-
-</head>
-
-<body>
 
 <!-- Preloader -->
 <style>
@@ -228,6 +251,7 @@
             <input
               class="mdc-text-field__input"
               autocomplete="pleasestop"
+              list="autocompleteOff"
               type="text"
               required
               minlength="1"
@@ -251,6 +275,7 @@
             <input
               class="mdc-text-field__input"
               autocomplete="pleasestop"
+              list="autocompleteOff"
               type="email"
               required
               minlength="1"
@@ -302,6 +327,7 @@
           <input
             class="mdc-text-field__input"
             autocomplete="pleasestop"
+            list="autocompleteOff"
             type="text"
           />
           <label class="mdc-floating-label">Search...</label>
@@ -313,7 +339,9 @@
       </main>
 
       <footer class="modal__footer">
-        <button class="modal__btn btn inactive" type="submit">Show results</button>
+        <button class="modal__btn btn inactive" type="submit">
+          Show results
+        </button>
       </footer>
     </form>
   </div>
@@ -1010,6 +1038,7 @@
             <div class="mdc-text-field mdc-text-field--outlined">
               <input
                 autocomplete="pleasestop"
+                list="autocompleteOff"
                 class="mdc-text-field__input"
                 type="text"
                 required
@@ -1033,6 +1062,7 @@
             <div class="mdc-text-field mdc-text-field--outlined">
               <input
                 autocomplete="pleasestop"
+                list="autocompleteOff"
                 class="mdc-text-field__input"
                 type="email"
                 required
@@ -1201,6 +1231,7 @@
             <input
               class="mdc-text-field__input"
               autocomplete="pleasestop"
+              list="autocompleteOff"
               type="text"
               required
               minlength="1"
@@ -1224,6 +1255,7 @@
             <input
               class="mdc-text-field__input"
               autocomplete="pleasestop"
+              list="autocompleteOff"
               type="email"
               required
               minlength="1"
@@ -1247,6 +1279,7 @@
             <textarea
               class="mdc-text-field__input"
               autocomplete="pleasestop"
+              list="autocompleteOff"
               required
               minlength="1"
             ></textarea>
@@ -1367,6 +1400,7 @@
                   <input
                     class="mdc-text-field__input"
                     autocomplete="pleasestop"
+                    list="autocompleteOff"
                     type="text"
                     required
                     minlength="1"
@@ -1390,6 +1424,7 @@
                   <input
                     class="mdc-text-field__input"
                     autocomplete="pleasestop"
+                    list="autocompleteOff"
                     type="email"
                     required
                     minlength="1"
@@ -1413,6 +1448,7 @@
                   <textarea
                     class="mdc-text-field__input"
                     autocomplete="pleasestop"
+                    list="autocompleteOff"
                     required
                     minlength="1"
                   ></textarea>
